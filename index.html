@@ -1121,18 +1121,18 @@ searchInput.addEventListener('keypress', (e) => {
 
 <!-- Add this JavaScript code right before the closing </body> tag -->
 <script>
-// Improved Music Player Script
+// Improved Music Player Script with Debugging
 document.addEventListener('DOMContentLoaded', function() {
-    // Comprehensive playlist with your songs
+    // Use full URLs or ensure correct relative paths
     const playlist = [
-        { name: "XZ-都一样", file: "./都一样.mp3" },
-        { name: "XZ-灯塔", file: "./灯塔.mp3" },
-        { name: "XZ-漂流", file: "./漂流.mp3" },
-        { name: "XZ-不要回头", file: "./不要回头.mp3" },
-        { name: "XZ-如愿", file: "./如愿.mp3" },
-        { name: "XZ-同路人", file: "./同路人.mp3" },
-        { name: "XZ-余年", file: "./余年.mp3" },
-        { name: "XZ-晚安", file: "./晚安.mp3" }
+        { name: "XZ-都一样", file: "https://canadaxfx.github.io/xiaozhan/都一样.mp3" },
+        { name: "XZ-灯塔", file: "https://canadaxfx.github.io/xiaozhan/灯塔.mp3" },
+        { name: "XZ-漂流", file: "https://canadaxfx.github.io/xiaozhan/漂流.mp3" },
+        { name: "XZ-不要回头", file: "https://canadaxfx.github.io/xiaozhan/不要回头.mp3" },
+        { name: "XZ-如愿", file: "https://canadaxfx.github.io/xiaozhan/如愿.mp3" },
+        { name: "XZ-同路人", file: "https://canadaxfx.github.io/xiaozhan/同路人.mp3" },
+        { name: "XZ-余年", file: "https://canadaxfx.github.io/xiaozhan/余年.mp3" },
+        { name: "XZ-晚安", file: "https://canadaxfx.github.io/xiaozhan/晚安.mp3" }
     ];
     
     const audio = document.getElementById('background-music');
@@ -1144,40 +1144,73 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     let isPlaying = false;
     
-    // Load a track by index with robust error handling
+    // Comprehensive logging function
+    function log(message, type = 'log') {
+        const prefix = '[Music Player]';
+        switch(type) {
+            case 'error':
+                console.error(`${prefix} ${message}`);
+                break;
+            case 'warn':
+                console.warn(`${prefix} ${message}`);
+                break;
+            default:
+                console.log(`${prefix} ${message}`);
+        }
+    }
+    
+    // Load a track by index with extensive error handling
     function loadTrack(index) {
+        // Validate index
         if (index < 0 || index >= playlist.length) {
-            console.error('Invalid track index');
+            log(`Invalid track index: ${index}`, 'error');
             return;
         }
         
         const track = playlist[index];
         
-        // Reset audio source and load
+        // Log track loading attempt
+        log(`Attempting to load track: ${track.name} from ${track.file}`);
+        
+        // Reset audio source
         audio.src = track.file;
+        
+        // Add error and canplay event listeners
+        audio.onerror = function(e) {
+            log(`Error loading track: ${track.name}`, 'error');
+            log(`Error details: ${JSON.stringify(e)}`, 'error');
+            
+            // Attempt to play next track on error
+            playNext();
+        };
+        
+        audio.oncanplay = function() {
+            log(`Track loaded successfully: ${track.name}`);
+            trackDisplay.textContent = track.name;
+            
+            // Attempt to play if currently playing
+            if (isPlaying) {
+                audio.play().catch(error => {
+                    log(`Play error: ${error}`, 'error');
+                    isPlaying = false;
+                    playButton.innerHTML = '<span class="music-icon">▶️</span>';
+                });
+            }
+        };
+        
+        // Load the audio
         audio.load();
-        
-        // Update track display
-        trackDisplay.textContent = track.name;
-        
-        // If currently playing, attempt to play new track
-        if (isPlaying) {
-            audio.play().catch(error => {
-                console.error('Error playing track:', error);
-                isPlaying = false;
-                playButton.innerHTML = '<span class="music-icon">▶️</span>';
-            });
-        }
     }
     
-    // Toggle play/pause with improved error handling
+    // Toggle play/pause with comprehensive error handling
     function togglePlay() {
         if (audio.paused) {
             audio.play().then(() => {
                 isPlaying = true;
                 playButton.innerHTML = '<span class="music-icon">⏸️</span>';
+                log('Audio playback started');
             }).catch(error => {
-                console.error('Play error:', error);
+                log(`Play error: ${error}`, 'error');
                 isPlaying = false;
                 playButton.innerHTML = '<span class="music-icon">▶️</span>';
             });
@@ -1185,23 +1218,27 @@ document.addEventListener('DOMContentLoaded', function() {
             audio.pause();
             isPlaying = false;
             playButton.innerHTML = '<span class="music-icon">▶️</span>';
+            log('Audio playback paused');
         }
     }
     
     // Play next track with circular playlist
     function playNext() {
         currentIndex = (currentIndex + 1) % playlist.length;
+        log(`Moving to next track: ${currentIndex}`);
         loadTrack(currentIndex);
     }
     
     // Play previous track with circular playlist
     function playPrev() {
         currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+        log(`Moving to previous track: ${currentIndex}`);
         loadTrack(currentIndex);
     }
     
     // Event listener for track ending
     audio.addEventListener('ended', function() {
+        log('Track ended, moving to next');
         playNext();
     });
     
@@ -1210,19 +1247,14 @@ document.addEventListener('DOMContentLoaded', function() {
     nextButton.addEventListener('click', playNext);
     prevButton.addEventListener('click', playPrev);
     
-    // Additional error handling for audio loading
-    audio.addEventListener('error', function(e) {
-        console.error('Audio error:', e);
-        console.error(`Failed to load: ${playlist[currentIndex].file}`);
-        playNext(); // Automatically try next track
-    });
-    
     // Set initial volume
     audio.volume = 0.5;
     
     // Initialize first track
+    log('Initializing music player');
     loadTrack(currentIndex);
 });
+
 </script>
 </body>
 </html>
