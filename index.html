@@ -1121,192 +1121,92 @@ searchInput.addEventListener('keypress', (e) => {
 
 <!-- Add this JavaScript code right before the closing </body> tag -->
 <script>
-// Music player with shuffle functionality but no autoplay
+// Simplified music player that focuses on fixing the track advancement issue
 document.addEventListener('DOMContentLoaded', function() {
-    // Define your playlist with track names and file paths
-    const originalPlaylist = [
-            { name: "XZ-都一样", file: "都一样.mp3" },
-            { name: "XZ-灯塔", file: "灯塔.mp3" },
-            { name: "XZ-漂流", file: "漂流.mp3" },
-            { name: "XZ-不要回头", file: "不要回头.mp3" },
-            { name: "XZ-如愿", file: "如愿.mp3" },
-            { name: "XZ-同路人", file: "同路人.mp3" },
-            { name: "XZ-余年", file: "余年.mp3" },
-            { name: "XZ-晚安", file: "晚安.mp3" },
+    // Basic playlist with your songs
+    const playlist = [
+        { name: "XZ-都一样", file: "都一样.mp3" },
+        { name: "XZ-灯塔", file: "灯塔.mp3" },
+        { name: "XZ-漂流", file: "漂流.mp3" },
+        { name: "XZ-不要回头", file: "不要回头.mp3" },
+        { name: "XZ-如愿", file: "如愿.mp3" },
+        { name: "XZ-同路人", file: "同路人.mp3" },
+        { name: "XZ-余年", file: "余年.mp3" },
+        { name: "XZ-晚安", file: "晚安.mp3" }
     ];
     
-    // Create a working copy of the playlist
-    let playlist = [...originalPlaylist];
-    
-    const audioElement = document.getElementById('background-music');
-    const musicToggle = document.getElementById('music-toggle');
+    const audio = document.getElementById('background-music');
+    const playButton = document.getElementById('music-toggle');
     const prevButton = document.getElementById('prev-track');
     const nextButton = document.getElementById('next-track');
-    const trackNameDisplay = document.getElementById('track-name');
+    const trackDisplay = document.getElementById('track-name');
     
-    // Add a shuffle button to the music controls
-    const musicControls = document.querySelector('.music-controls');
-    const shuffleButton = document.createElement('button');
-    shuffleButton.id = 'shuffle-toggle';
-    shuffleButton.className = 'control-btn';
-    shuffleButton.innerHTML = '🔀';
-    shuffleButton.title = 'Toggle shuffle mode';
-    
-    // Insert shuffle button after the next track button
-    musicControls.insertBefore(shuffleButton, trackNameDisplay);
-    
-    let currentTrackIndex = 0;
+    let currentIndex = 0;
     let isPlaying = false;
-    let isShuffled = false;
     
-    // Initialize the first track
+    // Load a track by index
     function loadTrack(index) {
         const track = playlist[index];
-        
-        // Set the source and load the audio
-        audioElement.src = track.file;
-        audioElement.load();
-        
-        trackNameDisplay.textContent = track.name;
-        trackNameDisplay.title = track.name; // For tooltip on hover
-        
-        // Debug: Log the current track being loaded
-        console.log("Loading track:", track.name, "File:", track.file);
+        audio.src = track.file;
+        audio.load();
+        trackDisplay.textContent = track.name;
+        console.log(`Loading track: ${track.name}`);
     }
     
-    // Update the play/pause button appearance
-    function updatePlayButton() {
-        musicToggle.innerHTML = isPlaying ? 
-            '<span class="music-icon">⏸️</span>' : 
-            '<span class="music-icon">▶️</span>';
-    }
-    
-    // Update shuffle button appearance
-    function updateShuffleButton() {
-        shuffleButton.style.backgroundColor = isShuffled ? 
-            '#1a252f' : 'var(--primary-color)';
-    }
-    
-    // Function to shuffle array using Fisher-Yates algorithm
-    function shuffleArray(array) {
-        let currentIndex = array.length;
-        let temporaryValue, randomIndex;
-        
-        // While there remain elements to shuffle
-        while (0 !== currentIndex) {
-            // Pick a remaining element
-            randomIndex = Math.floor(Math.random() * currentIndex);
-            currentIndex -= 1;
-            
-            // Swap it with the current element
-            temporaryValue = array[currentIndex];
-            array[currentIndex] = array[randomIndex];
-            array[randomIndex] = temporaryValue;
-        }
-        
-        return array;
-    }
-    
-    // Function to toggle shuffle mode
-    function toggleShuffle() {
-        // Remember the current track
-        const currentTrack = playlist[currentTrackIndex];
-        
-        if (isShuffled) {
-            // Turn off shuffle - restore original playlist order
-            playlist = [...originalPlaylist];
-            isShuffled = false;
+    // Toggle play/pause
+    function togglePlay() {
+        if (isPlaying) {
+            audio.pause();
+            playButton.innerHTML = '<span class="music-icon">▶️</span>';
         } else {
-            // Turn on shuffle - randomize the playlist
-            playlist = shuffleArray([...originalPlaylist]);
-            isShuffled = true;
+            audio.play().catch(err => console.error("Play error:", err));
+            playButton.innerHTML = '<span class="music-icon">⏸️</span>';
         }
-        
-        // Find the current track in the new playlist order
-        currentTrackIndex = playlist.findIndex(track => 
-            track.file === currentTrack.file);
-        
-        // If somehow the track wasn't found, reset to first track
-        if (currentTrackIndex === -1) currentTrackIndex = 0;
-        
-        updateShuffleButton();
+        isPlaying = !isPlaying;
     }
     
-    // Function to toggle music play/pause
-    function toggleMusic() {
+    // Play next track
+    function playNext() {
+        currentIndex = (currentIndex + 1) % playlist.length;
+        loadTrack(currentIndex);
+        console.log(`Moving to next track: ${currentIndex}`);
+        
         if (isPlaying) {
-            audioElement.pause();
-            isPlaying = false;
-        } else {
-            const playPromise = audioElement.play();
-            
-            if (playPromise !== undefined) {
-                playPromise.then(() => {
-                    isPlaying = true;
-                }).catch(e => {
-                    console.error('Playback prevented:', e);
-                    isPlaying = false;
-                });
-            }
+            audio.play().catch(err => console.error("Play next error:", err));
         }
-        updatePlayButton();
     }
     
-    // Function to play previous track
-    function playPreviousTrack() {
-        currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
-        loadTrack(currentTrackIndex);
+    // Play previous track
+    function playPrev() {
+        currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+        loadTrack(currentIndex);
         
-        // If music was already playing, start playing the new track
         if (isPlaying) {
-            audioElement.play().catch(e => {
-                console.error('Error playing previous track:', e);
-            });
+            audio.play().catch(err => console.error("Play prev error:", err));
         }
     }
     
-    // Function to play next track
-    function playNextTrack() {
-        currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
-        loadTrack(currentTrackIndex);
-        
-        // If music was already playing, start playing the new track
-        if (isPlaying) {
-            audioElement.play().catch(e => {
-                console.error('Error playing next track:', e);
-            });
-        }
-    }
-    
-    // Add event listeners
-    musicToggle.addEventListener('click', toggleMusic);
-    prevButton.addEventListener('click', playPreviousTrack);
-    nextButton.addEventListener('click', playNextTrack);
-    shuffleButton.addEventListener('click', toggleShuffle);
-    
-    // FIXED: When current track ends, play the next one
-    audioElement.addEventListener('ended', playNextTrack);
-    
-    // Add error handling for audio loading issues
-    audioElement.addEventListener('error', function(e) {
-        console.error('Audio loading error:', e);
-        console.error('Failed to load:', playlist[currentTrackIndex].file);
-        trackNameDisplay.textContent = "Error loading track";
-        
-        // Try playing the next track if one fails
-        setTimeout(() => {
-            playNextTrack();
-        }, 2000);
+    // Critical: This ensures the next track plays when current one ends
+    audio.addEventListener('ended', function() {
+        console.log('Track ended, playing next');
+        playNext();
     });
     
-    // Initialize the first track without playing
-    loadTrack(currentTrackIndex);
+    // Add all event listeners
+    playButton.addEventListener('click', togglePlay);
+    nextButton.addEventListener('click', playNext);
+    prevButton.addEventListener('click', playPrev);
     
-    // Set volume
-    audioElement.volume = 0.5; // Set volume to 50%
+    // Add error handling
+    audio.addEventListener('error', function(e) {
+        console.error('Audio error:', e);
+        console.error(`Failed to load: ${playlist[currentIndex].file}`);
+        setTimeout(playNext, 1000); // Try next track on error
+    });
     
-    // Initialize shuffle button appearance
-    updateShuffleButton();
+    // Initialize first track
+    loadTrack(currentIndex);
+    audio.volume = 0.5;
 });
 </script>
 </body>
