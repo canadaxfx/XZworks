@@ -1121,9 +1121,9 @@ searchInput.addEventListener('keypress', (e) => {
 
 <!-- Add this JavaScript code right before the closing </body> tag -->
 <script>
-// Simplified music player that focuses on fixing the track advancement issue
+// Improved Music Player Script
 document.addEventListener('DOMContentLoaded', function() {
-    // Basic playlist with your songs
+    // Comprehensive playlist with your songs
     const playlist = [
         { name: "XZ-都一样", file: "./都一样.mp3" },
         { name: "XZ-灯塔", file: "./灯塔.mp3" },
@@ -1144,69 +1144,84 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     let isPlaying = false;
     
-    // Load a track by index
+    // Load a track by index with robust error handling
     function loadTrack(index) {
+        if (index < 0 || index >= playlist.length) {
+            console.error('Invalid track index');
+            return;
+        }
+        
         const track = playlist[index];
+        
+        // Reset audio source and load
         audio.src = track.file;
         audio.load();
+        
+        // Update track display
         trackDisplay.textContent = track.name;
-        console.log(`Loading track: ${track.name}`);
-    }
-    
-    // Toggle play/pause
-    function togglePlay() {
+        
+        // If currently playing, attempt to play new track
         if (isPlaying) {
-            audio.pause();
-            playButton.innerHTML = '<span class="music-icon">▶️</span>';
-        } else {
-            audio.play().catch(err => console.error("Play error:", err));
-            playButton.innerHTML = '<span class="music-icon">⏸️</span>';
+            audio.play().catch(error => {
+                console.error('Error playing track:', error);
+                isPlaying = false;
+                playButton.innerHTML = '<span class="music-icon">▶️</span>';
+            });
         }
-        isPlaying = !isPlaying;
     }
     
-    // Play next track
+    // Toggle play/pause with improved error handling
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play().then(() => {
+                isPlaying = true;
+                playButton.innerHTML = '<span class="music-icon">⏸️</span>';
+            }).catch(error => {
+                console.error('Play error:', error);
+                isPlaying = false;
+                playButton.innerHTML = '<span class="music-icon">▶️</span>';
+            });
+        } else {
+            audio.pause();
+            isPlaying = false;
+            playButton.innerHTML = '<span class="music-icon">▶️</span>';
+        }
+    }
+    
+    // Play next track with circular playlist
     function playNext() {
         currentIndex = (currentIndex + 1) % playlist.length;
         loadTrack(currentIndex);
-        console.log(`Moving to next track: ${currentIndex}`);
-        
-        if (isPlaying) {
-            audio.play().catch(err => console.error("Play next error:", err));
-        }
     }
     
-    // Play previous track
+    // Play previous track with circular playlist
     function playPrev() {
         currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
         loadTrack(currentIndex);
-        
-        if (isPlaying) {
-            audio.play().catch(err => console.error("Play prev error:", err));
-        }
     }
     
-    // Critical: This ensures the next track plays when current one ends
+    // Event listener for track ending
     audio.addEventListener('ended', function() {
-        console.log('Track ended, playing next');
         playNext();
     });
     
-    // Add all event listeners
+    // Add event listeners
     playButton.addEventListener('click', togglePlay);
     nextButton.addEventListener('click', playNext);
     prevButton.addEventListener('click', playPrev);
     
-    // Add error handling
+    // Additional error handling for audio loading
     audio.addEventListener('error', function(e) {
         console.error('Audio error:', e);
         console.error(`Failed to load: ${playlist[currentIndex].file}`);
-        setTimeout(playNext, 1000); // Try next track on error
+        playNext(); // Automatically try next track
     });
+    
+    // Set initial volume
+    audio.volume = 0.5;
     
     // Initialize first track
     loadTrack(currentIndex);
-    audio.volume = 0.5;
 });
 </script>
 </body>
