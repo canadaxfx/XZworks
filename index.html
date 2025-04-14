@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Arts of Xiao Zhan</title>
+    <style>
+        :root {
+            --primary-color: #4a4a8f;
+            --secondary-color: #f8f8ff;
+            --accent-color: #8f4a8f;
+            --text-color: #333;
+            --light-gray: #f0f0f0;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--secondary-color);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: normal;
+        }
+        
+        .category-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .tab:hover {
+            background-color: #d0d0d0;
+        }
+        
+        .tab.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+        }
+        
+        .work-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .work-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .work-title {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .work-year {
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+        
+        .work-role {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .work-description {
+            margin-bottom: 15px;
+        }
+        
+        .platform-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .platform-link {
+            padding: 5px 15px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        
+        .platform-link:hover {
+            background-color: var(--accent-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: var(--light-gray);
+            border-top: 1px solid #ddd;
+        }
+        
+        /* Admin panel styles */
+        .admin-panel {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 5px 0 0 0;
+            padding: 15px;
+            z-index: 1000;
+            box-shadow: -2px -2px 5px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .admin-panel.visible {
+            display: block;
+        }
+        
+        .stats-display {
+            margin-bottom: 10px;
+        }
+        
+        .admin-control {
+            font-size: 0.9rem;
+            margin-top: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .work-title {
+                font-size: 1.3rem;
+            }
+        }
+        
+        /* Email Contact Form Styles */
+        .contact-section {
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--accent-color);
+        }
+        
+        .form-status {
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 15px;
+            display: none;
+        }
+        
+        .form-status.success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #a5d6a7;
+            display: block;
+        }
+        
+        .form-status.error {
+            background-color: #ffebee;
+            color: #c62828;
+            border: 1px solid #ef9a9a;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Screen Arts of Xiao Zhan</h1>
+            <p class="subtitle">Complete collection of dramas, movies, and shows</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="category-tabs">
+            <div class="tab active" data-section="all">All Works</div>
+            <div class="tab" data-section="dramas">TV Dramas</div>
+            <div class="tab" data-section="movies">Movies</div>
+            <div class="tab" data-section="variety">Variety Shows</div>
+        </div>
+        
+        <div id="all" class="content-section active">
+            <h2>All Works</h2>            
+ 
+            <div class="work-item">
+                <div class="work-year">2025</div>
+                <h3 class="work-title">Legends of the Condor Heroes: The Gallants 射雕英雄传：侠之大者</h3>
+                <div class="work-role">Role: Guo Jing 郭靖 (Lead)</div>
+                <p class="work-description">In a turbulent era of power struggles, Guo Jing (played by Xiao Zhan) embarks on a journey, honing his formidable skills to shape his destiny. Despite mastering legendary martial arts, he faces envy from all sides. Yet, with a pure heart, he and Huang Rong (played by Zhuang Dafen) brave the chaos, fighting to protect the Southern Song's borders.</p>
+                <div class="platform-links">
+                    <a href="https://v.youku.com/video?vid=XNjQ2NjA3OTE5Ng%3D%3D" target="_blank" class="platform-link">Youku</a>
+                    <a href="https://v.qq.com/x/cover/mzc00200vw6f142/e41009yghfh.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.iqiyi.com/v_hzvqba6v0o.html" target="_blank" class="platform-link">爱奇艺</a>
+                    <a href="https://w.mgtv.com/b/706801/22694149.html?fpa=1413&fpos=6" target="_blank" class="platform-link">芒果TV</a>
+                    <a href="https://www.bilibili.com/bangumi/play/ep1566136?from_spmid=666.19.0.0" target="_blank" class="platform-link">Bilibili</a>
+                    <a href="https://www.miguvideo.com/p/detail/951701301?lastLocation=6d97aa391d86420188f2c3103a1b3b55%2372c4c89448b24107b94d888d5aa99d4c" target="_blank" class="platform-link">咪咕视频</a>
+                    <a href="" target="_blank" class="platform-link">Also available on Huawei, Xiaomi, Oppo, Honor Mobile Apps</a>
+                </div>
+            </div>
+           
+            <div class="work-item">
+                <div class="work-year">2023</div>
+                <h3 class="work-title">Sunshine by My Side 骄阳伴我</h3>
+                <div class="work-role">Role: Sheng Yang 盛阳 (Lead)</div>
+                <p class="work-description">This drama tells the story of an advertising director "Jian Bing" (played by Bai Baihe) and a newcomer designer "Sheng Yang" (played by Xiao Zhan) who meet by chance. The two people with completely different personalities gradually develop feelings for each other in their daily interactions. This leads to a hilarious yet positive and inspiring story.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc00200t71kuy5/e0047g3kvgs.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.iqiyi.com/v_15kzchdfiqk.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" class="platform-link">爱奇艺</a>
+                    <a href="https://www.iq.com/album/%E9%A9%95%E9%99%BD%E4%BC%B4%E6%88%91-2023-tq1cyfu2j5?lang=zh_tw" target="_blank" class="platform-link">iQIYI</a>
+                    <a href="https://www.youtube.com/playlist?list=PLQqbdnAgoRmbSsGj7qT3ARvqvXe3SOWwM" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2023</div>
+                <h3 class="work-title">The Longest Promise 玉骨遥</h3>
+                <div class="work-role">Role: Shi Ying 时影 (Lead)</div>
+                <p class="work-description">In a mystical realm called "Yunhuang," the Kongsang people, the Jiao tribe, and the Ice tribe coexist. The aloof and enigmatic Kongsang Crown Prince Shiyingxiao (played by Xiao Zhan) and the passionate and righteous Zhu Yan, the Chieftain's Daughter (played by Ren Min), are bound by a fateful encounter with a flower (Xue Hanwei). Together, they face challenges to protect the Kongsang Dream-Flower Dynasty.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc002003rb9ntl/o0046yvt2fv.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.netflix.com/ca/title/81633653" target="_blank" class="platform-link">Netflix</a>
+                    <a href="https://www.youtube.com/playlist?list=PLGBZFpiWG8JXhPifLlHJz9wuB7Nv2YRr6" target="_blank" class="platform-link">YouTube</a>		    
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-year">2023</div>
+                <h3 class="work-title">The Youth Memories 梦中的那片海 </h3>
+                <div class="work-role">Role: Xiao Chunsheng 肖春生 (Lead)</div>
+                <p class="work-description">The Youth Memories is a show about a group of youths and their struggles as they chase their dreams in 1970's Beijing.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc002007vp35qj/s0046m7x9we.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/zh-tw/play/sp6ws3r9o3upf7l-%E5%A4%A2%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7/c0046cmle6l-%E5%A4%A2%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7_01" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLRBClVey5BqwM9E2uvd2rVf_mekyic98m" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2022</div>
+                <h3 class="work-title">The Oath of Love 余生，请多指教</h3>
+                <div class="work-role">Role: 顾魏 (Lead)</div>
+                <p class="work-description">Gu Wei is his surgical doctor. He is very solemn and almost cold, although glimpses of his warm heart can be seen from time to time. As Zhi Xiao's father progresses through treatment, she and Dr. Gu become close—she helps him learn how to enjoy life, and he helps her focus on what she truly wants in life.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc00200opqzg5p/i0042znd9iv.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/zh-cn/play/et4xynjronzthfj-%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/c0042mhbdbu-%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99_01" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLMX26aiIvX5pKLsGYgPFP0gDFVVjGbf0k" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.viki.com/tv/36966c-the-oath-of-love?utm_source=global_search_or_media_action&utm_campaign=36966c#episodes" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2021</div>
+                <h3 class="work-title">Ace Troops 王牌部队</h3>
+                <div class="work-role">Role: Gu Yiye 顾一野 (Lead)</div>
+                <p class="work-description">From humble beginnings to forged bonds, two recruits - miner's son Gao Liang and military family scion Gu Yiye - clash over their differences, only to become comrades-in-arms. Through battles, demining in Guangxi, Hong Kong garrison, and the '98 flood relief, they weathered the military's transformation from mechanization to informatization. Their story is one of rivalry, camaraderie, and the unbreakable spirit of soldiers.</p>
+                <div class="platform-links">
+                    <a href="https://www.iqiyi.com/v_1u9rlrabn5w.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" class="platform-link">爱奇艺</a>
+                    <a href="https://www.iq.com/play/ace-troops-episode-1-nlcx80xlds?lang=en_us" target="_blank" class="platform-link">iQIYI</a>
+                    <a href="https://www.youtube.com/playlist?list=PLlCrV9TCfzMYAXQEBxvu6aoqBlXFLVs6x" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2021</div>
+                <h3 class="work-title">Douluo Continent 斗罗大陆</h3>
+                <div class="work-role">Role: Tang San 唐三 (Lead)</div>
+                <p class="work-description">A gifted young man, Tang San (played by Xiao Zhan), and his alcoholic father, Tang Hao, forge an unbreakable bond. As Tang San's martial soul awakens, his father reveals a secret about his mother. Determined to fulfill his promise, Tang San enrolls at Nuoding Academy and Shrek Academy, where he and six other talented youths form the "Shrek Seven Devils." Through trials and tribulations, they uncover a sinister plot by the Martial Soul Hall, ultimately emerging victorious and becoming the pinnacle of the Douluo Continent.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc00200js3mdvw/q00354i139r.html?ptag=11974" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.youtube.com/playlist?list=PLuidrAcAGAOO3cEgUAV5ziXjDk2_xg9jn" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.viki.com/tv/36952c-douluo-continent?utm_source=global_search_or_media_action&utm_campaign=36952c#episodes" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2020</div>
+                <h3 class="work-title">The Wolf 狼殿下</h3>
+                <div class="work-role">Role: Ji Chong 疾冲 </div>
+                <p class="work-description">A young wolf raised in the pack is mistaken for a murderer and hunted relentlessly. Though the truth is uncovered, a sibling's interference leads the wolf to believe the noblewoman has betrayed him. He vanishes, only to be secretly adopted by a passing traveler. Years later, they reunite, their past misunderstandings unraveling a new tale.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/rj22lk3mjdlxfet/n0035l8ajq6.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.iqiyi.com/v_ryscd5za9s.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" class="platform-link">爱奇艺</a>
+                    <a href="https://www.iq.com/play/2f3t4gx3rf9?source_caller=ui&shortlink=GoogleTraffic&pid=Google%20Traffic&deep_link_value=%257B%2522biz_id%2522%253A%2522102%2522%252C%2522biz_plugin%2522%253A%2522qiyiplayer%2522%252C%2522biz_params%2522%253A%257B%2522biz_sub_id%2522%253A%2522101%2522%252C%2522biz_params%2522%253A%2522aid%253D8752932918020601%2526tvid%253D1578361576507000%2526ctype%253D0%2526pc%253D0%2526video_type%253D0%2526playMode%253D1%2522%257D%252C%2522biz_extend_params%2522%253A%2522%2522%252C%2522biz_dynamic_params%2522%253A%2522%2522%252C%2522biz_statistics%2522%253A%2522%2522%257D&version=2&af_channel=Mediaaction" target="_blank" class="platform-link">iQIYI</a>
+                    <a href="https://www.youtube.com/playlist?list=PLpghCOjR4QqrKjwKw-jkbWAbH6g08q1SR" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.viki.com/tv/35890c-the-wolf#episodes" target="_blank" class="platform-link">Rakuten Viki</a>
+                    <a href="https://www.primevideo.com/dp/amzn1.dv.gti.e8ffe5ab-ce63-4acf-8b0f-8d831275a3e3?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" class="platform-link">Prime Video</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2020</div>
+                <h3 class="work-title">Heroes in Harm's Way: Happiness Community 最美逆行者：幸福社区</h3>
+                <div class="work-role">Role: Cai Ding 蔡丁</div>
+                <p class="work-description">The COVID-19 pandemic in China serves as the backdrop for this 7-part series.</p>
+                <div class="platform-links">
+                    <a href="https://tv.cctv.com/2020/09/21/VIDEnAR2exiunMHhn41cbvlI200921.shtml" target="_blank" class="platform-link">CCTV(1)</a>
+                    <a href="https://tv.cctv.com/2020/09/21/VIDEG7oR7FWKequmjWI7bHx3200921.shtml?spm=C55853485115.PhO6T4rt8QwC.0.0" target="_blank" class="platform-link">CCTV(2)</a>
+                    <a href="https://w.yangshipin.cn/video?type=0&vid=g000022hfsl" target="_blank" class="platform-link">央视频(1)</a>
+                    <a href="https://w.yangshipin.cn/video?type=0&vid=h0000813lav" target="_blank" class="platform-link">央视频(2)</a>
+                    <a href="https://www.youtube.com/watch?v=ttmwU8mYYac" target="_blank" class="platform-link">YouTube(1)</a>
+                    <a href="https://www.youtube.com/watch?v=jC_1ErkEaVY" target="_blank" class="platform-link">YouTube(2)</a>
+                </div>
+            </div>
+
+
+            <div class="work-item">
+                <div class="work-year">2019</div>
+                <h3 class="work-title">Joy of Life 庆余年</h3>
+                <div class="work-role">Role: Yan Bingyun 言冰云</div>
+                <p class="work-description">The COVID-19 pandemic in China serves as the backdrop for this 7-part series.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/rjae621myqca41h/i0032qxbi2v.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/en/play/e1028wfqyv7e32s-Joy%20of%20Life/g0032bnc6xu-EP1%3AJoy%20of%20Life" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLTB73Ibi_X3H0oT42WnzzY_6lo3pQjNMW" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.viki.com/tv/36367c-joy-of-life" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2019</div>
+                <h3 class="work-title">Our Song 我们的歌</h3>
+                <div class="work-role">Role: Guest Performer</div>
+                <p class="work-description">A reality competition show where singers from different generations collaborate to reinterpret classic songs.</p>
+                <div class="platform-links">
+                    <a href="https://www.youtube.com/playlist?list=PLzcpmqe6SErkEtDDK_eXq_cphWCQBsjU5" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://v.qq.com/x/cover/mzc00200379ftoz/r003232r7mj.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.bilibili.com/bangumi/media/md21129432" target="_blank" class="platform-link">Bilibili</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2019</div>
+                <h3 class="work-title">Jade Dynasty 诛仙 I</h3>
+                <div class="work-role">Role: Zhang Xiaofan 张小凡 (Lead)</div>
+                <p class="work-description">The film follows the story of Zhang Xiaofan, a kindhearted and pure village boy who is thrown into a world of chaos after his village gets massacred, and then becomes a disciple of the Qingyun Sect. Zhang Xiaofan learns martial arts from three masters and becomes a master of the mythical realm, while at the same time, experiencing a complicated relationship with three beautiful women, Lu Xueqi, Tian Ling'er, and Bi Yao.</p>
+                <div class="platform-links">
+                    <a href="https://tubitv.com/movies/581987/jade-dynasty" target="_blank" class="platform-link">Tubi TV</a>             
+                    <a href="https://www.primevideo.com/detail/Jade-Dynasty/0JXMYFQKWNUA19OEUGB4XZPJDD" target="_blank" class="platform-link">Prime Video</a>
+                    <a href="https://www.viki.com/movies/36837c-jade-dynasty" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2019</div>
+                <h3 class="work-title">The Untamed 陈情令</h3>
+                <div class="work-role">Role: Wei Wuxian / Mo Xuanyu 魏无羡 / 莫玄羽 (Lead)</div>
+                <p class="work-description">A fantasy drama based on the novel "Mo Dao Zu Shi" by Mo Xiang Tong Xiu. The story follows Wei Wuxian and Lan Wangji as they solve mysteries, face ghosts, and uncover dark secrets in the cultivation world.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/vbb35hm6m6da1wc/w0031s4gikk.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/en/play/gnwjazjgmg997xg-The%20Untamed/d0031smeq8n-EP01%3A%20The%20Untamed" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.netflix.com/ca/title/81200228" target="_blank" class="platform-link">Netflix</a>
+                    <a href="https://www.viki.com/tv/36657c-the-untamed" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-year">2018</div>
+                <h3 class="work-title">Battle Through the Heavens 斗破苍穹</h3>
+                <div class="work-role">Role: Lin Xiuya 林修崖</div>
+                <p class="work-description">A fantasy drama based on the novel "Battle Through the Heavens" by Heavenly Silkworm Potato. The story follows Xiao Yan, a former genius, who embarks on a journey to regain his powers and avenge his mother's death.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/5joaacfgqdo8q8v/n0027gzq84y.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.youtube.com/playlist?list=PLpghCOjR4QqrN8DTJsVFY3wDLjYZX8A7H" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-year">2018</div>
+                <h3 class="work-title">Oh! My Emperor S2 哦！我的皇帝陛下 第二季</h3>
+                <div class="work-role">Role: Bei Tang Mo Ran 北堂墨染</div>
+                <p class="work-description">Discover the enchanting tale of a mysterious realm where zodiac powers reign supreme!</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/idcrbac503kxzap/p06761ymcqx.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/en/play/q3pceue59xfirit/k0027st7gbh-EP1%EF%BC%9AOh!_My_Emperor_SS2" target="_blank" class="platform-link">WeTV</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2018</div>
+                <h3 class="work-title">Oh! My Emperor S1 哦！我的皇帝陛下 第一季</h3>
+                <div class="work-role">Role: Bei Tang Mo Ran 北堂墨染</div>
+                <p class="work-description">Discover the enchanting tale of a mysterious realm where zodiac powers reign supreme!</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/wxwaravazucarb1/t0635gds69v.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/en/play/vlk58kdlj1g0lup/l00273jfikp" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLs3DOuT3JlGTWokDapX8D6D-S9s9qbrgI" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2016</div>
+                <h3 class="work-title">Super Star Academy 超星星学园</h3>
+                <div class="work-role">Role: Fang Tianze 方天泽</div>
+                <p class="work-description">Discover the enchanting tale of a mysterious realm where zodiac powers reign supreme!</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/7kcf8a09yt0mkzh/k0332np9ggo.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/zh-cn/play/63s2rqvbmfkbqzl-%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD/x0032pbhdbf-%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD_01" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLMX26aiIvX5r4DsfYoltPM1SmUC-FMcRr" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-year">2015</div>
+                <h3 class="work-title">X File 燃烧吧少年</h3>
+                <div class="work-role">Role: Contestant (X NINE member)</div>
+                <p class="work-description">A reality competition show where idol groups compete in various challenges and performances.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/imzwsz2awsd230g/e0018j4lzz3.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.youtube.com/playlist?list=PLmHvcli_9mkRH4oFQTVRkZHkiUVQRWw3n" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.bilibili.com/video/BV1ua411w7si/?spm_id_from=333.337.search-card.all.click" target="_blank" class="platform-link">Bilibili(cut)</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">Continue to Update</div>
+                <h3 class="work-title">Xiao Zhan Studio on YouTube 肖战工作室</h3>
+                <div class="work-role">Role: The Owner</div>
+                <p class="work-description"> Contents released by Xiao Zhan Studio on YouTube including shorts, MVs, documentaries and behind-the-scenes</p>
+                <div class="platform-links">
+                    <a href="https://www.youtube.com/@xzstudio-1005/videos" target="_blank" class="platform-link">YouTube</a>                   
+                </div>
+            </div>
+
+
+         </div>
+<!-- =============== End of All Works Section =============== -->
+
+        <div id="dramas" class="content-section">
+            <h2>TV Dramas</h2>
+            
+            <div class="work-item">
+                <div class="work-year">2023</div>
+                <h3 class="work-title">Sunshine by My Side 骄阳伴我</h3>
+                <div class="work-role">Role: Sheng Yang 盛阳 (Lead)</div>
+                <p class="work-description">This drama tells the story of an advertising director "Jian Bing" (played by Bai Baihe) and a newcomer designer "Sheng Yang" (played by Xiao Zhan) who meet by chance. The two people with completely different personalities gradually develop feelings for each other in their daily interactions. This leads to a hilarious yet positive and inspiring story.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc00200t71kuy5/e0047g3kvgs.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.iqiyi.com/v_15kzchdfiqk.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" class="platform-link">爱奇艺</a>
+                    <a href="https://www.iq.com/album/%E9%A9%95%E9%99%BD%E4%BC%B4%E6%88%91-2023-tq1cyfu2j5?lang=zh_tw" target="_blank" class="platform-link">iQIYI</a>
+                    <a href="https://www.youtube.com/playlist?list=PLQqbdnAgoRmbSsGj7qT3ARvqvXe3SOWwM" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2023</div>
+                <h3 class="work-title">The Longest Promise 玉骨遥</h3>
+                <div class="work-role">Role: Shi Ying 时影 (Lead)</div>
+                <p class="work-description">In a mystical realm called "Yunhuang," the Kongsang people, the Jiao tribe, and the Ice tribe coexist. The aloof and enigmatic Kongsang Crown Prince Shiyingxiao (played by Xiao Zhan) and the passionate and righteous Zhu Yan, the Chieftain's Daughter (played by Ren Min), are bound by a fateful encounter with a flower (Xue Hanwei). Together, they face challenges to protect the Kongsang Dream-Flower Dynasty.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc002003rb9ntl/o0046yvt2fv.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.netflix.com/ca/title/81633653" target="_blank" class="platform-link">Netflix</a>
+                    <a href="https://www.youtube.com/playlist?list=PLGBZFpiWG8JXhPifLlHJz9wuB7Nv2YRr6" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+            
+
+            <div class="work-item">
+                <div class="work-year">2023</div>
+                <h3 class="work-title">The Youth Memories 梦中的那片海 </h3>
+                <div class="work-role">Role: Xiao Chunsheng 肖春生 (Lead)</div>
+                <p class="work-description">The Youth Memories is a show about a group of youths and their struggles as they chase their dreams in 1970's Beijing.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc002007vp35qj/s0046m7x9we.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/zh-tw/play/sp6ws3r9o3upf7l-%E5%A4%A2%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7/c0046cmle6l-%E5%A4%A2%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7_01" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLRBClVey5BqwM9E2uvd2rVf_mekyic98m" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2022</div>
+                <h3 class="work-title">The Oath of Love 余生，请多指教</h3>
+                <div class="work-role">Role: 顾魏 (Lead)</div>
+                <p class="work-description">Gu Wei is his surgical doctor. He is very solemn and almost cold, although glimpses of his warm heart can be seen from time to time. As Zhi Xiao's father progresses through treatment, she and Dr. Gu become close—she helps him learn how to enjoy life, and he helps her focus on what she truly wants in life.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc00200opqzg5p/i0042znd9iv.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/zh-cn/play/et4xynjronzthfj-%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/c0042mhbdbu-%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99_01" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLMX26aiIvX5pKLsGYgPFP0gDFVVjGbf0k" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.viki.com/tv/36966c-the-oath-of-love?utm_source=global_search_or_media_action&utm_campaign=36966c#episodes" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2021</div>
+                <h3 class="work-title">Ace Troops 王牌部队</h3>
+                <div class="work-role">Role: Gu Yiye 顾一野 (Lead)</div>
+                <p class="work-description">From humble beginnings to forged bonds, two recruits - miner's son Gao Liang and military family scion Gu Yiye - clash over their differences, only to become comrades-in-arms. Through battles, demining in Guangxi, Hong Kong garrison, and the '98 flood relief, they weathered the military's transformation from mechanization to informatization. Their story is one of rivalry, camaraderie, and the unbreakable spirit of soldiers.</p>
+                <div class="platform-links">
+                    <a href="https://www.iqiyi.com/v_1u9rlrabn5w.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" class="platform-link">爱奇艺</a>
+                    <a href="https://www.iq.com/play/ace-troops-episode-1-nlcx80xlds?lang=en_us" target="_blank" class="platform-link">iQIYI</a>
+                    <a href="https://www.youtube.com/playlist?list=PLlCrV9TCfzMYAXQEBxvu6aoqBlXFLVs6x" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2021</div>
+                <h3 class="work-title">Douluo Continent 斗罗大陆</h3>
+                <div class="work-role">Role: Tang San 唐三 (Lead)</div>
+                <p class="work-description">A gifted young man, Tang San (played by Xiao Zhan), and his alcoholic father, Tang Hao, forge an unbreakable bond. As Tang San's martial soul awakens, his father reveals a secret about his mother. Determined to fulfill his promise, Tang San enrolls at Nuoding Academy and Shrek Academy, where he and six other talented youths form the "Shrek Seven Devils." Through trials and tribulations, they uncover a sinister plot by the Martial Soul Hall, ultimately emerging victorious and becoming the pinnacle of the Douluo Continent.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/mzc00200js3mdvw/q00354i139r.html?ptag=11974" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.youtube.com/playlist?list=PLuidrAcAGAOO3cEgUAV5ziXjDk2_xg9jn" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.viki.com/tv/36952c-douluo-continent?utm_source=global_search_or_media_action&utm_campaign=36952c#episodes" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2020</div>
+                <h3 class="work-title">The Wolf 狼殿下</h3>
+                <div class="work-role">Role: Ji Chong 疾冲 </div>
+                <p class="work-description">A young wolf raised in the pack is mistaken for a murderer and hunted relentlessly. Though the truth is uncovered, a sibling's interference leads the wolf to believe the noblewoman has betrayed him. He vanishes, only to be secretly adopted by a passing traveler. Years later, they reunite, their past misunderstandings unraveling a new tale.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/rj22lk3mjdlxfet/n0035l8ajq6.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.iqiyi.com/v_ryscd5za9s.html?vfm=2008_aldbd&fv=p_02_01" target="_blank" class="platform-link">爱奇艺</a>
+                    <a href="https://www.iq.com/play/2f3t4gx3rf9?source_caller=ui&shortlink=GoogleTraffic&pid=Google%20Traffic&deep_link_value=%257B%2522biz_id%2522%253A%2522102%2522%252C%2522biz_plugin%2522%253A%2522qiyiplayer%2522%252C%2522biz_params%2522%253A%257B%2522biz_sub_id%2522%253A%2522101%2522%252C%2522biz_params%2522%253A%2522aid%253D8752932918020601%2526tvid%253D1578361576507000%2526ctype%253D0%2526pc%253D0%2526video_type%253D0%2526playMode%253D1%2522%257D%252C%2522biz_extend_params%2522%253A%2522%2522%252C%2522biz_dynamic_params%2522%253A%2522%2522%252C%2522biz_statistics%2522%253A%2522%2522%257D&version=2&af_channel=Mediaaction" target="_blank" class="platform-link">iQIYI</a>
+                    <a href="https://www.youtube.com/playlist?list=PLpghCOjR4QqrKjwKw-jkbWAbH6g08q1SR" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.viki.com/tv/35890c-the-wolf#episodes" target="_blank" class="platform-link">Rakuten Viki</a>
+                    <a href="https://www.primevideo.com/dp/amzn1.dv.gti.e8ffe5ab-ce63-4acf-8b0f-8d831275a3e3?autoplay=0&ref_=atv_cf_strg_wb" target="_blank" class="platform-link">Prime Video</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2020</div>
+                <h3 class="work-title">Heroes in Harm's Way: Happiness Community 最美逆行者：幸福社区</h3>
+                <div class="work-role">Role: Cai Ding 蔡丁</div>
+                <p class="work-description">The COVID-19 pandemic in China serves as the backdrop for this 7-part series.</p>
+                <div class="platform-links">
+                    <a href="https://tv.cctv.com/2020/09/21/VIDEnAR2exiunMHhn41cbvlI200921.shtml" target="_blank" class="platform-link">CCTV(1)</a>
+                    <a href="https://tv.cctv.com/2020/09/21/VIDEG7oR7FWKequmjWI7bHx3200921.shtml?spm=C55853485115.PhO6T4rt8QwC.0.0" target="_blank" class="platform-link">CCTV(2)</a>
+                    <a href="https://w.yangshipin.cn/video?type=0&vid=g000022hfsl" target="_blank" class="platform-link">央视频(1)</a>
+                    <a href="https://w.yangshipin.cn/video?type=0&vid=h0000813lav" target="_blank" class="platform-link">央视频(2)</a>
+                    <a href="https://www.youtube.com/watch?v=ttmwU8mYYac" target="_blank" class="platform-link">YouTube(1)</a>
+                    <a href="https://www.youtube.com/watch?v=jC_1ErkEaVY" target="_blank" class="platform-link">YouTube(2)</a>
+                </div>
+            </div>
+
+
+            <div class="work-item">
+                <div class="work-year">2019</div>
+                <h3 class="work-title">Joy of Life 庆余年</h3>
+                <div class="work-role">Role: Yan Bingyun 言冰云</div>
+                <p class="work-description">The COVID-19 pandemic in China serves as the backdrop for this 7-part series.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/rjae621myqca41h/i0032qxbi2v.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/en/play/e1028wfqyv7e32s-Joy%20of%20Life/g0032bnc6xu-EP1%3AJoy%20of%20Life" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLTB73Ibi_X3H0oT42WnzzY_6lo3pQjNMW" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.viki.com/tv/36367c-joy-of-life" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+
+             <div class="work-item">
+                <div class="work-year">2019</div>
+                <h3 class="work-title">The Untamed 陈情令</h3>
+                <div class="work-role">Role: Wei Wuxian / Mo Xuanyu 魏无羡 / 莫玄羽(Lead)</div>
+                <p class="work-description">A fantasy drama based on the novel "Mo Dao Zu Shi" by Mo Xiang Tong Xiu. The story follows Wei Wuxian and Lan Wangji as they solve mysteries, face ghosts, and uncover dark secrets in the cultivation world.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/vbb35hm6m6da1wc/w0031s4gikk.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/en/play/gnwjazjgmg997xg-The%20Untamed/d0031smeq8n-EP01%3A%20The%20Untamed" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.netflix.com/ca/title/81200228" target="_blank" class="platform-link">Netflix</a>
+                    <a href="https://www.viki.com/tv/36657c-the-untamed" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-year">2018</div>
+                <h3 class="work-title">Battle Through the Heavens 斗破苍穹</h3>
+                <div class="work-role">Role: Lin Xiuya 林修崖</div>
+                <p class="work-description">A fantasy drama based on the novel "Battle Through the Heavens" by Heavenly Silkworm Potato. The story follows Xiao Yan, a former genius, who embarks on a journey to regain his powers and avenge his mother's death.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/5joaacfgqdo8q8v/n0027gzq84y.html?ptag=11972" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.youtube.com/playlist?list=PLpghCOjR4QqrN8DTJsVFY3wDLjYZX8A7H" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-year">2018</div>
+                <h3 class="work-title">Oh! My Emperor S2 哦！我的皇帝陛下 第二季</h3>
+                <div class="work-role">Role: Bei Tang Mo Ran 北堂墨染</div>
+                <p class="work-description">Discover the enchanting tale of a mysterious realm where zodiac powers reign supreme!</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/idcrbac503kxzap/p06761ymcqx.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/en/play/q3pceue59xfirit/k0027st7gbh-EP1%EF%BC%9AOh!_My_Emperor_SS2" target="_blank" class="platform-link">WeTV</a>
+                </div>
+            </div>
+
+            <div class="work-item">
+                <div class="work-year">2018</div>
+                <h3 class="work-title">Oh! My Emperor S1 哦！我的皇帝陛下 第一季</h3>
+                <div class="work-role">Role: Bei Tang Mo Ran 北堂墨染</div>
+                <p class="work-description">Discover the enchanting tale of a mysterious realm where zodiac powers reign supreme!</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/wxwaravazucarb1/t0635gds69v.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/en/play/vlk58kdlj1g0lup/l00273jfikp" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLs3DOuT3JlGTWokDapX8D6D-S9s9qbrgI" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+ 
+            <div class="work-item">
+                <div class="work-year">2016</div>
+                <h3 class="work-title">Super Star Academy 超星星学园</h3>
+                <div class="work-role">Role: Fang Tianze 方天泽</div>
+                <p class="work-description">Discover the enchanting tale of a mysterious realm where zodiac powers reign supreme!</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/7kcf8a09yt0mkzh/k0332np9ggo.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://wetv.vip/zh-cn/play/63s2rqvbmfkbqzl-%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD/x0032pbhdbf-%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD_01" target="_blank" class="platform-link">WeTV</a>
+                    <a href="https://www.youtube.com/playlist?list=PLMX26aiIvX5r4DsfYoltPM1SmUC-FMcRr" target="_blank" class="platform-link">YouTube</a>
+                </div>
+            </div>
+        </div>
+
+<!-- =============== End of Dramas =============== -->
+
+
+        <div id="movies" class="content-section">
+            <h2>Movies</h2>
+
+            <div class="work-item">
+                <div class="work-year">2025</div>
+                <h3 class="work-title">Legends of the Condor Heroes: The Gallants 射雕英雄传：侠之大者</h3>
+                <div class="work-role">Role: Guo Jing 郭靖 (Lead)</div>
+                <p class="work-description">In a turbulent era of power struggles, Guo Jing (played by Xiao Zhan) embarks on a journey, honing his formidable skills to shape his destiny. Despite mastering legendary martial arts, he faces envy from all sides. Yet, with a pure heart, he and Huang Rong (played by Zhuang Dafen) brave the chaos, fighting to protect the Southern Song's borders.</p>
+                <div class="platform-links">
+                    <a href="https://v.youku.com/video?vid=XNjQ2NjA3OTE5Ng%3D%3D" target="_blank" class="platform-link">Youku</a>
+                    <a href="https://v.qq.com/x/cover/mzc00200vw6f142/e41009yghfh.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.iqiyi.com/v_hzvqba6v0o.html" target="_blank" class="platform-link">爱奇艺</a>
+                    <a href="https://w.mgtv.com/b/706801/22694149.html?fpa=1413&fpos=6" target="_blank" class="platform-link">芒果TV</a>
+                    <a href="https://www.bilibili.com/bangumi/play/ep1566136?from_spmid=666.19.0.0" target="_blank" class="platform-link">Bilibili</a>
+                    <a href="https://www.miguvideo.com/p/detail/951701301?lastLocation=6d97aa391d86420188f2c3103a1b3b55%2372c4c89448b24107b94d888d5aa99d4c" target="_blank" class="platform-link">咪咕视频</a>
+                    <a href="" target="_blank" class="platform-link">Also available on Huawei, Xiaomi, Oppo, Honor Mobile Apps</a>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-year">2019</div>
+                <h3 class="work-title">Jade Dynasty 诛仙 I</h3>
+                <div class="work-role">Role: Zhang Xiaofan 张小凡 (Lead)</div>
+                <p class="work-description">The film follows the story of Zhang Xiaofan, a kindhearted and pure village boy who is thrown into a world of chaos after his village gets massacred, and then becomes a disciple of the Qingyun Sect. Zhang Xiaofan learns martial arts from three masters and becomes a master of the mythical realm, while at the same time, experiencing a complicated relationship with three beautiful women, Lu Xueqi, Tian Ling'er, and Bi Yao.</p>
+                <div class="platform-links">
+                    <a href="https://tubitv.com/movies/581987/jade-dynasty" target="_blank" class="platform-link">Tubi TV</a>             
+                    <a href="https://www.primevideo.com/detail/Jade-Dynasty/0JXMYFQKWNUA19OEUGB4XZPJDD" target="_blank" class="platform-link">Prime Video</a>
+                    <a href="https://www.viki.com/movies/36837c-jade-dynasty" target="_blank" class="platform-link">Rakuten Viki</a>
+                </div>
+            </div>
+        </div>
+
+<!-- =============== End of Movies =============== -->
+  
+        <div id="variety" class="content-section">
+            <h2>Variety Shows</h2>
+  
+            <div class="work-item">
+                <div class="work-year">Continue to Update</div>
+                <h3 class="work-title">Xiao Zhan Studio on YouTube 肖战工作室</h3>
+                <div class="work-role">Role: The Owner</div>
+                <p class="work-description"> Contents released by Xiao Zhan Studio on YouTube including shorts, MVs, documentaries and behind-the-scenes</p>
+                <div class="platform-links">
+                    <a href="https://www.youtube.com/@xzstudio-1005/videos" target="_blank" class="platform-link">YouTube</a>                   
+                </div>
+            </div>
+
+          
+            <div class="work-item">
+                <div class="work-year">2019</div>
+                <h3 class="work-title">Our Song 我们的歌</h3>
+                <div class="work-role">Role: Guest Performer</div>
+                <p class="work-description">A reality competition show where singers from different generations collaborate to reinterpret classic songs.</p>
+                <div class="platform-links">
+                    <a href="https://www.youtube.com/playlist?list=PLzcpmqe6SErkEtDDK_eXq_cphWCQBsjU5" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://v.qq.com/x/cover/mzc00200379ftoz/r003232r7mj.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.bilibili.com/bangumi/media/md21129432" target="_blank" class="platform-link">Bilibili</a>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <div class="work-year">2015</div>
+                <h3 class="work-title">X File 燃烧吧少年</h3>
+                <div class="work-role">Role: Contestant (X NINE member)</div>
+                <p class="work-description">A reality competition show where idol groups compete in various challenges and performances.</p>
+                <div class="platform-links">
+                    <a href="https://v.qq.com/x/cover/imzwsz2awsd230g/e0018j4lzz3.html" target="_blank" class="platform-link">Tencent</a>
+                    <a href="https://www.youtube.com/playlist?list=PLmHvcli_9mkRH4oFQTVRkZHkiUVQRWw3n" target="_blank" class="platform-link">YouTube</a>
+                    <a href="https://www.bilibili.com/video/BV1ua411w7si/?spm_id_from=333.337.search-card.all.click" target="_blank" class="platform-link">Bilibili(cut)</a>
+                </div>
+            </div>
+
+
+
+
+<!-- =============== End of Variety Shows =============== -->
+        </div>
+    </div>
+    
+    <!-- =============== CONTACT SECTION =============== -->
+<div class="container">
+    <div class="contact-section">
+        <h2 class="section-title">Contact Me</h2>
+        <form action="https://formsubmit.co/yvonzh@gmail.com" method="POST">
+            <!-- Anti-spam honeypot field -->
+            <input type="text" name="_honey" style="display:none">
+            
+            <!-- Disable captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Redirect after submission -->
+            <input type="hidden" name="_next" value="https://YOUR_WEBSITE_URL_HERE/thanks.html">
+            
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</div>    </footer>
+    
+    <div class="admin-panel">
+        <div class="stats-display">
+            <div><strong>Page Views:</strong> <span id="page-views">0</span></div>
+            <div><strong>Today's Visitors:</strong> <span id="daily-visitors">0</span></div>
+            <div><strong>Total Visitors:</strong> <span id="total-visitors">0</span></div>
+        </div>
+        <div style="margin-top: 15px;">
+            <h4>Recent Messages</h4>
+            <div id="messages-list" style="max-height: 200px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; margin-top: 5px; background-color: white;">
+                No messages yet
+            </div>
+        </div>
+        <div class="admin-control">
+            <button id="toggle-admin">Hide Admin Panel</button>
+            <button id="export-messages">Export Messages</button>
+        </div>
+    </div>
+    
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tab');
+        const contentSections = document.querySelectorAll('.content-section');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and content sections
+                tabs.forEach(t => t.classList.remove('active'));
+                contentSections.forEach(section => section.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding content section
+                const sectionId = tab.getAttribute('data-section');
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+        
+        // Admin panel functionality
+        const adminPanel = document.querySelector('.admin-panel');
+        const toggleAdminBtn = document.getElementById('toggle-admin');
+        
+        // Check for admin access with a simple password mechanism
+        const checkAdminAccess = () => {
+            // This is a simple implementation - in a real application, use a more secure method
+            const savedPassword = localStorage.getItem('xzAdmin');
+            
+            if (!savedPassword) {
+                const password = prompt('Enter admin password:');
+                if (password === 'xzadmin123') { // Simple password - change this!
+                    localStorage.setItem('xzAdmin', 'true');
+                    return true;
+                }
+                return false;
+            }
+            
+            return true;
+        };
+        
+        // Function to show/hide admin panel
+        const toggleAdminPanel = () => {
+            if (adminPanel.classList.contains('visible')) {
+                adminPanel.classList.remove('visible');
+                toggleAdminBtn.textContent = 'Show Admin Panel';
+            } else {
+                if (checkAdminAccess()) {
+                    adminPanel.classList.add('visible');
+                    toggleAdminBtn.textContent = 'Hide Admin Panel';
+                    updateStats();
+                }
+            }
+        };
+        
+        // Attach event listener to admin button
+        document.addEventListener('keydown', (e) => {
+            // Show admin panel when pressing Ctrl+Shift+A
+            if (e.ctrlKey && e.shiftKey && e.key === 'A') {
+                toggleAdminPanel();
+            }
+        });
+        
+        toggleAdminBtn.addEventListener('click', toggleAdminPanel);
+        
+        // Stats tracking functionality
+        const updateStats = () => {
+            // Get stats from localStorage
+            let pageViews = localStorage.getItem('xzPageViews') || 0;
+            let totalVisitors = localStorage.getItem('xzTotalVisitors') || 0;
+            let dailyVisitors = localStorage.getItem('xzDailyVisitors') || 0;
+            let lastVisitDate = localStorage.getItem('xzLastVisitDate');
+            
+            // Update DOM
+            document.getElementById('page-views').textContent = pageViews;
+            document.getElementById('total-visitors').textContent = totalVisitors;
+            document.getElementById('daily-visitors').textContent = dailyVisitors;
+            
+            // Display recent messages
+            displayMessages();
+        };
+        
+        // Function to track page view
+        const trackPageView = () => {
+            // Check if this is a new visitor
+            let isNewVisitor = !localStorage.getItem('xzVisitor');
+            
+            // Increment page views
+            let pageViews = parseInt(localStorage.getItem('xzPageViews') || 0);
+            pageViews++;
+            localStorage.setItem('xzPageViews', pageViews.toString());
+            
+            // Check if it's a new day
+            const today = new Date().toDateString();
+            const lastVisitDate = localStorage.getItem('xzLastVisitDate');
+            
+            if (today !== lastVisitDate) {
+                // Reset daily visitors count for a new day
+                localStorage.setItem('xzDailyVisitors', '1');
+                localStorage.setItem('xzLastVisitDate', today);
+            } else if (isNewVisitor) {
+                // Increment daily visitors if it's a new visitor
+                let dailyVisitors = parseInt(localStorage.getItem('xzDailyVisitors') || 0);
+                dailyVisitors++;
+                localStorage.setItem('xzDailyVisitors', dailyVisitors.toString());
+            }
+            
+            // Increment total visitors if it's a new visitor
+            if (isNewVisitor) {
+                let totalVisitors = parseInt(localStorage.getItem('xzTotalVisitors') || 0);
+                totalVisitors++;
+                localStorage.setItem('xzTotalVisitors', totalVisitors.toString());
+                localStorage.setItem('xzVisitor', 'true');
+            }
+            
+            // Update admin panel if visible
+            if (adminPanel.classList.contains('visible')) {
+                updateStats();
+            }
+        };
+        
+        // Track page view on load
+        window.addEventListener('load', trackPageView);
+        
+        // Email form handling
+        function sendEmail(event) {
+            event.preventDefault();
+            
+            // Get form elements
+            const form = document.getElementById('email-form');
+            const formStatus = document.getElementById('form-status');
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Store message in localStorage for admin viewing
+            const messageData = {
+                name: name,
+                email: email,
+                subject: subject,
+                message: message,
+                date: new Date().toISOString()
+            };
+            
+            // Get existing messages or create empty array
+            let messages = JSON.parse(localStorage.getItem('xzMessages') || '[]');
+            messages.push(messageData);
+            localStorage.setItem('xzMessages', JSON.stringify(messages));
+            
+            // Show success message
+            formStatus.innerHTML = 'Thank you! Your message has been received.';
+            formStatus.className = 'form-status success';
+            
+            // Reset form
+            form.reset();
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                formStatus.style.display = 'none';
+            }, 5000);
+            
+            return false;
+        }
+        
+        // Add event listener to export button
+        document.getElementById('export-messages').addEventListener('click', exportMessages);
+        
+        // Function to display messages in admin panel
+        function displayMessages() {
+            const messagesList = document.getElementById('messages-list');
+            const messages = JSON.parse(localStorage.getItem('xzMessages') || '[]');
+            
+            if (messages.length === 0) {
+                messagesList.innerHTML = 'No messages yet';
+                return;
+            }
+            
+            // Display most recent messages first (up to 10)
+            const recentMessages = messages.slice(-10).reverse();
+            
+            messagesList.innerHTML = recentMessages.map(msg => `
+                <div style="margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #eee;">
+                    <strong>${msg.subject}</strong> from ${msg.name} (${msg.email})<br>
+                    <small>${new Date(msg.date).toLocaleString()}</small>
+                    <p>${msg.message}</p>
+                </div>
+            `).join('');
+        }
+        
+        // Function to export messages as CSV
+        function exportMessages() {
+            const messages = JSON.parse(localStorage.getItem('xzMessages') || '[]');
+            
+            if (messages.length === 0) {
+                alert('No messages to export');
+                return;
+            }
+            
+            // Create CSV content
+            let csv = 'Date,Name,Email,Subject,Message\n';
+            
+            messages.forEach(msg => {
+                // Escape quotes in the message and handle commas
+                const escapedMessage = msg.message.replace(/"/g, '""');
+                const escapedSubject = msg.subject.replace(/"/g, '""');
+                csv += `"${msg.date}","${msg.name}","${msg.email}","${escapedSubject}","${escapedMessage}"\n`;
+            });
+            
+            // Create download link
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'xiao-zhan-messages.csv';
+            document.body.appendChild(a);
+            a.click();
+            
+            // Clean up
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+    </script>
+</body>
+</html>
