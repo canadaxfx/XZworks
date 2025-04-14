@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Screen Arts of Xiao Zhan</title>
+    <!-- Preload key assets -->
+    <link rel="preload" href="xiao-zhan.jpg" as="image">
+    <!-- CSS STYLES - Optimized and minified -->
     <style>
         :root {
             --primary-color: #4a4a8f;
@@ -36,10 +39,18 @@
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 20px 0;
+            padding: 2rem 0;
             text-align: center;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 1rem;
         }
         
         h1 {
@@ -148,32 +159,6 @@
             border-top: 1px solid #ddd;
         }
         
-        /* Admin panel styles */
-        .admin-panel {
-            position: fixed;
-            bottom: 0;
-            right: 0;
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ddd;
-            border-radius: 5px 0 0 0;
-            padding: 15px;
-            z-index: 1000;
-            box-shadow: -2px -2px 5px rgba(0,0,0,0.1);
-            display: none;
-        }
-        
-        .admin-panel.visible {
-            display: block;
-        }
-        
-        .stats-display {
-            margin-bottom: 10px;
-        }
-        
-        .admin-control {
-            font-size: 0.9rem;
-            margin-top: 5px;
-        }
         
         @media (max-width: 768px) {
             .container {
@@ -244,26 +229,7 @@
             background-color: var(--accent-color);
         }
         
-        .form-status {
-            padding: 10px;
-            border-radius: 4px;
-            margin-top: 15px;
-            display: none;
-        }
-        
-        .form-status.success {
-            background-color: #e8f5e9;
-            color: #2e7d32;
-            border: 1px solid #a5d6a7;
-            display: block;
-        }
-        
-        .form-status.error {
-            background-color: #ffebee;
-            color: #c62828;
-            border: 1px solid #ef9a9a;
-            display: block;
-        }
+
     </style>
 
 <!-- Google tag (gtag.js) -->
@@ -280,6 +246,7 @@
 <body>
     <header>
         <div class="container">
+            <img src="xiao-zhan.jpg" alt="Xiao Zhan" class="profile-img" id="profile-img">
             <h1>Screen Arts of Xiao Zhan</h1>
             <p class="subtitle">Complete collection of dramas, movies, and shows</p>
         </div>
