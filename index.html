@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -264,6 +265,17 @@
             display: block;
         }
     </style>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3EF01R2111"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3EF01R2111');
+</script>
+
 </head>
 <body>
     <header>
@@ -790,7 +802,18 @@
 <!-- =============== End of Variety Shows =============== -->
         </div>
     </div>
-    
+ 
+<div class="container">
+    <div class="work-item" style="text-align: center; margin-bottom: 40px;">
+        <h3 class="work-title">Connect with Xiao Zhan on Social Media</h3>
+        <p class="work-description">Follow Xiao Zhan's latest updates and activities on various social media platforms.</p>
+        <div style="margin-top: 20px;">
+            <a href="https://canadaxfx.github.io/xiaozhan/" target="_blank" class="platform-link" style="font-size: 1.1rem; padding: 10px 25px;">Visit Xiao Zhan Social Media Hub</a>
+        </div>
+    </div>
+</div>
+
+   
     <!-- =============== CONTACT SECTION =============== -->
 <div class="container">
     <div class="contact-section">
@@ -826,23 +849,6 @@
     </div>
 </div>    </footer>
     
-    <div class="admin-panel">
-        <div class="stats-display">
-            <div><strong>Page Views:</strong> <span id="page-views">0</span></div>
-            <div><strong>Today's Visitors:</strong> <span id="daily-visitors">0</span></div>
-            <div><strong>Total Visitors:</strong> <span id="total-visitors">0</span></div>
-        </div>
-        <div style="margin-top: 15px;">
-            <h4>Recent Messages</h4>
-            <div id="messages-list" style="max-height: 200px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; margin-top: 5px; background-color: white;">
-                No messages yet
-            </div>
-        </div>
-        <div class="admin-control">
-            <button id="toggle-admin">Hide Admin Panel</button>
-            <button id="export-messages">Export Messages</button>
-        </div>
-    </div>
     
     <script>
         // Tab functionality
@@ -864,110 +870,8 @@
             });
         });
         
-        // Admin panel functionality
-        const adminPanel = document.querySelector('.admin-panel');
-        const toggleAdminBtn = document.getElementById('toggle-admin');
-        
-        // Check for admin access with a simple password mechanism
-        const checkAdminAccess = () => {
-            // This is a simple implementation - in a real application, use a more secure method
-            const savedPassword = localStorage.getItem('xzAdmin');
+   
             
-            if (!savedPassword) {
-                const password = prompt('Enter admin password:');
-                if (password === 'xzadmin123') { // Simple password - change this!
-                    localStorage.setItem('xzAdmin', 'true');
-                    return true;
-                }
-                return false;
-            }
-            
-            return true;
-        };
-        
-        // Function to show/hide admin panel
-        const toggleAdminPanel = () => {
-            if (adminPanel.classList.contains('visible')) {
-                adminPanel.classList.remove('visible');
-                toggleAdminBtn.textContent = 'Show Admin Panel';
-            } else {
-                if (checkAdminAccess()) {
-                    adminPanel.classList.add('visible');
-                    toggleAdminBtn.textContent = 'Hide Admin Panel';
-                    updateStats();
-                }
-            }
-        };
-        
-        // Attach event listener to admin button
-        document.addEventListener('keydown', (e) => {
-            // Show admin panel when pressing Ctrl+Shift+A
-            if (e.ctrlKey && e.shiftKey && e.key === 'A') {
-                toggleAdminPanel();
-            }
-        });
-        
-        toggleAdminBtn.addEventListener('click', toggleAdminPanel);
-        
-        // Stats tracking functionality
-        const updateStats = () => {
-            // Get stats from localStorage
-            let pageViews = localStorage.getItem('xzPageViews') || 0;
-            let totalVisitors = localStorage.getItem('xzTotalVisitors') || 0;
-            let dailyVisitors = localStorage.getItem('xzDailyVisitors') || 0;
-            let lastVisitDate = localStorage.getItem('xzLastVisitDate');
-            
-            // Update DOM
-            document.getElementById('page-views').textContent = pageViews;
-            document.getElementById('total-visitors').textContent = totalVisitors;
-            document.getElementById('daily-visitors').textContent = dailyVisitors;
-            
-            // Display recent messages
-            displayMessages();
-        };
-        
-        // Function to track page view
-        const trackPageView = () => {
-            // Check if this is a new visitor
-            let isNewVisitor = !localStorage.getItem('xzVisitor');
-            
-            // Increment page views
-            let pageViews = parseInt(localStorage.getItem('xzPageViews') || 0);
-            pageViews++;
-            localStorage.setItem('xzPageViews', pageViews.toString());
-            
-            // Check if it's a new day
-            const today = new Date().toDateString();
-            const lastVisitDate = localStorage.getItem('xzLastVisitDate');
-            
-            if (today !== lastVisitDate) {
-                // Reset daily visitors count for a new day
-                localStorage.setItem('xzDailyVisitors', '1');
-                localStorage.setItem('xzLastVisitDate', today);
-            } else if (isNewVisitor) {
-                // Increment daily visitors if it's a new visitor
-                let dailyVisitors = parseInt(localStorage.getItem('xzDailyVisitors') || 0);
-                dailyVisitors++;
-                localStorage.setItem('xzDailyVisitors', dailyVisitors.toString());
-            }
-            
-            // Increment total visitors if it's a new visitor
-            if (isNewVisitor) {
-                let totalVisitors = parseInt(localStorage.getItem('xzTotalVisitors') || 0);
-                totalVisitors++;
-                localStorage.setItem('xzTotalVisitors', totalVisitors.toString());
-                localStorage.setItem('xzVisitor', 'true');
-            }
-            
-            // Update admin panel if visible
-            if (adminPanel.classList.contains('visible')) {
-                updateStats();
-            }
-        };
-        
-        // Track page view on load
-        window.addEventListener('load', trackPageView);
-        
         // Email form handling
         function sendEmail(event) {
             event.preventDefault();
