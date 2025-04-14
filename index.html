@@ -63,6 +63,8 @@
             font-weight: normal;
         }
         
+
+
         .category-tabs {
             display: flex;
             justify-content: center;
@@ -228,7 +230,71 @@
         .submit-btn:hover {
             background-color: var(--accent-color);
         }
-        
+
+/* Search Bar Styles */
+	.search-container {
+	    margin-top: 30px;
+   	    margin-bottom: 0px;
+            display: flex;
+   	    flex-wrap: wrap;
+  	    align-items: center;
+	    justify-content: center;
+    	    gap: 10px;
+	    max-width: 600px;  /* Limit the width of the search container */
+    	    margin-left: auto;  /* Center the search bar */
+    	    margin-right: auto;
+	}
+
+	#search-input {
+   	    flex: 1;
+   	    min-width: 200px;
+            max-width: 600px;
+  	    padding: 10px 15px;
+ 	    border: 1px solid #ddd;
+ 	    border-radius: 5px;
+	    font-size: 1rem;
+	    outline: none;
+	}
+
+	#search-input:focus {
+   	    border-color: var(--primary-color);
+   	    box-shadow: 0 0 3px rgba(74, 74, 143, 0.3);
+	}
+
+	#search-button, #clear-search {
+    	    padding: 10px 15px;
+    	    background-color: var(--primary-color);
+   	    color: white;
+   	    border: none;
+    	    border-radius: 5px;
+    	    cursor: pointer;
+    	    transition: background-color 0.3s;
+	}
+
+	#search-button:hover, #clear-search:hover {
+    	    background-color: var(--accent-color);
+	}
+
+	#clear-search {
+  	    background-color: #999;
+	}
+
+	#search-results-count {
+   	    width: 100%;
+   	    margin-top: 5px;
+   	    font-size: 0.9rem;
+   	    color: var(--accent-color);
+	}
+
+	.work-item.hidden {
+    	    display: none;
+	}
+
+	.highlight {
+    	    background-color: rgba(143, 74, 143, 0.2);
+   	    padding: 0 2px;
+   	    border-radius: 2px;
+	}
 
     </style>
 
@@ -252,6 +318,14 @@
         </div>
     </header>
     
+<!-- =============== SEARCH BAR =============== -->
+    <div class="search-container">
+   	    <input type="text" id="search-input" placeholder="Search by title, role, year..." />
+   	    <button id="search-button">Search</button>
+            <button id="clear-search">Clear</button>
+            <div id="search-results-count"></div>
+    </div>
+
     <div class="container">
         <div class="category-tabs">
             <div class="tab active" data-section="all">All Works</div>
@@ -842,7 +916,128 @@
             });
         });
         
-   
+// =============== SEARCH FUNCTIONALITY ===============
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+const clearSearchButton = document.getElementById('clear-search');
+const searchResultsCount = document.getElementById('search-results-count');
+const allWorkItems = document.querySelectorAll('.work-item');
+
+// Function to perform search
+const performSearch = () => {
+    const searchTerm = searchInput.value.toLowerCase().trim();
+    
+    // If search term is empty, show all items
+    if (searchTerm === '') {
+        allWorkItems.forEach(item => {
+            item.classList.remove('hidden');
+            
+            // Remove any existing highlights
+            const highlightedElements = item.querySelectorAll('.highlight');
+            highlightedElements.forEach(el => {
+                const parent = el.parentNode;
+                parent.replaceChild(document.createTextNode(el.textContent), el);
+                parent.normalize();
+            });
+        });
+        
+        searchResultsCount.textContent = '';
+        return;
+    }
+    
+    let matchCount = 0;
+    
+    // Loop through all work items
+    allWorkItems.forEach(item => {
+        const title = item.querySelector('.work-title').textContent.toLowerCase();
+        const year = item.querySelector('.work-year').textContent.toLowerCase();
+        const role = item.querySelector('.work-role').textContent.toLowerCase();
+        const description = item.querySelector('.work-description').textContent.toLowerCase();
+        
+        // Check if any field contains the search term
+        const isMatch = title.includes(searchTerm) || 
+                        year.includes(searchTerm) || 
+                        role.includes(searchTerm) || 
+                        description.includes(searchTerm);
+        
+        if (isMatch) {
+            item.classList.remove('hidden');
+            matchCount++;
+            
+            // Remove any existing highlights first
+            const highlightedElements = item.querySelectorAll('.highlight');
+            highlightedElements.forEach(el => {
+                const parent = el.parentNode;
+                parent.replaceChild(document.createTextNode(el.textContent), el);
+                parent.normalize();
+            });
+            
+            // Add highlights to matching text
+            highlightText(item.querySelector('.work-title'), searchTerm);
+            highlightText(item.querySelector('.work-year'), searchTerm);
+            highlightText(item.querySelector('.work-role'), searchTerm);
+            highlightText(item.querySelector('.work-description'), searchTerm);
+        } else {
+            item.classList.add('hidden');
+        }
+    });
+    
+    // Show the tab that contains "All Works" to see all search results
+    tabs.forEach(t => t.classList.remove('active'));
+    contentSections.forEach(section => section.classList.remove('active'));
+    
+    const allTab = document.querySelector('[data-section="all"]');
+    allTab.classList.add('active');
+    document.getElementById('all').classList.add('active');
+    
+    // Update results count
+    searchResultsCount.textContent = `Found ${matchCount} result${matchCount !== 1 ? 's' : ''}`;
+};
+
+// Function to highlight matching text
+const highlightText = (element, searchTerm) => {
+    if (!element) return;
+    
+    const content = element.innerHTML;
+    const pattern = new RegExp(searchTerm, 'gi');
+    
+    if (pattern.test(content)) {
+        const newContent = content.replace(pattern, match => `<span class="highlight">${match}</span>`);
+        element.innerHTML = newContent;
+    }
+};
+
+// Clear search results and show all items
+const clearSearch = () => {
+    searchInput.value = '';
+    searchResultsCount.textContent = '';
+    
+    allWorkItems.forEach(item => {
+        item.classList.remove('hidden');
+        
+        // Remove any existing highlights
+        const highlightedElements = item.querySelectorAll('.highlight');
+        highlightedElements.forEach(el => {
+            const parent = el.parentNode;
+            parent.replaceChild(document.createTextNode(el.textContent), el);
+            parent.normalize();
+        });
+    });
+};
+
+// Add event listeners for search
+searchButton.addEventListener('click', performSearch);
+clearSearchButton.addEventListener('click', clearSearch);
+
+// Search on Enter key
+searchInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        performSearch();
+    }
+});
+
+// Search as you type (uncomment if desired)
+// searchInput.addEventListener('input', performSearch);   
             
     </script>
 </body>
