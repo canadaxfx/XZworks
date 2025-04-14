@@ -1169,6 +1169,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         trackNameDisplay.textContent = track.name;
         trackNameDisplay.title = track.name; // For tooltip on hover
+        
+        // Debug: Log the current track being loaded
+        console.log("Loading track:", track.name, "File:", track.file);
     }
     
     // Update the play/pause button appearance
@@ -1256,7 +1259,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // If music was already playing, start playing the new track
         if (isPlaying) {
-            audioElement.play();
+            audioElement.play().catch(e => {
+                console.error('Error playing previous track:', e);
+            });
         }
     }
     
@@ -1267,7 +1272,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // If music was already playing, start playing the new track
         if (isPlaying) {
-            audioElement.play();
+            audioElement.play().catch(e => {
+                console.error('Error playing next track:', e);
+            });
         }
     }
     
@@ -1277,16 +1284,19 @@ document.addEventListener('DOMContentLoaded', function() {
     nextButton.addEventListener('click', playNextTrack);
     shuffleButton.addEventListener('click', toggleShuffle);
     
-    // When current track ends, play the next one
-    audioElement.addEventListener('ended', function() {
-        playNextTrack();
-    });
+    // FIXED: When current track ends, play the next one
+    audioElement.addEventListener('ended', playNextTrack);
     
     // Add error handling for audio loading issues
     audioElement.addEventListener('error', function(e) {
         console.error('Audio loading error:', e);
         console.error('Failed to load:', playlist[currentTrackIndex].file);
         trackNameDisplay.textContent = "Error loading track";
+        
+        // Try playing the next track if one fails
+        setTimeout(() => {
+            playNextTrack();
+        }, 2000);
     });
     
     // Initialize the first track without playing
@@ -1298,7 +1308,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize shuffle button appearance
     updateShuffleButton();
 });
-
 </script>
 </body>
 </html>
