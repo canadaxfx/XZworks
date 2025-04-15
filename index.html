@@ -1121,9 +1121,9 @@ searchInput.addEventListener('keypress', (e) => {
 
 <!-- Add this JavaScript code right before the closing </body> tag -->
 <script>
-// Improved Music Player Script with Debugging
+// Improved Music Player Script with Correct URL
 document.addEventListener('DOMContentLoaded', function() {
-    // Use full URLs or ensure correct relative paths
+    // Use full URLs with correct path
     const playlist = [
         { name: "XZ-都一样", file: "https://canadaxfx.github.io/XZworks/都一样.mp3" },
         { name: "XZ-灯塔", file: "https://canadaxfx.github.io/XZworks/灯塔.mp3" },
@@ -1186,14 +1186,18 @@ document.addEventListener('DOMContentLoaded', function() {
         
         audio.oncanplay = function() {
             log(`Track loaded successfully: ${track.name}`);
-            trackDisplay.textContent = track.name;
+            if (trackDisplay) {
+                trackDisplay.textContent = track.name;
+            }
             
             // Attempt to play if currently playing
             if (isPlaying) {
                 audio.play().catch(error => {
                     log(`Play error: ${error}`, 'error');
                     isPlaying = false;
-                    playButton.innerHTML = '<span class="music-icon">▶️</span>';
+                    if (playButton) {
+                        playButton.innerHTML = '<span class="music-icon">▶️</span>';
+                    }
                 });
             }
         };
@@ -1207,17 +1211,23 @@ document.addEventListener('DOMContentLoaded', function() {
         if (audio.paused) {
             audio.play().then(() => {
                 isPlaying = true;
-                playButton.innerHTML = '<span class="music-icon">⏸️</span>';
+                if (playButton) {
+                    playButton.innerHTML = '<span class="music-icon">⏸️</span>';
+                }
                 log('Audio playback started');
             }).catch(error => {
                 log(`Play error: ${error}`, 'error');
                 isPlaying = false;
-                playButton.innerHTML = '<span class="music-icon">▶️</span>';
+                if (playButton) {
+                    playButton.innerHTML = '<span class="music-icon">▶️</span>';
+                }
             });
         } else {
             audio.pause();
             isPlaying = false;
-            playButton.innerHTML = '<span class="music-icon">▶️</span>';
+            if (playButton) {
+                playButton.innerHTML = '<span class="music-icon">▶️</span>';
+            }
             log('Audio playback paused');
         }
     }
@@ -1243,9 +1253,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Add event listeners
-    playButton.addEventListener('click', togglePlay);
-    nextButton.addEventListener('click', playNext);
-    prevButton.addEventListener('click', playPrev);
+    if (playButton) {
+        playButton.addEventListener('click', togglePlay);
+    }
+    if (nextButton) {
+        nextButton.addEventListener('click', playNext);
+    }
+    if (prevButton) {
+        prevButton.addEventListener('click', playPrev);
+    }
     
     // Set initial volume
     audio.volume = 0.5;
