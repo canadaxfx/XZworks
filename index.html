@@ -373,7 +373,6 @@
 </head>
 <body>
 
-<!-- Add this code right after the opening <body> tag -->
 <div class="music-player">
     <audio id="background-music">
         <!-- Your tracks will be loaded here via JavaScript -->
@@ -384,6 +383,7 @@
             <span class="music-icon">▶️</span>
         </button>
         <button id="next-track" class="control-btn">⏭️</button>
+        <button id="shuffle-toggle" class="control-btn">🔀</button>
         <span id="track-name" class="track-info">Select a track</span>
     </div>
 </div>
@@ -1121,155 +1121,181 @@ searchInput.addEventListener('keypress', (e) => {
 
 <!-- Add this JavaScript code right before the closing </body> tag -->
 <script>
-// Improved Music Player Script with Correct URL
-document.addEventListener('DOMContentLoaded', function() {
-    // Use full URLs with correct path
-    const playlist = [
-        { name: "XZ-都一样", file: "https://canadaxfx.github.io/XZworks/都一样.mp3" },
-        { name: "XZ-灯塔", file: "https://canadaxfx.github.io/XZworks/灯塔.mp3" },
-        { name: "XZ-漂流", file: "https://canadaxfx.github.io/XZworks/漂流.mp3" },
-        { name: "XZ-不要回头", file: "https://canadaxfx.github.io/XZworks/不要回头.mp3" },
-        { name: "XZ-如愿", file: "https://canadaxfx.github.io/XZworks/如愿.mp3" },
-        { name: "XZ-同路人", file: "https://canadaxfx.github.io/XZworks/同路人.mp3" },
-        { name: "XZ-余年", file: "https://canadaxfx.github.io/XZworks/余年.mp3" },
-        { name: "XZ-晚安", file: "https://canadaxfx.github.io/XZworks/晚安.mp3" }
-    ];
-    
-    const audio = document.getElementById('background-music');
-    const playButton = document.getElementById('music-toggle');
-    const prevButton = document.getElementById('prev-track');
-    const nextButton = document.getElementById('next-track');
-    const trackDisplay = document.getElementById('track-name');
-    
-    let currentIndex = 0;
-    let isPlaying = false;
-    
-    // Comprehensive logging function
-    function log(message, type = 'log') {
-        const prefix = '[Music Player]';
-        switch(type) {
-            case 'error':
-                console.error(`${prefix} ${message}`);
-                break;
-            case 'warn':
-                console.warn(`${prefix} ${message}`);
-                break;
-            default:
-                console.log(`${prefix} ${message}`);
-        }
-    }
-    
-    // Load a track by index with extensive error handling
-    function loadTrack(index) {
-        // Validate index
-        if (index < 0 || index >= playlist.length) {
-            log(`Invalid track index: ${index}`, 'error');
-            return;
-        }
+    document.addEventListener('DOMContentLoaded', function() {
+        // Define your playlist with track names and file paths
+        const originalPlaylist = [
+            { name: "XZ-都一样", file: "都一样.mp3" },
+            { name: "XZ-灯塔", file: "灯塔.mp3" },
+            { name: "XZ-漂流", file: "漂流.mp3" },
+            { name: "XZ-不要回头", file: "不要回头.mp3" },
+            { name: "XZ-如愿", file: "如愿.mp3" },
+            { name: "XZ-同路人", file: "同路人.mp3" },
+            { name: "XZ-余年", file: "余年.mp3" },
+            { name: "XZ-晚安", file: "晚安.mp3" },
+            // Add more tracks as needed
+        ];
         
-        const track = playlist[index];
+        // Create a working copy of the playlist that we can shuffle
+        let playlist = [...originalPlaylist];
         
-        // Log track loading attempt
-        log(`Attempting to load track: ${track.name} from ${track.file}`);
+        const audioElement = document.getElementById('background-music');
+        const musicToggle = document.getElementById('music-toggle');
+        const prevButton = document.getElementById('prev-track');
+        const nextButton = document.getElementById('next-track');
+        const shuffleButton = document.getElementById('shuffle-toggle');
+        const trackNameDisplay = document.getElementById('track-name');
         
-        // Reset audio source
-        audio.src = track.file;
+        let currentTrackIndex = 0;
+        let isPlaying = false;
+        let isShuffled = false;
         
-        // Add error and canplay event listeners
-        audio.onerror = function(e) {
-            log(`Error loading track: ${track.name}`, 'error');
-            log(`Error details: ${JSON.stringify(e)}`, 'error');
+        // Initialize the first track
+        function loadTrack(index) {
+            const track = playlist[index];
             
-            // Attempt to play next track on error
-            playNext();
-        };
-        
-        audio.oncanplay = function() {
-            log(`Track loaded successfully: ${track.name}`);
-            if (trackDisplay) {
-                trackDisplay.textContent = track.name;
-            }
+            // Log to help debug
+            console.log("Loading track:", track.name, "File path:", track.file);
             
-            // Attempt to play if currently playing
+            // Set the source and load the audio
+            audioElement.src = track.file;
+            audioElement.load(); // Explicitly load the audio file
+            
+            trackNameDisplay.textContent = track.name;
+            trackNameDisplay.title = track.name; // For tooltip on hover
+            
+            // If music was playing before changing tracks, start playing the new track
             if (isPlaying) {
-                audio.play().catch(error => {
-                    log(`Play error: ${error}`, 'error');
-                    isPlaying = false;
-                    if (playButton) {
-                        playButton.innerHTML = '<span class="music-icon">▶️</span>';
-                    }
-                });
-            }
-        };
-        
-        // Load the audio
-        audio.load();
-    }
-    
-    // Toggle play/pause with comprehensive error handling
-    function togglePlay() {
-        if (audio.paused) {
-            audio.play().then(() => {
-                isPlaying = true;
-                if (playButton) {
-                    playButton.innerHTML = '<span class="music-icon">⏸️</span>';
+                const playPromise = audioElement.play();
+                
+                // Handle play promise properly
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        // Playback started successfully
+                        console.log("Playback started for:", track.name);
+                    }).catch(e => {
+                        console.error('Playback prevented:', e);
+                        isPlaying = false;
+                        updatePlayButton();
+                    });
                 }
-                log('Audio playback started');
-            }).catch(error => {
-                log(`Play error: ${error}`, 'error');
-                isPlaying = false;
-                if (playButton) {
-                    playButton.innerHTML = '<span class="music-icon">▶️</span>';
-                }
-            });
-        } else {
-            audio.pause();
-            isPlaying = false;
-            if (playButton) {
-                playButton.innerHTML = '<span class="music-icon">▶️</span>';
             }
-            log('Audio playback paused');
         }
-    }
-    
-    // Play next track with circular playlist
-    function playNext() {
-        currentIndex = (currentIndex + 1) % playlist.length;
-        log(`Moving to next track: ${currentIndex}`);
-        loadTrack(currentIndex);
-    }
-    
-    // Play previous track with circular playlist
-    function playPrev() {
-        currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
-        log(`Moving to previous track: ${currentIndex}`);
-        loadTrack(currentIndex);
-    }
-    
-    // Event listener for track ending
-    audio.addEventListener('ended', function() {
-        log('Track ended, moving to next');
-        playNext();
+        
+        // Update the play/pause button appearance
+        function updatePlayButton() {
+            musicToggle.innerHTML = isPlaying ? 
+                '<span class="music-icon">⏸️</span>' : 
+                '<span class="music-icon">▶️</span>';
+        }
+        
+        // Update shuffle button appearance
+        function updateShuffleButton() {
+            shuffleButton.style.backgroundColor = isShuffled ? 
+                '#1a252f' : 'var(--primary-color)';
+        }
+        
+        // Function to shuffle array using Fisher-Yates algorithm
+        function shuffleArray(array) {
+            let currentIndex = array.length;
+            let temporaryValue, randomIndex;
+            
+            // While there remain elements to shuffle
+            while (0 !== currentIndex) {
+                // Pick a remaining element
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+                
+                // Swap it with the current element
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            
+            return array;
+        }
+        
+        // Function to toggle shuffle mode
+        function toggleShuffle() {
+            const currentTrack = playlist[currentTrackIndex];
+            
+            if (isShuffled) {
+                // Turn off shuffle - restore original playlist order
+                playlist = [...originalPlaylist];
+                isShuffled = false;
+            } else {
+                // Turn on shuffle - randomize the playlist
+                playlist = shuffleArray([...originalPlaylist]);
+                isShuffled = true;
+            }
+            
+            // Find the current track in the new playlist order
+            currentTrackIndex = playlist.findIndex(track => 
+                track.file === currentTrack.file);
+            
+            // If somehow the track wasn't found, reset to first track
+            if (currentTrackIndex === -1) currentTrackIndex = 0;
+            
+            updateShuffleButton();
+        }
+        
+        // Function to toggle music play/pause
+        function toggleMusic() {
+            if (isPlaying) {
+                audioElement.pause();
+            } else {
+                const playPromise = audioElement.play();
+                
+                if (playPromise !== undefined) {
+                    playPromise.catch(e => {
+                        console.error('Playback prevented:', e);
+                    });
+                }
+            }
+            isPlaying = !isPlaying;
+            updatePlayButton();
+        }
+        
+        // Function to play previous track
+        function playPreviousTrack() {
+            currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+            loadTrack(currentTrackIndex);
+        }
+        
+        // Function to play next track
+        function playNextTrack() {
+            currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+            loadTrack(currentTrackIndex);
+        }
+        
+        // Add event listeners
+        musicToggle.addEventListener('click', toggleMusic);
+        prevButton.addEventListener('click', playPreviousTrack);
+        nextButton.addEventListener('click', playNextTrack);
+        shuffleButton.addEventListener('click', toggleShuffle);
+        
+        // When current track ends, play the next one
+        audioElement.addEventListener('ended', function() {
+            console.log("Track ended, playing next");
+            playNextTrack();
+        });
+        
+        // Add error handling for audio loading issues
+        audioElement.addEventListener('error', function(e) {
+            console.error('Audio loading error:', e);
+            console.error('Failed to load:', playlist[currentTrackIndex].file);
+            // Optionally try the next track
+            // playNextTrack();
+        });
+        
+        // Initialize the first track
+        loadTrack(currentTrackIndex);
+        
+        // Set volume
+        audioElement.volume = 0.5; // Set volume to 50%
+        
+        // Initialize shuffle button appearance
+        updateShuffleButton();
     });
-    
-    // Add event listeners
-    if (playButton) {
-        playButton.addEventListener('click', togglePlay);
-    }
-    if (nextButton) {
-        nextButton.addEventListener('click', playNext);
-    }
-    if (prevButton) {
-        prevButton.addEventListener('click', playPrev);
-    }
-    
-    // Set initial volume
-    audio.volume = 0.5;
-    
-    // Initialize first track
-    log('Initializing music player');
-    loadTrack(currentIndex);
-});
 
 </script>
 </body>
