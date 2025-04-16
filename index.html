@@ -8,6 +8,121 @@
     <!-- Preload key assets -->
     <link rel="preload" href="xiao-zhan.jpg" as="image">
     <!-- CSS STYLES - Optimized and minified -->
+
+<!-- Add these CSS styles to the existing <style> section -->
+<style>
+    /* Update header to support background carousel */
+    header {
+        position: relative;
+        background-color: var(--primary-color); /* Keep the background color as fallback */
+        color: white;
+        text-align: center;
+        padding: 3rem 0;
+        overflow: hidden; /* Keep the carousel contained */
+        min-height: 350px; /* Increased height to give more room for portrait images */
+    }
+    
+    /* Header carousel styles - completely overhauled for truly seamless looping */
+    .header-bg-carousel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1; /* Place behind content */
+        overflow: hidden;
+    }
+    
+    /* Image strip with critical settings for seamless looping */
+    .image-strip {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        display: flex; /* Make images line up horizontally */
+        will-change: transform; /* Hardware acceleration hint */
+        backface-visibility: hidden; /* Reduce flickering */
+        transform: translateZ(0); /* Force GPU rendering */
+    }
+    
+    .image-strip img {
+        height: 100%;
+        width: auto; /* Maintain aspect ratio */
+        object-fit: cover;
+        flex-shrink: 0; /* Prevent images from shrinking */
+        -webkit-backface-visibility: hidden; /* Prevent flickering */
+        -moz-backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        -moz-perspective: 1000;
+    }
+    
+    @keyframes scrollStrip {
+        0% { 
+            transform: translateX(0);
+        }
+        100% { 
+            transform: translateX(calc(-100% / 2)); /* Move exactly half the total width */
+        }
+    }
+
+    
+    /* Dark overlay to improve text readability */
+    .header-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        z-index: 2;
+    }
+    
+    /* Header content positioning */
+    .header-content {
+        position: relative;
+        z-index: 3; /* Ensure content is on top */
+    }
+    
+    /* Carousel navigation */
+    .carousel-nav {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        z-index: 4;
+    }
+    
+    .nav-dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-dot.active {
+        background-color: white;
+        transform: scale(1.2);
+    }
+    
+    /* Enhance profile image to stand out against the changing background */
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid white;
+        margin-bottom: 1rem;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for more depth */
+    }
+</style>
+
+
+
     <style>
 
     .music-player {
@@ -389,11 +504,24 @@
 </div>
 
     <header>
-        <div class="container">
-            <img src="logo.jpg" alt="Xiao Zhan" class="profile-img" id="profile-img">
-            <h1>Screen Arts of Xiao Zhan</h1>
-            <p class="subtitle">Complete collection of dramas, movies, and shows</p>
+     <!-- Background carousel that sits behind everything -->
+    <div class="header-bg-carousel">
+        <!-- We'll use a continuous strip of images instead of individual slides -->
+        <div class="image-strip">
+            <!-- Images will be added here dynamically -->
         </div>
+    </div>
+    
+    <!-- Overlay with a semi-transparent background to ensure text readability -->
+    <div class="header-overlay"></div>
+    
+    <!-- Header content remains unchanged -->
+    <div class="header-content">
+        <img src="logo.jpg" alt="Xiao Zhan" class="profile-img" id="profile-img">
+        <h1>Screen Arts of Xiao Zhan</h1>
+        <p class="subtitle">Complete collection of dramas, movies, and shows</p>
+    </div>
+
     </header>
     
 <!-- =============== SEARCH BAR =============== -->
@@ -1298,5 +1426,174 @@ searchInput.addEventListener('keypress', (e) => {
     });
 
 </script>
+
+
+<!-- Replace your existing carousel JavaScript with this perfected version -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Array of image paths for the background carousel
+    const imagePaths = [
+        'xiao-zhan1-1.jpg',
+        'xiao-zhan1-2.jpg',
+        'xiao-zhan1-3.jpg',
+        'xiao-zhan1-4.jpg',
+        'xiao-zhan1-5.jpg',
+	'xiao-zhan1-6.jpg',
+        'xiao-zhan1-7.jpg',
+        'xiao-zhan1-8.jpg',
+        'xiao-zhan1-9.jpg',
+        'xiao-zhan1-10.jpg',
+        'xiao-zhan1-11.jpg',
+        'xiao-zhan1-12.jpg',
+        'xiao-zhan1-13.jpg',
+        'xiao-zhan1-14.jpg',
+	'xiao-zhan1-15.jpg',
+        'xiao-zhan1-16.jpg',
+        'xiao-zhan1-17.jpg',
+        'xiao-zhan1-18.jpg',
+        'xiao-zhan2-1.jpg',
+        'xiao-zhan2-2.jpg',
+	'xiao-zhan2-3.jpg',
+        'xiao-zhan2-4.jpg'
+    ];
+    
+    // Get the image strip container
+    const imageStrip = document.querySelector('.image-strip');
+    const carouselContainer = document.querySelector('.header-bg-carousel');
+    
+    if (!imageStrip || !carouselContainer) {
+        console.error('Carousel elements not found');
+        return;
+    }
+
+    // Clear any existing content
+    imageStrip.innerHTML = '';
+    
+    // Function to create a complete clone of all images
+    function createImageSet() {
+        const fragment = document.createDocumentFragment();
+        imagePaths.forEach((path, index) => {
+            const img = document.createElement('img');
+            img.src = path;
+            img.alt = `Xiao Zhan Photo ${index + 1}`;
+            img.className = 'carousel-image';
+            img.loading = 'eager'; // Prioritize loading
+            fragment.appendChild(img);
+        });
+        return fragment;
+    }
+    
+    // Get container dimensions for calculations
+    const containerWidth = carouselContainer.clientWidth;
+    
+    // Add multiple sets of images (more than needed for safety)
+    imageStrip.appendChild(createImageSet());
+    imageStrip.appendChild(createImageSet());
+    imageStrip.appendChild(createImageSet());
+    imageStrip.appendChild(createImageSet()); // Extra set for absolute safety
+    
+    // Variables to track animation state
+    let animationId = null;
+    let isPaused = false;
+    let startTime = null;
+    let currentPosition = 0;
+    
+    // Pure JavaScript animation approach (more precise than CSS animations)
+    function animateCarousel(timestamp) {
+        if (isPaused) {
+            // If paused, just update startTime and continue the loop
+            animationId = requestAnimationFrame(animateCarousel);
+            return;
+        }
+        
+        if (!startTime) startTime = timestamp;
+        
+        // Calculate elapsed time
+        const elapsed = timestamp - startTime;
+        
+        // Get width of a single set
+        const singleSetWidth = imageStrip.scrollWidth / 4; // Four sets total
+        
+        // Calculate how long it should take to scroll through one set (in ms)
+        const scrollDuration = 30000; // 30 seconds to scroll through one set
+        
+        // Calculate new position
+        currentPosition = -(elapsed * singleSetWidth / scrollDuration);
+        
+        // Apply transform with hardware acceleration for smoothness
+        imageStrip.style.transform = `translate3d(${currentPosition}px, 0, 0)`;
+        
+        // If we've scrolled past the first set, reset to beginning
+        // We reset earlier than strictly necessary to ensure smoothness
+        if (Math.abs(currentPosition) >= singleSetWidth) {
+            // Reset time and position to create perfect loop
+            startTime = timestamp;
+            currentPosition = 0;
+            imageStrip.style.transform = `translate3d(0, 0, 0)`;
+        }
+        
+        // Continue animation loop
+        animationId = requestAnimationFrame(animateCarousel);
+    }
+    
+    // Preload all carousel images before starting animation
+    let imagesLoaded = 0;
+    const totalImages = imagePaths.length;
+    
+    function preloadImages() {
+        imagePaths.forEach(src => {
+            const img = new Image();
+            img.onload = () => {
+                imagesLoaded++;
+                if (imagesLoaded === totalImages) {
+                    // All images preloaded, now start animation
+                    animationId = requestAnimationFrame(animateCarousel);
+                    console.log('Carousel animation started');
+                }
+            };
+            img.onerror = () => {
+                console.error(`Failed to load image: ${src}`);
+                imagesLoaded++;
+                if (imagesLoaded === totalImages) {
+                    animationId = requestAnimationFrame(animateCarousel);
+                }
+            };
+            img.src = src;
+        });
+    }
+    
+    // Start preloading
+    preloadImages();
+    
+    // Pause animation when hovering over the header
+    document.querySelector('header').addEventListener('mouseenter', function() {
+        isPaused = true;
+    });
+    
+    // Resume animation when leaving the header
+    document.querySelector('header').addEventListener('mouseleave', function() {
+        isPaused = false;
+    });
+    
+    // Handle visibility changes (tab switching, etc.)
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            // Page is hidden, pause animation
+            isPaused = true;
+        } else {
+            // Page is visible again, resume animation
+            isPaused = false;
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        // Simply continue the animation - our calculation uses current width
+        // No special handling needed as we calculate position on each frame
+    });
+});
+</script>
+
+
 </body>
 </html>
