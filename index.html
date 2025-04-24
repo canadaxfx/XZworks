@@ -267,6 +267,7 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 10px;
+	    white-space: nowrap; /* Prevents line breaks */
         }
         
         .subtitle {
@@ -381,13 +382,31 @@
             }
             
             h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             
             .work-title {
-                font-size: 1.3rem;
+                font-size: 0.9rem;
             }
-        }
+
+           .subtitle {
+        	font-size: 0.9rem; /* Slightly smaller subtitle on mobile */
+    	    }
+    
+    	   .header-content {
+        	padding: 0 10px; /* Add some horizontal padding to prevent text from touching the edges */
+    	    }
+	}
+
+	/* For extremely small screens */
+	@media (max-width: 360px) {
+   	   h1 {
+           font-size: 1.3rem; /* Even smaller font size for very small screens */
+    	   }
+	}
+
+
+
         
         /* Email Contact Form Styles */
         .contact-section {
@@ -2306,8 +2325,23 @@
 </div>
 
     <footer class="footer">
-        <p>This fan-made website by North American XFX is created for personal use only. All rights to images and content belong to their respective owners.</p>
-        <p>Last updated: <span id="last-updated">April 2025</span></p>
+        <p>This fan-made website by CanadaXFX is created for personal and non-commercial use only. <br>All images, videos, and content related to Xiao Zhan belong to their respective copyright owners.</p>
+        <p>The original content, design, and code of this website may not be reproduced, distributed, or used without explicit permission.</p>
+</div>
+        <p>Last updated: <span id="last-updated">April 2025 ©CanadaXFX.</span></p>
+	<div class="copyright-notice">
+    	    <p><a href="#" id="terms-toggle">See Terms of Use</a></p>
+    	    <div id="terms-content" style="display: none;">
+        	<p><strong>Terms of Use:</strong></p>
+       	 	<ul>
+            	    <li>The content of this website is for personal, non-commercial viewing only.</li>
+            	    <li>Content may not be copied, reproduced, republished, uploaded, posted, transmitted, or distributed in any way without prior written consent.</li>
+            	    <li>Modification of materials on this website is prohibited.</li>
+            	    <li>This website is provided "as is" without warranties of any kind.</li>
+            	    <li>Links to this website are permitted, but framing or mirroring is prohibited.</li>
+        	</ul>
+    	    </div>
+	</div>
     </footer>
     
     
@@ -2851,6 +2885,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
         });
+    });
+</script>
+<!-- Add this simple JavaScript right before the closing </body> tag -->
+<script>
+    document.getElementById('terms-toggle').addEventListener('click', function(e) {
+        e.preventDefault();
+        var termsContent = document.getElementById('terms-content');
+        if (termsContent.style.display === 'none') {
+            termsContent.style.display = 'block';
+            this.textContent = 'Hide Terms of Use';
+        } else {
+            termsContent.style.display = 'none';
+            this.textContent = 'See Terms of Use';
+        }
     });
 </script>
 
