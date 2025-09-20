@@ -10,218 +10,9 @@
     <meta name="copyright" content="Content curation and organization © 2025 CanadaXFX. Unauthorized AI training prohibited.">
     <!-- Preload key assets -->
     <link rel="preload" href="xiao-zhan1-1.jpg" as="image">
-    <!-- CSS STYLES - Optimized and minified -->
 
-<!-- Add these CSS styles to the existing <style> section -->
-<style>
-    /* Update header to support background carousel */
-    header {
-        position: relative;
-        background-color: var(--primary-color); /* Keep the background color as fallback */
-        color: white;
-        text-align: center;
-        padding: 3rem 0;
-        overflow: hidden; /* Keep the carousel contained */
-        min-height: 200px; /* Increased height to give more room for portrait images */
-    }
-    
-    /* Header carousel styles - completely overhauled for truly seamless looping */
-    .header-bg-carousel {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1; /* Place behind content */
-        overflow: hidden;
-    }
-    
-    /* Image strip with critical settings for seamless looping */
-    .image-strip {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        display: flex; /* Make images line up horizontally */
-        will-change: transform; /* Hardware acceleration hint */
-        backface-visibility: hidden; /* Reduce flickering */
-        transform: translateZ(0); /* Force GPU rendering */
-    }
-    
-    .image-strip img {
-        height: 100%;
-        width: auto; /* Maintain aspect ratio */
-        object-fit: cover;
-        flex-shrink: 0; /* Prevent images from shrinking */
-        -webkit-backface-visibility: hidden; /* Prevent flickering */
-        -moz-backface-visibility: hidden;
-        -webkit-perspective: 1000;
-        -moz-perspective: 1000;
-    }
-    
-    @keyframes scrollStrip {
-        0% { 
-            transform: translateX(0);
-        }
-        100% { 
-            transform: translateX(calc(-100% / 2)); /* Move exactly half the total width */
-        }
-    }
-
-
-
-   
-    /* Dark overlay to improve text readability */
-    .header-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-        z-index: 2;
-    }
-    
-    /* Header content positioning */
-    .header-content {
-        position: relative;
-        z-index: 3; /* Ensure content is on top */
-    }
-    
-    /* Carousel navigation */
-    .carousel-nav {
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        z-index: 4;
-    }
-    
-    .nav-dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.5);
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-    
-    .nav-dot.active {
-        background-color: white;
-        transform: scale(1.2);
-    }
-    
-
-
-</style>
-
-<!-- Add this CSS to your existing <style> section in the head -->
-<style>
-    #back-to-top {
-        position: fixed;
-        bottom: 20px;
-        left: 20px;
-        background-color: var(--primary-color);
-        color: white;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        text-align: center;
-        line-height: 48px;
-        font-size: 32px;
-        font-weight: bold;
-        cursor: pointer;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 1000;
-    }
-    
-    #back-to-top.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    #back-to-top:hover {
-        background-color: var(--accent-color);
-        transform: scale(1.1);
-    }
-    
-    /* Ensure it doesn't interfere with the music player */
-    @media (max-width: 768px) {
-        #back-to-top {
-            bottom: 70px; /* Position above the music player on mobile */
-        }
-    }
-</style>
-
+    <!-- CONSOLIDATED CSS STYLES -->
     <style>
-
-    .music-player {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 1000;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 50px;
-        padding: 8px 16px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        display: flex;
-        align-items: center;
-        transition: all 0.3s ease;
-    }
-    
-    .music-controls {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    
-    .play-btn, .control-btn {
-        background-color: var(--primary-color);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        width: 36px;
-        height: 36px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-    }
-    
-    .play-btn:hover, .control-btn:hover {
-        background-color: #1a252f;
-        transform: scale(1.1);
-    }
-    
-    .track-info {
-        margin-left: 10px;
-        font-size: 0.9rem;
-        color: var(--text-color);
-        white-space: nowrap;
-        max-width: 150px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-    @media (max-width: 768px) {
-        .music-player {
-            bottom: 10px;
-            right: 10px;
-            padding: 6px 12px;
-        }
-        
-        .track-info {
-            max-width: 100px;
-        }
-    }
-
         :root {
             --primary-color: #3f3f7d;
             --secondary-color: #f8f8ff;
@@ -249,12 +40,62 @@
             padding: 20px;
         }
         
+        /* Header and Carousel Styles */
         header {
+            position: relative;
             background-color: var(--primary-color);
             color: white;
-            padding: 2rem 0;
             text-align: center;
+            padding: 3rem 0;
+            overflow: hidden;
+            min-height: 200px;
+        }
+        
+        .header-bg-carousel {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .image-strip {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            display: flex;
+            will-change: transform;
+            backface-visibility: hidden;
+            transform: translateZ(0);
+        }
+        
+        .image-strip img {
+            height: 100%;
+            width: auto;
+            object-fit: cover;
+            flex-shrink: 0;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+            -moz-perspective: 1000;
+        }
+        
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 2;
+        }
+        
+        .header-content {
             position: relative;
+            z-index: 3;
         }
         
         .profile-img {
@@ -264,24 +105,23 @@
             object-fit: cover;
             border: 5px solid white;
             margin-bottom: 1rem;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Add shadow for more depth */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
         }
         
         h1 {
             font-size: 1.7rem;
             margin-bottom: 10px;
-	    white-space: nowrap; /* Prevents line breaks */
+            white-space: nowrap;
         }
         
         .subtitle {
-            font-size: 0.9 rem;
+            font-size: 0.9rem;
             font-weight: normal;
-	    white-space: nowrap;
+            white-space: nowrap;
             margin-bottom: 25px;
         }
-        
 
-
+        /* Tab Styles */
         .category-tabs {
             display: flex;
             justify-content: center;
@@ -297,9 +137,9 @@
             margin: 2px;
             border-radius: 5px;
             transition: background-color 0.3s;
-	    font-weight: bold;
-	    text-align: center;
-	    font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1rem;
             flex: 0 0 auto;
             min-width: 60px;
             white-space: normal;
@@ -308,19 +148,15 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
         }
-        
 
-
-    .tab::after {
-        content: "";
-        display: block;
-        margin-top: 2px;
-        font-size: 0.7rem;
-        white-space: nowrap;
-    }
-
+        .tab::after {
+            content: "";
+            display: block;
+            margin-top: 2px;
+            font-size: 0.7rem;
+            white-space: nowrap;
+        }
 
         .tab:hover {
             background-color: #d0d0d0;
@@ -329,7 +165,7 @@
         .tab.active {
             background-color: var(--primary-color);
             color: white;
- 	    border: 2px solid var(--accent-color);
+            border: 2px solid var(--accent-color);
         }
         
         .content-section {
@@ -339,7 +175,72 @@
         .content-section.active {
             display: block;
         }
-        
+
+        /* Enhanced YouTube Tab Styling */
+        .youtube-tab {
+            background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
+            color: white;
+            border: 2px solid #FF0000;
+            padding: 8px 10px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1rem;
+            padding-left: 25px;
+            box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+            padding: 14px 20px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .youtube-tab::before {
+            content: "▶";
+            position: absolute;
+            left: 8px;
+            font-size: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .youtube-tab:hover {
+            background: linear-gradient(135deg, #FF0000 0%, #FF3333 100%);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        .youtube-tab::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-radius: 5px;
+            opacity: 0;
+            background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
+            transition: opacity 0.3s ease;
+        }
+
+        .youtube-tab:hover::after {
+            opacity: 1;
+        }
+
+        @keyframes subtle-pulse {
+            0% { box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); }
+            50% { box-shadow: 0 0 12px rgba(255, 0, 0, 0.7); }
+            100% { box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); }
+        }
+
+        .youtube-tab {
+            animation: subtle-pulse 2s infinite;
+        }
+
+        /* Work Item Styles */
         .work-item {
             background-color: white;
             border-radius: 8px;
@@ -352,6 +253,10 @@
         .work-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .work-item.hidden {
+            display: none;
         }
         
         .work-title {
@@ -394,132 +299,151 @@
         .platform-link:hover {
             background-color: var(--accent-color);
         }
-        
-        footer {
-            padding: 20px;
-            margin-top: 40px;
-            background-color: var(--light-gray);
-            border-top: 1px solid #ddd;
+
+        .highlight {
+            background-color: rgba(143, 74, 143, 0.3);
+            padding: 0 2px;
+            border-radius: 2px;
         }
- 
 
-        /* Footer */
+        /* Search Bar Styles */
+        .search-container {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
+        #search-input {
+            flex: 1;
+            min-width: 200px;
+            max-width: 600px;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            outline: none;
+        }
 
-.site-footer .copyright-text ul {
-    list-style-type: disc;
-    padding-left: 30px;
-    text-align: left;
-}
+        #search-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 3px rgba(74, 74, 143, 0.3);
+        }
 
-.site-footer .copyright-text li {
-    margin-bottom: 0px;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.site-footer .copyright-notice {
-    text-align: center;
-} 
-
-        .site-footer {
+        #search-button, #clear-search {
+            padding: 10px 15px;
             background-color: var(--primary-color);
             color: white;
-            padding: 30px 0;
-            margin-top: 50px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        
-        .footer-content {
-            text-align: center;
-	    margin-bottom: 20px; /* Add space between footer content and copyright notice */
-        }
-        
-        
-        .footer-links {
-            margin-bottom: 0px;
-        }
-        
-        .footer-link {
-            color: white;
-            margin: 0 5px;
-            color: white;
-            text-decoration: underline;
-            transition: all 0.3s;
-            padding: 5px 5px;
-            border-radius: 4px;
-            font-weight: bold;
-            font-style: italic;
-    	    display: flex;
-    	    justify-content: center;
-    	    gap: 20px;
 
+        #search-button:hover, #clear-search:hover {
+            background-color: var(--accent-color);
         }
-        
-        .footer-link:hover {
-            opacity: 0.8;
+
+        #clear-search {
+            background-color: #999;
         }
-        
-        .copyright {
+
+        #search-results-count {
+            width: 100%;
+            margin-top: 5px;
             font-size: 0.9rem;
-            opacity: 0.7;
+            color: var(--accent-color);
+        }
+
+        /* Music Player Styles */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 50px;
+            padding: 8px 16px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
         }
         
-    /* Style the copyright notice container */
-    .copyright-notice {
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding-top: 15px;
-        margin-top: 15px;
-        text-align: center;
-    }
-
-    /* Make the Terms of Use link more visible */
-    #terms-toggle {
-        display: inline-block;
-        color: white;
-        background-color: var(--accent-color);
-        padding: 5px 15px;
-        border-radius: 4px;
-        margin: 10px auto;
-        font-weight: bold;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-
-    #terms-toggle:hover {
-        background-color: white;
-        color: var(--accent-color);
-        transform: translateY(-2px);
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-
-    /* Style the Terms content when shown */
-    #terms-content {
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 5px;
-        padding: 15px;
-        margin-top: 10px;
-        text-align: left;
-    }
-
-    #terms-content ul {
-        list-style-type: disc;
-        padding-left: 20px;
-        margin-top: 10px;
-    }
-
-    #terms-content li {
-        margin-bottom: 5px;
-    }
-
-
-
-
+        .music-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
         
-        /* Email Contact Form Styles */
+        .play-btn, .control-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .play-btn:hover, .control-btn:hover {
+            background-color: #1a252f;
+            transform: scale(1.1);
+        }
+        
+        .track-info {
+            margin-left: 10px;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            white-space: nowrap;
+            max-width: 150px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 48px;
+            font-size: 32px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        #back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        #back-to-top:hover {
+            background-color: var(--accent-color);
+            transform: scale(1.1);
+        }
+
+        /* Contact Form Styles */
         .contact-section {
             max-width: 800px;
             margin: 40px auto;
@@ -574,293 +498,230 @@
             background-color: var(--accent-color);
         }
 
-/* Search Bar Styles */
-	.search-container {
-	    margin-top: 30px;
-   	    margin-bottom: 0px;
+        /* Footer Styles */
+        .site-footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links {
+            margin-bottom: 0px;
             display: flex;
-   	    flex-wrap: wrap;
-  	    align-items: center;
-	    justify-content: center;
-    	    gap: 10px;
-	    max-width: 600px;  /* Limit the width of the search container */
-    	    margin-left: auto;  /* Center the search bar */
-    	    margin-right: auto;
-	}
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .footer-link {
+            color: white;
+            margin: 0 5px;
+            text-decoration: underline;
+            transition: all 0.3s;
+            padding: 5px 5px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        .footer-link:hover {
+            opacity: 0.8;
+        }
 
-	#search-input {
-   	    flex: 1;
-   	    min-width: 200px;
-            max-width: 600px;
-  	    padding: 10px 15px;
- 	    border: 1px solid #ddd;
- 	    border-radius: 5px;
-	    font-size: 1rem;
-	    outline: none;
-	}
+        .copyright-notice {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 15px;
+            margin-top: 15px;
+            text-align: center;
+        }
 
-	#search-input:focus {
-   	    border-color: var(--primary-color);
-   	    box-shadow: 0 0 3px rgba(74, 74, 143, 0.3);
-	}
+        #terms-toggle {
+            display: inline-block;
+            color: white;
+            background-color: var(--accent-color);
+            padding: 5px 15px;
+            border-radius: 4px;
+            margin: 10px auto;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
 
-	#search-button, #clear-search {
-    	    padding: 10px 15px;
-    	    background-color: var(--primary-color);
-   	    color: white;
-   	    border: none;
-    	    border-radius: 5px;
-    	    cursor: pointer;
-    	    transition: background-color 0.3s;
-	}
+        #terms-toggle:hover {
+            background-color: white;
+            color: var(--accent-color);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
 
-	#search-button:hover, #clear-search:hover {
-    	    background-color: var(--accent-color);
-	}
+        #terms-content {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 10px;
+            text-align: left;
+        }
 
-	#clear-search {
-  	    background-color: #999;
-	}
+        #terms-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
 
-	#search-results-count {
-   	    width: 100%;
-   	    margin-top: 5px;
-   	    font-size: 0.9rem;
-   	    color: var(--accent-color);
-	}
+        #terms-content li {
+            margin-bottom: 5px;
+        }
 
-	.work-item.hidden {
-    	    display: none;
-	}
+        .copyright-text ul {
+            list-style-type: disc;
+            padding-left: 30px;
+            text-align: left;
+        }
 
-	.highlight {
-    	    background-color: rgba(143, 74, 143, 0.3);
-   	    padding: 0 2px;
-   	    border-radius: 2px;
-	}
+        .copyright-text li {
+            margin-bottom: 0px;
+        }
 
+        /* iframe Styles */
+        .iframe-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
 
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            border-radius: 8px;
+        }
 
+        .upcoming-work-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #eef4ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
 
+        .upcoming-work-section h2 {
+            text-align: left; 
+            color: var(--accent-color); 
+            margin-bottom: 20px; 
+        }
 
-/* Enhanced YouTube Tab Styling */
-.youtube-tab {
-    /* Special gradient background */
-    background: linear-gradient(135deg, #FF0000 0%, #CC0000 100%);
-    color: white;
-    border: 2px solid #FF0000;
-    padding: 8px 10px;
-    cursor: pointer;
-    margin: 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-weight: bold;
-    text-align: center;
-    font-size: 1rem;
-    padding-left: 25px;
+        .upcoming-work-section .upcoming-media {
+            text-align: center;
+        }
 
+        .upcoming-work-section .work-description {
+            margin-bottom: 15px; 
+            margin-top: 10px;
+        }
 
-    /* Add subtle glow effect */
-    box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
-    
-    /* Make slightly larger than other tabs */
-    padding: 14px 20px;
-    
-    /* Improve text visibility */
-    font-weight: bold;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-    
-    /* Add YouTube icon */
-    position: relative;
-    padding-left: 40px;
-}
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .music-player {
+                bottom: 10px;
+                right: 10px;
+                padding: 6px 12px;
+            }
+            
+            .track-info {
+                max-width: 100px;
+            }
 
-/* YouTube play button icon before the text */
-.youtube-tab::before {
-    content: "▶";
-    position: absolute;
-    left: 8px;
-    font-size: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-}
+            #back-to-top {
+                bottom: 70px;
+            }
+        }
 
-/* Hover effects */
-.youtube-tab:hover {
-    background: linear-gradient(135deg, #FF0000 0%, #FF3333 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
-    transition: all 0.3s ease;
-}
-
-/* After hover animation */
-.youtube-tab::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
-    opacity: 0;
-    background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 70%);
-    transition: opacity 0.3s ease;
-}
-
-.youtube-tab:hover::after {
-    opacity: 1;
-}
-
-/* Optional: Make it stand out more with a slight pulse animation */
-@keyframes subtle-pulse {
-    0% { box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); }
-    50% { box-shadow: 0 0 12px rgba(255, 0, 0, 0.7); }
-    100% { box-shadow: 0 0 8px rgba(255, 0, 0, 0.5); }
-}
-
-/* Apply the animation */
-.youtube-tab {
-    animation: subtle-pulse 2s infinite;
-}
-
-
-/* Even smaller screens */
-@media (max-width: 380px) {
-    .tab {
-        padding: 6px 8px;
-        font-size: 0.75rem;
-        margin: 1px;
-        min-width: 50px;
-    }
-    
-    .youtube-tab {
-        padding: 6px 8px;
-        padding-left: 20px;
-        font-size: 0.75rem;
-    }
-    
-    .youtube-tab::before {
-        left: 5px;
-        font-size: 12px;
-    }
-}
-
-.iframe-container {
-    max-width: 800px; /* Or your desired max width on desktop */
-    margin: 0 auto;   /* Center the container */
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* For a 16:9 aspect ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-.iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;    /* Make iframe fill the container */
-    height: 100%;   /* Make iframe fill the container */
-    border: 0;      /* Remove default iframe border */
-    border-radius: 8px; /* Added this back from your inline style */
-}
-
-.upcoming-work-section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #eef4ff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-
-.upcoming-work-section h2 {
-    text-align: left; 
-    color: var(--accent-color); 
-    margin-bottom: 20px; 
-}
-
-.upcoming-work-section .upcoming-media {
-    text-align: center; /* Keep centering */
-}
-
-/* Control spacing below the video container by adding margin-top to the paragraph */
-.upcoming-work-section .work-description {
-    /* Keep existing styles */
-    margin-bottom: 15px; 
-    /* Add a margin-top to create space between the video and description */
-    margin-top: 10px; /* Adjust this value (e.g., 5px, 10px, 15px) to get the desired space */
-}
-
+        @media (max-width: 380px) {
+            .tab {
+                padding: 6px 8px;
+                font-size: 0.75rem;
+                margin: 1px;
+                min-width: 50px;
+            }
+            
+            .youtube-tab {
+                padding: 6px 8px;
+                padding-left: 20px;
+                font-size: 0.75rem;
+            }
+            
+            .youtube-tab::before {
+                left: 5px;
+                font-size: 12px;
+            }
+        }
     </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3EF01R2111"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3EF01R2111');
-</script>
-
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EF01R2111"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-3EF01R2111');
+    </script>
 </head>
 
-
-
 <body>
-
-<div class="music-player">
-    <audio id="background-music">
-        <!-- Your tracks will be loaded here via JavaScript -->
-    </audio>
-    <div class="music-controls">
-        <button id="prev-track" class="control-btn"⏮️</button>
-        <button id="music-toggle" class="play-btn">
-            <span class="music-icon">▶️</span>
-        </button>
-        <button id="next-track" class="control-btn">⏭️</button>
-        <button id="shuffle-toggle" class="control-btn">🔀</button>
-        <span id="track-name" class="track-info">Select a track</span>
-    </div>
-</div>
-
-    <header>
-     <!-- Background carousel that sits behind everything -->
-    <div class="header-bg-carousel">
-        <!-- We'll use a continuous strip of images instead of individual slides -->
-        <div class="image-strip">
-            <!-- Images will be added here dynamically -->
+    <!-- Music Player -->
+    <div class="music-player">
+        <audio id="background-music"></audio>
+        <div class="music-controls">
+            <button id="prev-track" class="control-btn">⏮️</button>
+            <button id="music-toggle" class="play-btn">
+                <span class="music-icon">▶️</span>
+            </button>
+            <button id="next-track" class="control-btn">⏭️</button>
+            <button id="shuffle-toggle" class="control-btn">🔀</button>
+            <span id="track-name" class="track-info">Select a track</span>
         </div>
     </div>
-    
-    <!-- Overlay with a semi-transparent background to ensure text readability -->
-    <div class="header-overlay"></div>
-    
-    <!-- Header content remains unchanged -->
-    <div class="header-content">
-        <img src="logo.jpg" alt="Xiao Zhan" class="profile-img" id="profile-img">
-        <h1>Screen Arts of Xiao Zhan</h1>
-        <p class="footer">Collection of dramas, movies, and shows</p>
-        <p class="footer">Also welcome to visit:</p>        
-        <div class="footer-links">
+
+    <!-- Header -->
+    <header>
+        <div class="header-bg-carousel">
+            <div class="image-strip"></div>
+        </div>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+            <img src="logo.jpg" alt="Xiao Zhan" class="profile-img" id="profile-img">
+            <h1>Screen Arts of Xiao Zhan</h1>
+            <p class="footer">Collection of dramas, movies, and shows</p>
+            <p class="footer">Also welcome to visit:</p>        
+            <div class="footer-links">
                 <a href="https://canadaxfx.github.io/xiaozhan/" target="_blank" class="footer-link">XZ Social Media</a>
                 <a href="https://www.youtube.com/@CanadaXFX" target="_blank" class="footer-link">CanadaXFX on YouTube</a>
+            </div>
         </div>
-
-    </div>
-
     </header>
     
-<!-- =============== SEARCH BAR =============== -->
+    <!-- Search Bar -->
     <div class="search-container">
-   	    <input type="text" id="search-input" placeholder="Search by title, role, year..." />
-   	    <button id="search-button">Search</button>
-            <button id="clear-search">Clear</button>
-            <div id="search-results-count"></div>
+        <input type="text" id="search-input" placeholder="Search by title, role, year..." />
+        <button id="search-button">Search</button>
+        <button id="clear-search">Clear</button>
+        <div id="search-results-count"></div>
     </div>
 
     <div class="container">
+        <!-- Category Tabs -->
         <div class="category-tabs">
             <div class="tab active" data-section="all">All Works<br>全部演出</div>
             <div class="tab" data-section="dramas">TV Dramas<br>剧集</div>
@@ -868,12 +729,13 @@
             <div class="tab" data-section="stage performances">Stages<br>舞台</div>
             <div class="tab" data-section="variety">Variety Shows<br>综艺</div>
             <div class="tab youtube-tab">YouTube<br>聚合站</div>
-
         </div>
+        
+        <!-- ALL YOUR ORIGINAL CONTENT SECTIONS GO HERE -->
+        <!-- I'm preserving all your original work items exactly as they were -->
         
         <div id="all" class="content-section active">
             <h2>All Works</h2>            
-
 
             <div class="work-item">
                 <div class="work-year">2025-05-25</div>
@@ -1920,10 +1782,9 @@
          </div>
 <!-- =============== End of All Works Section =============== -->
 
+
         <div id="dramas" class="content-section">
             <h2>TV Dramas</h2>
-
-
             <div class="work-item">
                 <div class="work-year">2025-05-18</div>
                 <h3 class="work-title">Legend of Zang Hai &nbsp; 藏海传</h3>
@@ -2121,10 +1982,8 @@
 
 <!-- =============== End of Dramas =============== -->
 
-
         <div id="movies" class="content-section">
             <h2>Movies</h2>
-
             <div class="work-item">
                 <div class="work-year">2025-01-29</div>
                 <h3 class="work-title">Legends of the Condor Heroes: The Gallants &nbsp; 射雕英雄传：侠之大者</h3>
@@ -2159,11 +2018,8 @@
 
 <!-- =============== End of Movies =============== -->
 
-
         <div id="stage performances" class="content-section">
             <h2>Stage Performances</h2>
- 
-
             <div class="work-item">
                 <div class="work-year">2025-01-29</div>
                 <h3 class="work-title">Beijing Spring Festival Gala &nbsp; 北京春晚舞台：灯塔</h3>
@@ -2583,12 +2439,9 @@
 
 
 <!-- =============== End of Stage Performances =============== -->
-  
+
         <div id="variety" class="content-section">
             <h2>Variety Shows</h2>
-
-
-  
             <div class="work-item">
                 <div class="work-year">Updated by XZ.Studio</div>
                 <h3 class="work-title">Xiao Zhan Studio on YouTube &nbsp; 肖战工作室</h3>
@@ -2998,650 +2851,486 @@
 
 <!-- =============== End of Variety Shows =============== -->
     </div>
- 
-<div class="container">
-    <div class="work-item" style="text-align: center; margin-bottom: 40px;">
-        <h3 class="work-title">Connect with Xiao Zhan on Social Media</h3>
-        <p class="work-description">Follow Xiao Zhan's latest updates and activities on various social media platforms.</p>
-        <div style="margin-top: 20px;">
-            <a href="https://canadaxfx.github.io/xiaozhan/" target="_blank" class="platform-link" style="font-size: 1 rem; padding: 10px 20px;">Visit Xiao Zhan Social Media Hub</a>
+
+    <!-- Social Media Section -->
+    <div class="container">
+        <div class="work-item" style="text-align: center; margin-bottom: 40px;">
+            <h3 class="work-title">Connect with Xiao Zhan on Social Media</h3>
+            <p class="work-description">Follow Xiao Zhan's latest updates and activities on various social media platforms.</p>
+            <div style="margin-top: 20px;">
+                <a href="https://canadaxfx.github.io/xiaozhan/" target="_blank" class="platform-link" style="font-size: 1rem; padding: 10px 20px;">Visit Xiao Zhan Social Media Hub</a>
+            </div>
         </div>
     </div>
-</div>
 
-   
-    <!-- =============== CONTACT SECTION =============== -->
-<div class="container">
-    <div class="contact-section" id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <form action="https://formsubmit.co/yvonzh@gmail.com" method="POST">
-            <!-- Anti-spam honeypot field -->
-            <input type="text" name="_honey" style="display:none">
-            
-            <!-- Disable captcha -->
-            <!--<input type="hidden" name="_captcha" value="false"> -->
-            
-            <!-- Redirect after submission -->
-            <input type="hidden" name="_next" value="https://canadaxfx.github.io/xiaozhan/">
-            
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Your Email (Optional) </label>
-                <input type="email" id="email" name="email" >
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-    </div>
-</div>
-
-<footer class="site-footer">
+    <!-- Contact Section -->
     <div class="container">
-        <div class="footer-content">
-             <div class="footer-links">
-                <a href="https://canadaxfx.github.io/xiaozhan/" target="_blank" class="footer-link">XZ Social Media</a>
-                <a href="https://canadaxfx.github.io/XZworks/index.html#contact" class="footer-link">Contact Us</a>
+        <div class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <form action="https://formsubmit.co/yvonzh@gmail.com" method="POST">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="https://canadaxfx.github.io/xiaozhan/">
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email (Optional) </label>
+                    <input type="email" id="email" name="email" >
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
 
-            </div>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://canadaxfx.github.io/xiaozhan/" target="_blank" class="footer-link">XZ Social Media</a>
+                    <a href="https://canadaxfx.github.io/XZworks/index.html#contact" class="footer-link">Contact Us</a>
+                </div>
 
-
-            <div class="copyright-text">
-                <ul>
-                    <li>This fan-made website by CanadaXFX is created for personal and non-commercial use only.</li>
-                    <li>All images, videos, and content related to Xiao Zhan belong to their respective copyright owners.</li>
-                    <li>The original content, design, and code of this website may not be reproduced, distributed, or used without explicit permission.</li>
-                    <li>Last updated September 2025 ©CanadaXFX.</li>
-                </ul>
-            </div>
-            <div class="copyright-notice">
-                <p><a href="#" id="terms-toggle">See Terms of Use</a></p>
-                <div id="terms-content" style="display: none;">
-                    <p><strong>Terms of Use:</strong></p>
+                <div class="copyright-text">
                     <ul>
-                        <li>The content of this website is for personal, non-commercial viewing only.</li>
-                        <li>Content may not be copied, reproduced, republished, uploaded, posted, transmitted, or distributed in any way without prior written consent.</li>
-                        <li>Modification of materials on this website is prohibited.</li>
-                        <li>This website is provided "as is" without warranties of any kind.</li>
-                        <li>Links to this website are permitted, but framing or mirroring is prohibited.</li>
+                        <li>This fan-made website by CanadaXFX is created for personal and non-commercial use only.</li>
+                        <li>All images, videos, and content related to Xiao Zhan belong to their respective copyright owners.</li>
+                        <li>The original content, design, and code of this website may not be reproduced, distributed, or used without explicit permission.</li>
+                        <li>Last updated September 2025 ©CanadaXFX.</li>
                     </ul>
+                </div>
+                <div class="copyright-notice">
+                    <p><a href="#" id="terms-toggle">See Terms of Use</a></p>
+                    <div id="terms-content" style="display: none;">
+                        <p><strong>Terms of Use:</strong></p>
+                        <ul>
+                            <li>The content of this website is for personal, non-commercial viewing only.</li>
+                            <li>Content may not be copied, reproduced, republished, uploaded, posted, transmitted, or distributed in any way without prior written consent.</li>
+                            <li>Modification of materials on this website is prohibited.</li>
+                            <li>This website is provided "as is" without warranties of any kind.</li>
+                            <li>Links to this website are permitted, but framing or mirroring is prohibited.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top" title="Back to Top">
+        <span>&#10514;</span>
     </div>
-</footer>    
-    
+
+    <!-- CONSOLIDATED JAVASCRIPT -->
     <script>
-        // Tab functionality
-        const tabs = document.querySelectorAll('.tab');
-        const contentSections = document.querySelectorAll('.content-section');
-        
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                // Remove active class from all tabs and content sections
+        document.addEventListener('DOMContentLoaded', function() {
+            // =============== DOM ELEMENTS ===============
+            const tabs = document.querySelectorAll('.tab');
+            const contentSections = document.querySelectorAll('.content-section');
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+            const clearSearchButton = document.getElementById('clear-search');
+            const searchResultsCount = document.getElementById('search-results-count');
+            const allWorkItems = document.querySelectorAll('.work-item');
+            const backToTopButton = document.getElementById('back-to-top');
+
+            // =============== TAB FUNCTIONALITY ===============
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    if (tab.classList.contains('youtube-tab')) {
+                        window.location.href = 'https://canadaxfx.github.io/XZYT/';
+                        return;
+                    }
+
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contentSections.forEach(section => section.classList.remove('active'));
+                    
+                    tab.classList.add('active');
+                    
+                    const sectionId = tab.getAttribute('data-section');
+                    document.getElementById(sectionId).classList.add('active');
+                    
+                    clearSearch();
+                });
+            });
+
+            // =============== SEARCH FUNCTIONALITY ===============
+            const performSearch = () => {
+                const searchTerm = searchInput.value.toLowerCase().trim();
+                
+                if (searchTerm === '') {
+                    allWorkItems.forEach(item => {
+                        item.classList.remove('hidden');
+                        removeHighlights(item);
+                    });
+                    searchResultsCount.textContent = '';
+                    return;
+                }
+                
+                let matchCount = 0;
+                
+                allWorkItems.forEach(item => {
+                    const title = item.querySelector('.work-title')?.textContent.toLowerCase() || '';
+                    const year = item.querySelector('.work-year')?.textContent.toLowerCase() || '';
+                    const role = item.querySelector('.work-role')?.textContent.toLowerCase() || '';
+                    const description = item.querySelector('.work-description')?.textContent.toLowerCase() || '';
+                    
+                    const isMatch = title.includes(searchTerm) || 
+                                    year.includes(searchTerm) || 
+                                    role.includes(searchTerm) || 
+                                    description.includes(searchTerm);
+                    
+                    if (isMatch) {
+                        item.classList.remove('hidden');
+                        matchCount++;
+                        
+                        removeHighlights(item);
+                        highlightText(item.querySelector('.work-title'), searchTerm);
+                        highlightText(item.querySelector('.work-year'), searchTerm);
+                        highlightText(item.querySelector('.work-role'), searchTerm);
+                        highlightText(item.querySelector('.work-description'), searchTerm);
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+                
+                // Show "All Works" section for search results
                 tabs.forEach(t => t.classList.remove('active'));
                 contentSections.forEach(section => section.classList.remove('active'));
                 
-                // Add active class to clicked tab
-                tab.classList.add('active');
+                const allTab = document.querySelector('[data-section="all"]');
+                allTab.classList.add('active');
+                document.getElementById('all').classList.add('active');
                 
-                // Show corresponding content section
-                const sectionId = tab.getAttribute('data-section');
-                document.getElementById(sectionId).classList.add('active');
-            });
-        });
-        
-// =============== SEARCH FUNCTIONALITY ===============
-const searchInput = document.getElementById('search-input');
-const searchButton = document.getElementById('search-button');
-const clearSearchButton = document.getElementById('clear-search');
-const searchResultsCount = document.getElementById('search-results-count');
-const allWorkItems = document.querySelectorAll('.work-item');
+                searchResultsCount.textContent = `Found ${matchCount} result${matchCount !== 1 ? 's' : ''}`;
+            };
 
-// Function to perform search
-const performSearch = () => {
-    const searchTerm = searchInput.value.toLowerCase().trim();
-    
-    // If search term is empty, show all items
-    if (searchTerm === '') {
-        allWorkItems.forEach(item => {
-            item.classList.remove('hidden');
-            
-            // Remove any existing highlights
-            const highlightedElements = item.querySelectorAll('.highlight');
-            highlightedElements.forEach(el => {
-                const parent = el.parentNode;
-                parent.replaceChild(document.createTextNode(el.textContent), el);
-                parent.normalize();
-            });
-        });
-        
-        searchResultsCount.textContent = '';
-        return;
-    }
-    
-    let matchCount = 0;
-    
-    // Loop through all work items
-    allWorkItems.forEach(item => {
-        const title = item.querySelector('.work-title').textContent.toLowerCase();
-        const year = item.querySelector('.work-year').textContent.toLowerCase();
-        const role = item.querySelector('.work-role').textContent.toLowerCase();
-        const description = item.querySelector('.work-description').textContent.toLowerCase();
-        
-        // Check if any field contains the search term
-        const isMatch = title.includes(searchTerm) || 
-                        year.includes(searchTerm) || 
-                        role.includes(searchTerm) || 
-                        description.includes(searchTerm);
-        
-        if (isMatch) {
-            item.classList.remove('hidden');
-            matchCount++;
-            
-            // Remove any existing highlights first
-            const highlightedElements = item.querySelectorAll('.highlight');
-            highlightedElements.forEach(el => {
-                const parent = el.parentNode;
-                parent.replaceChild(document.createTextNode(el.textContent), el);
-                parent.normalize();
-            });
-            
-            // Add highlights to matching text
-            highlightText(item.querySelector('.work-title'), searchTerm);
-            highlightText(item.querySelector('.work-year'), searchTerm);
-            highlightText(item.querySelector('.work-role'), searchTerm);
-            highlightText(item.querySelector('.work-description'), searchTerm);
-        } else {
-            item.classList.add('hidden');
-        }
-    });
-    
-    // Show the tab that contains "All Works" to see all search results
-    tabs.forEach(t => t.classList.remove('active'));
-    contentSections.forEach(section => section.classList.remove('active'));
-    
-    const allTab = document.querySelector('[data-section="all"]');
-    allTab.classList.add('active');
-    document.getElementById('all').classList.add('active');
-    
-    // Update results count
-    searchResultsCount.textContent = `Found ${matchCount} result${matchCount !== 1 ? 's' : ''}`;
-};
-
-// Function to highlight matching text
-const highlightText = (element, searchTerm) => {
-    if (!element) return;
-    
-    const content = element.innerHTML;
-    const pattern = new RegExp(searchTerm, 'gi');
-    
-    if (pattern.test(content)) {
-        const newContent = content.replace(pattern, match => `<span class="highlight">${match}</span>`);
-        element.innerHTML = newContent;
-    }
-};
-
-// Clear search results and show all items
-const clearSearch = () => {
-    searchInput.value = '';
-    searchResultsCount.textContent = '';
-    
-    allWorkItems.forEach(item => {
-        item.classList.remove('hidden');
-        
-        // Remove any existing highlights
-        const highlightedElements = item.querySelectorAll('.highlight');
-        highlightedElements.forEach(el => {
-            const parent = el.parentNode;
-            parent.replaceChild(document.createTextNode(el.textContent), el);
-            parent.normalize();
-        });
-    });
-};
-
-// Add event listeners for search
-searchButton.addEventListener('click', performSearch);
-clearSearchButton.addEventListener('click', clearSearch);
-
-// Search on Enter key
-searchInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        performSearch();
-    }
-});
-
-// Search as you type (uncomment if desired)
-// searchInput.addEventListener('input', performSearch);   
-            
-    </script>
-
-<!-- Add this JavaScript code right before the closing </body> tag -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Define your playlist with track names and file paths
-        const originalPlaylist = [
-            { name: "XZ-都一样", file: "都一样.mp3" },
-            { name: "XZ-灯塔", file: "灯塔.mp3" },
-            { name: "XZ-漂流", file: "漂流.mp3" },
-            { name: "XZ-不要回头", file: "不要回头.mp3" },
-            { name: "XZ-如愿", file: "如愿.mp3" },
-            { name: "XZ-同路人", file: "同路人.mp3" },
-            { name: "XZ-余年", file: "余年.mp3" },
-            { name: "XZ-晚安", file: "晚安.mp3" },
-            // Add more tracks as needed
-        ];
-        
-        // Create a working copy of the playlist that we can shuffle
-        let playlist = [...originalPlaylist];
-        
-        const audioElement = document.getElementById('background-music');
-        const musicToggle = document.getElementById('music-toggle');
-        const prevButton = document.getElementById('prev-track');
-        const nextButton = document.getElementById('next-track');
-        const shuffleButton = document.getElementById('shuffle-toggle');
-        const trackNameDisplay = document.getElementById('track-name');
-        
-        let currentTrackIndex = 0;
-        let isPlaying = false;
-        let isShuffled = false;
-        
-        // Initialize the first track
-        function loadTrack(index) {
-            const track = playlist[index];
-            
-            // Log to help debug
-            console.log("Loading track:", track.name, "File path:", track.file);
-            
-            // Set the source and load the audio
-            audioElement.src = track.file;
-            audioElement.load(); // Explicitly load the audio file
-            
-            trackNameDisplay.textContent = track.name;
-            trackNameDisplay.title = track.name; // For tooltip on hover
-            
-            // If music was playing before changing tracks, start playing the new track
-            if (isPlaying) {
-                const playPromise = audioElement.play();
+            const highlightText = (element, searchTerm) => {
+                if (!element) return;
                 
-                // Handle play promise properly
-                if (playPromise !== undefined) {
-                    playPromise.then(() => {
-                        // Playback started successfully
-                        console.log("Playback started for:", track.name);
-                    }).catch(e => {
-                        console.error('Playback prevented:', e);
-                        isPlaying = false;
-                        updatePlayButton();
-                    });
+                const content = element.innerHTML;
+                const pattern = new RegExp(searchTerm, 'gi');
+                
+                if (pattern.test(content)) {
+                    const newContent = content.replace(pattern, match => `<span class="highlight">${match}</span>`);
+                    element.innerHTML = newContent;
+                }
+            };
+
+            const removeHighlights = (item) => {
+                const highlightedElements = item.querySelectorAll('.highlight');
+                highlightedElements.forEach(el => {
+                    const parent = el.parentNode;
+                    parent.replaceChild(document.createTextNode(el.textContent), el);
+                    parent.normalize();
+                });
+            };
+
+            const clearSearch = () => {
+                searchInput.value = '';
+                searchResultsCount.textContent = '';
+                
+                allWorkItems.forEach(item => {
+                    item.classList.remove('hidden');
+                    removeHighlights(item);
+                });
+            };
+
+            // Search event listeners
+            searchButton.addEventListener('click', performSearch);
+            clearSearchButton.addEventListener('click', clearSearch);
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+
+            // =============== BACK TO TOP FUNCTIONALITY ===============
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // =============== TERMS TOGGLE ===============
+            document.getElementById('terms-toggle').addEventListener('click', function(e) {
+                e.preventDefault();
+                var termsContent = document.getElementById('terms-content');
+                if (termsContent.style.display === 'none') {
+                    termsContent.style.display = 'block';
+                    this.textContent = 'Hide Terms of Use';
+                } else {
+                    termsContent.style.display = 'none';
+                    this.textContent = 'See Terms of Use';
+                }
+            });
+
+            // =============== MUSIC PLAYER ===============
+            const originalPlaylist = [
+                { name: "XZ-都一样", file: "都一样.mp3" },
+                { name: "XZ-灯塔", file: "灯塔.mp3" },
+                { name: "XZ-漂流", file: "漂流.mp3" },
+                { name: "XZ-不要回头", file: "不要回头.mp3" },
+                { name: "XZ-如愿", file: "如愿.mp3" },
+                { name: "XZ-同路人", file: "同路人.mp3" },
+                { name: "XZ-余年", file: "余年.mp3" },
+                { name: "XZ-晚安", file: "晚安.mp3" }
+            ];
+            
+            let playlist = [...originalPlaylist];
+            const audioElement = document.getElementById('background-music');
+            const musicToggle = document.getElementById('music-toggle');
+            const prevButton = document.getElementById('prev-track');
+            const nextButton = document.getElementById('next-track');
+            const shuffleButton = document.getElementById('shuffle-toggle');
+            const trackNameDisplay = document.getElementById('track-name');
+            
+            let currentTrackIndex = 0;
+            let isPlaying = false;
+            let isShuffled = false;
+            
+            function loadTrack(index) {
+                const track = playlist[index];
+                console.log("Loading track:", track.name, "File path:", track.file);
+                
+                audioElement.src = track.file;
+                audioElement.load();
+                trackNameDisplay.textContent = track.name;
+                trackNameDisplay.title = track.name;
+                
+                if (isPlaying) {
+                    const playPromise = audioElement.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            console.log("Playback started for:", track.name);
+                        }).catch(e => {
+                            console.error('Playback prevented:', e);
+                            isPlaying = false;
+                            updatePlayButton();
+                        });
+                    }
                 }
             }
-        }
-        
-        // Update the play/pause button appearance
-        function updatePlayButton() {
-            musicToggle.innerHTML = isPlaying ? 
-                '<span class="music-icon">⏸️</span>' : 
-                '<span class="music-icon">▶️</span>';
-        }
-        
-
-// Make sure all buttons use the same pattern for their content
-prevButton.innerHTML = '<span class="music-icon">⏮️</span>'; // Remove the emoji variation selector if present
-musicToggle.innerHTML = '<span class="music-icon">▶️</span>';
-nextButton.innerHTML = '<span class="music-icon">⏭️</span>';
-
-
-        // Update shuffle button appearance
-        function updateShuffleButton() {
-            shuffleButton.style.backgroundColor = isShuffled ? 
-                '#1a252f' : 'var(--primary-color)';
-        }
-        
-        // Function to shuffle array using Fisher-Yates algorithm
-        function shuffleArray(array) {
-            let currentIndex = array.length;
-            let temporaryValue, randomIndex;
             
-            // While there remain elements to shuffle
-            while (0 !== currentIndex) {
-                // Pick a remaining element
-                randomIndex = Math.floor(Math.random() * currentIndex);
-                currentIndex -= 1;
+            function updatePlayButton() {
+                musicToggle.innerHTML = isPlaying ? 
+                    '<span class="music-icon">⏸️</span>' : 
+                    '<span class="music-icon">▶️</span>';
+            }
+
+            function updateShuffleButton() {
+                shuffleButton.style.backgroundColor = isShuffled ? 
+                    '#1a252f' : 'var(--primary-color)';
+            }
+            
+            function shuffleArray(array) {
+                let currentIndex = array.length;
+                let temporaryValue, randomIndex;
                 
-                // Swap it with the current element
-                temporaryValue = array[currentIndex];
-                array[currentIndex] = array[randomIndex];
-                array[randomIndex] = temporaryValue;
+                while (0 !== currentIndex) {
+                    randomIndex = Math.floor(Math.random() * currentIndex);
+                    currentIndex -= 1;
+                    temporaryValue = array[currentIndex];
+                    array[currentIndex] = array[randomIndex];
+                    array[randomIndex] = temporaryValue;
+                }
+                
+                return array;
             }
             
-            return array;
-        }
-        
-        // Function to toggle shuffle mode
-        function toggleShuffle() {
-            const currentTrack = playlist[currentTrackIndex];
-            
-            if (isShuffled) {
-                // Turn off shuffle - restore original playlist order
-                playlist = [...originalPlaylist];
-                isShuffled = false;
-            } else {
-                // Turn on shuffle - randomize the playlist
-                playlist = shuffleArray([...originalPlaylist]);
-                isShuffled = true;
+            function toggleShuffle() {
+                const currentTrack = playlist[currentTrackIndex];
+                
+                if (isShuffled) {
+                    playlist = [...originalPlaylist];
+                    isShuffled = false;
+                } else {
+                    playlist = shuffleArray([...originalPlaylist]);
+                    isShuffled = true;
+                }
+                
+                currentTrackIndex = playlist.findIndex(track => 
+                    track.file === currentTrack.file);
+                
+                if (currentTrackIndex === -1) currentTrackIndex = 0;
+                
+                updateShuffleButton();
             }
             
-            // Find the current track in the new playlist order
-            currentTrackIndex = playlist.findIndex(track => 
-                track.file === currentTrack.file);
+            function toggleMusic() {
+                if (isPlaying) {
+                    audioElement.pause();
+                } else {
+                    const playPromise = audioElement.play();
+                    if (playPromise !== undefined) {
+                        playPromise.catch(e => {
+                            console.error('Playback prevented:', e);
+                        });
+                    }
+                }
+                isPlaying = !isPlaying;
+                updatePlayButton();
+            }
             
-            // If somehow the track wasn't found, reset to first track
-            if (currentTrackIndex === -1) currentTrackIndex = 0;
+            function playPreviousTrack() {
+                currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
+                loadTrack(currentTrackIndex);
+            }
             
+            function playNextTrack() {
+                currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
+                loadTrack(currentTrackIndex);
+            }
+            
+            // Music player event listeners
+            musicToggle.addEventListener('click', toggleMusic);
+            prevButton.addEventListener('click', playPreviousTrack);
+            nextButton.addEventListener('click', playNextTrack);
+            shuffleButton.addEventListener('click', toggleShuffle);
+            
+            audioElement.addEventListener('ended', function() {
+                console.log("Track ended, playing next");
+                playNextTrack();
+            });
+            
+            audioElement.addEventListener('error', function(e) {
+                console.error('Audio loading error:', e);
+                console.error('Failed to load:', playlist[currentTrackIndex].file);
+            });
+            
+            // Initialize music player
+            loadTrack(currentTrackIndex);
+            audioElement.volume = 0.5;
             updateShuffleButton();
-        }
-        
-        // Function to toggle music play/pause
-        function toggleMusic() {
-            if (isPlaying) {
-                audioElement.pause();
-            } else {
-                const playPromise = audioElement.play();
+
+            // =============== BACKGROUND CAROUSEL ===============
+            const imagePaths = [
+                'xiao-zhan1-1.jpg', 'xiao-zhan1-2.jpg', 'xiao-zhan1-3.jpg', 'xiao-zhan1-4.jpg',
+                'xiao-zhan1-5.jpg', 'xiao-zhan1-6.jpg', 'xiao-zhan1-7.jpg', 'xiao-zhan1-8.jpg',
+                'xiao-zhan1-9.jpg', 'xiao-zhan1-10.jpg', 'xiao-zhan1-11.jpg', 'xiao-zhan1-12.jpg',
+                'xiao-zhan1-13.jpg', 'xiao-zhan1-14.jpg', 'xiao-zhan1-15.jpg', 'xiao-zhan1-16.jpg',
+                'xiao-zhan1-17.jpg', 'xiao-zhan1-18.jpg', 'xiao-zhan2-1.jpg', 'xiao-zhan2-2.jpg',
+                'xiao-zhan2-3.jpg', 'xiao-zhan2-4.jpg', 'xiao-zhan3-1.jpg'
+            ];
+            
+            const imageStrip = document.querySelector('.image-strip');
+            const carouselContainer = document.querySelector('.header-bg-carousel');
+            
+            if (!imageStrip || !carouselContainer) {
+                console.error('Carousel elements not found');
+                return;
+            }
+
+            imageStrip.innerHTML = '';
+            
+            function createImageSet() {
+                const fragment = document.createDocumentFragment();
+                imagePaths.forEach((path, index) => {
+                    const img = document.createElement('img');
+                    img.src = path;
+                    img.alt = `Xiao Zhan Photo ${index + 1}`;
+                    img.className = 'carousel-image';
+                    img.loading = 'eager';
+                    fragment.appendChild(img);
+                });
+                return fragment;
+            }
+            
+            imageStrip.appendChild(createImageSet());
+            imageStrip.appendChild(createImageSet());
+            imageStrip.appendChild(createImageSet());
+            imageStrip.appendChild(createImageSet());
+            
+            let animationId = null;
+            let isPaused = false;
+            let startTime = null;
+            let currentPosition = 0;
+            
+            function animateCarousel(timestamp) {
+                if (isPaused) {
+                    animationId = requestAnimationFrame(animateCarousel);
+                    return;
+                }
                 
-                if (playPromise !== undefined) {
-                    playPromise.catch(e => {
-                        console.error('Playback prevented:', e);
-                    });
+                if (!startTime) startTime = timestamp;
+                
+                const elapsed = timestamp - startTime;
+                const singleSetWidth = imageStrip.scrollWidth / 4;
+                const scrollDuration = 30000;
+                
+                currentPosition = -(elapsed * singleSetWidth / scrollDuration);
+                imageStrip.style.transform = `translate3d(${currentPosition}px, 0, 0)`;
+                
+                if (Math.abs(currentPosition) >= singleSetWidth) {
+                    startTime = timestamp;
+                    currentPosition = 0;
+                    imageStrip.style.transform = `translate3d(0, 0, 0)`;
                 }
+                
+                animationId = requestAnimationFrame(animateCarousel);
             }
-            isPlaying = !isPlaying;
-            updatePlayButton();
-        }
-        
-        // Function to play previous track
-        function playPreviousTrack() {
-            currentTrackIndex = (currentTrackIndex - 1 + playlist.length) % playlist.length;
-            loadTrack(currentTrackIndex);
-        }
-        
-        // Function to play next track
-        function playNextTrack() {
-            currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
-            loadTrack(currentTrackIndex);
-        }
-        
-        // Add event listeners
-        musicToggle.addEventListener('click', toggleMusic);
-        prevButton.addEventListener('click', playPreviousTrack);
-        nextButton.addEventListener('click', playNextTrack);
-        shuffleButton.addEventListener('click', toggleShuffle);
-        
-        // When current track ends, play the next one
-        audioElement.addEventListener('ended', function() {
-            console.log("Track ended, playing next");
-            playNextTrack();
-        });
-        
-        // Add error handling for audio loading issues
-        audioElement.addEventListener('error', function(e) {
-            console.error('Audio loading error:', e);
-            console.error('Failed to load:', playlist[currentTrackIndex].file);
-            // Optionally try the next track
-            // playNextTrack();
-        });
-        
-        // Initialize the first track
-        loadTrack(currentTrackIndex);
-        
-        // Set volume
-        audioElement.volume = 0.5; // Set volume to 50%
-        
-        // Initialize shuffle button appearance
-        updateShuffleButton();
-    });
-
-</script>
-
-
-<!-- Replace your existing carousel JavaScript with this perfected version -->
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Array of image paths for the background carousel
-    const imagePaths = [
-        'xiao-zhan1-1.jpg',
-        'xiao-zhan1-2.jpg',
-        'xiao-zhan1-3.jpg',
-        'xiao-zhan1-4.jpg',
-        'xiao-zhan1-5.jpg',
-	'xiao-zhan1-6.jpg',
-        'xiao-zhan1-7.jpg',
-        'xiao-zhan1-8.jpg',
-        'xiao-zhan1-9.jpg',
-        'xiao-zhan1-10.jpg',
-        'xiao-zhan1-11.jpg',
-        'xiao-zhan1-12.jpg',
-        'xiao-zhan1-13.jpg',
-        'xiao-zhan1-14.jpg',
-	'xiao-zhan1-15.jpg',
-        'xiao-zhan1-16.jpg',
-        'xiao-zhan1-17.jpg',
-        'xiao-zhan1-18.jpg',
-        'xiao-zhan2-1.jpg',
-        'xiao-zhan2-2.jpg',
-	'xiao-zhan2-3.jpg',
-        'xiao-zhan2-4.jpg',
-        'xiao-zhan3-1.jpg'
-
-    ];
-    
-    // Get the image strip container
-    const imageStrip = document.querySelector('.image-strip');
-    const carouselContainer = document.querySelector('.header-bg-carousel');
-    
-    if (!imageStrip || !carouselContainer) {
-        console.error('Carousel elements not found');
-        return;
-    }
-
-    // Clear any existing content
-    imageStrip.innerHTML = '';
-    
-    // Function to create a complete clone of all images
-    function createImageSet() {
-        const fragment = document.createDocumentFragment();
-        imagePaths.forEach((path, index) => {
-            const img = document.createElement('img');
-            img.src = path;
-            img.alt = `Xiao Zhan Photo ${index + 1}`;
-            img.className = 'carousel-image';
-            img.loading = 'eager'; // Prioritize loading
-            fragment.appendChild(img);
-        });
-        return fragment;
-    }
-    
-    // Get container dimensions for calculations
-    const containerWidth = carouselContainer.clientWidth;
-    
-    // Add multiple sets of images (more than needed for safety)
-    imageStrip.appendChild(createImageSet());
-    imageStrip.appendChild(createImageSet());
-    imageStrip.appendChild(createImageSet());
-    imageStrip.appendChild(createImageSet()); // Extra set for absolute safety
-    
-    // Variables to track animation state
-    let animationId = null;
-    let isPaused = false;
-    let startTime = null;
-    let currentPosition = 0;
-    
-    // Pure JavaScript animation approach (more precise than CSS animations)
-    function animateCarousel(timestamp) {
-        if (isPaused) {
-            // If paused, just update startTime and continue the loop
-            animationId = requestAnimationFrame(animateCarousel);
-            return;
-        }
-        
-        if (!startTime) startTime = timestamp;
-        
-        // Calculate elapsed time
-        const elapsed = timestamp - startTime;
-        
-        // Get width of a single set
-        const singleSetWidth = imageStrip.scrollWidth / 4; // Four sets total
-        
-        // Calculate how long it should take to scroll through one set (in ms)
-        const scrollDuration = 30000; // 30 seconds to scroll through one set
-        
-        // Calculate new position
-        currentPosition = -(elapsed * singleSetWidth / scrollDuration);
-        
-        // Apply transform with hardware acceleration for smoothness
-        imageStrip.style.transform = `translate3d(${currentPosition}px, 0, 0)`;
-        
-        // If we've scrolled past the first set, reset to beginning
-        // We reset earlier than strictly necessary to ensure smoothness
-        if (Math.abs(currentPosition) >= singleSetWidth) {
-            // Reset time and position to create perfect loop
-            startTime = timestamp;
-            currentPosition = 0;
-            imageStrip.style.transform = `translate3d(0, 0, 0)`;
-        }
-        
-        // Continue animation loop
-        animationId = requestAnimationFrame(animateCarousel);
-    }
-    
-    // Preload all carousel images before starting animation
-    let imagesLoaded = 0;
-    const totalImages = imagePaths.length;
-    
-    function preloadImages() {
-        imagePaths.forEach(src => {
-            const img = new Image();
-            img.onload = () => {
-                imagesLoaded++;
-                if (imagesLoaded === totalImages) {
-                    // All images preloaded, now start animation
-                    animationId = requestAnimationFrame(animateCarousel);
-                    console.log('Carousel animation started');
-                }
-            };
-            img.onerror = () => {
-                console.error(`Failed to load image: ${src}`);
-                imagesLoaded++;
-                if (imagesLoaded === totalImages) {
-                    animationId = requestAnimationFrame(animateCarousel);
-                }
-            };
-            img.src = src;
-        });
-    }
-    
-    // Start preloading
-    preloadImages();
-    
-    // Pause animation when hovering over the header
-    document.querySelector('header').addEventListener('mouseenter', function() {
-        isPaused = true;
-    });
-    
-    // Resume animation when leaving the header
-    document.querySelector('header').addEventListener('mouseleave', function() {
-        isPaused = false;
-    });
-    
-    // Handle visibility changes (tab switching, etc.)
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
-            // Page is hidden, pause animation
-            isPaused = true;
-        } else {
-            // Page is visible again, resume animation
-            isPaused = false;
-        }
-    });
-    
-    // Handle window resize
-    window.addEventListener('resize', function() {
-        // Simply continue the animation - our calculation uses current width
-        // No special handling needed as we calculate position on each frame
-    });
-});
-
-
-
-// Add YouTube tab functionality
-document.addEventListener('DOMContentLoaded', function() {
-    const youtubeTab = document.querySelector('.youtube-tab');
-    
-    if (youtubeTab) {
-        youtubeTab.addEventListener('click', function() {
-            // Navigate to the xz-yt.html page
-            window.location.href = 'https://canadaxfx.github.io/XZYT/';
-        });
-    }
-});
-
-
-
-</script>
-
-<!-- Add this JavaScript code -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const backToTopButton = document.getElementById('back-to-top');
-        
-        // Show/hide the button based on scroll position
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) { // Show button after scrolling 300px
-                backToTopButton.classList.add('visible');
-            } else {
-                backToTopButton.classList.remove('visible');
+            
+            function preloadImages() {
+                let imagesLoaded = 0;
+                const totalImages = imagePaths.length;
+                
+                imagePaths.forEach(src => {
+                    const img = new Image();
+                    img.onload = () => {
+                        imagesLoaded++;
+                        if (imagesLoaded === totalImages) {
+                            animationId = requestAnimationFrame(animateCarousel);
+                            console.log('Carousel animation started');
+                        }
+                    };
+                    img.onerror = () => {
+                        console.error(`Failed to load image: ${src}`);
+                        imagesLoaded++;
+                        if (imagesLoaded === totalImages) {
+                            animationId = requestAnimationFrame(animateCarousel);
+                        }
+                    };
+                    img.src = src;
+                });
             }
-        });
-        
-        // Scroll to top when clicked
-        backToTopButton.addEventListener('click', function() {
-            // Smooth scroll to top
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
+            
+            preloadImages();
+            
+            document.querySelector('header').addEventListener('mouseenter', function() {
+                isPaused = true;
+            });
+            
+            document.querySelector('header').addEventListener('mouseleave', function() {
+                isPaused = false;
+            });
+            
+            document.addEventListener('visibilitychange', function() {
+                if (document.hidden) {
+                    isPaused = true;
+                } else {
+                    isPaused = false;
+                }
             });
         });
-    });
-</script>
-<!-- Add this simple JavaScript right before the closing </body> tag -->
-<script>
-    document.getElementById('terms-toggle').addEventListener('click', function(e) {
-        e.preventDefault();
-        var termsContent = document.getElementById('terms-content');
-        if (termsContent.style.display === 'none') {
-            termsContent.style.display = 'block';
-            this.textContent = 'Hide Terms of Use';
-        } else {
-            termsContent.style.display = 'none';
-            this.textContent = 'See Terms of Use';
-        }
-    });
-</script>
-
-
-<!-- Add this HTML code right before the closing </body> tag -->
-<div id="back-to-top" title="Back to Top">
-    <span>&#10514;</span>
-</div>
-
+    </script>
 </body>
 </html>
