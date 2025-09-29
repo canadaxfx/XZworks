@@ -6,81 +6,42 @@
       "title": "The Greater Bay Area Film Concert 2025 - Music All Night",
       "titleChinese": "2025 湾区升明月电影音乐晚会 - 整晚的音乐",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at The Greater Bay Area Film Concert 2025.",
       "platforms": [
-        {
-          "name": "YouTube(鳳凰衛視PhoenixTV)",
-          "url": "https://www.youtube.com/watch?v=g-foS_WUDoQ"
-        },
-        {
-          "name": "YouTube(China Movie Channel)",
-          "url": "https://www.youtube.com/watch?v=14wfu32vqq8"
-        },
-        {
-          "name": "YouTube(中国音乐电视 Music TV)",
-          "url": "https://www.youtube.com/watch?v=eSt36KYYTS8"
-        },
-        {
-          "name": "Bilibili(中国电影报道)",
-          "url": "https://www.bilibili.com/video/BV1WvnZzTEgS/"
-        },
-        {
-          "name": "Facebook(鳳凰衛視PhoenixTV)",
-          "url": "https://www.facebook.com/PhoenixTVHK/videos/%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E8%82%96%E6%88%B0%E4%BE%86%E5%95%A6%E7%B6%93%E5%85%B8%E6%96%B0%E5%94%B1%E8%82%96%E6%88%B0%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E6%99%9A%E6%9C%83%E6%BC%94%E7%B9%B9%E6%95%B4%E6%99%9A%E7%9A%84%E9%9F%B3%E6%A8%82/1349546320169426/"
-        }
+        {"name": "YouTube(凤凰卫视PhoenixTV)", "url": "https://www.youtube.com/watch?v=g-foS_WUDoQ"},
+        {"name": "YouTube(China Movie Channel)", "url": "https://www.youtube.com/watch?v=14wfu32vqq8"},
+        {"name": "YouTube(中国音乐电视 Music TV)", "url": "https://www.youtube.com/watch?v=eSt36KYYTS8"},
+        {"name": "Bilibili(中国电影报道)", "url": "https://www.bilibili.com/video/BV1WvnZzTEgS/"},
+        {"name": "Facebook(凤凰卫视PhoenixTV)", "url": "https://www.facebook.com/PhoenixTVHK/videos/灣區升明月肖戰來啦經典新唱肖戰灣區升明月晚會演繹整晚的音樂/1349546320169426/"}
       ]
     },
     {
       "id": "show-great-shows-zang-hai",
       "date": "2025-05-25",
       "title": "Show of Great Shows: Legend of Zang Hai",
-      "titleChinese": "剧说很好看完整版：藏海传",
+      "titleChinese": "剧说很好看完整版:藏海传",
       "role": "Zang Hai 藏海 (Lead)",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Behind-the-scenes and interviews on CCTV8.",
       "platforms": [
-        {
-          "name": "央视网",
-          "url": "https://tv.cctv.com/2025/05/26/VIDEE6hEE4AzMcB4ptpA45Ip250526.shtml?spm=C71355.PKONNECOndFh.EbIhsTzcTlpR.26"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=3PQPavKtF8I"
-        }
+        {"name": "央视网", "url": "https://tv.cctv.com/2025/05/26/VIDEE6hEE4AzMcB4ptpA45Ip250526.shtml?spm=C71355.PKONNECOndFh.EbIhsTzcTlpR.26"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=3PQPavKtF8I"}
       ]
     },
     {
       "id": "beijing-premiere-zang-hai",
       "date": "2025-05-23/24",
       "title": "Beijing Premiere: Legend of Zang Hai",
-      "titleChinese": "大戏看北京/媒体追剧团见面会：藏海传 1, 2",
+      "titleChinese": "大戏看北京/媒体追剧团见面会:藏海传 1, 2",
       "role": "Zang Hai 藏海 (Lead)",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Introduction and media events about Legend of Zang Hai on BRTV.",
       "platforms": [
-        {
-          "name": "BRTV-1",
-          "url": "https://item.btime.com/20cbkm4q00bom7db6isnqm4fobl"
-        },
-        {
-          "name": "YouTube-1",
-          "url": "https://www.youtube.com/watch?v=VrwsXrCKnhg"
-        },
-        {
-          "name": "BRTV-2",
-          "url": "https://item.btime.com/27f22k4c98cqm8m4jv7magfho5b"
-        },
-        {
-          "name": "YouTube-2",
-          "url": "https://www.youtube.com/watch?v=bgCwCFp78lU"
-        }
+        {"name": "BRTV-1", "url": "https://item.btime.com/20cbkm4q00bom7db6isnqm4fobl"},
+        {"name": "YouTube-1", "url": "https://www.youtube.com/watch?v=VrwsXrCKnhg"},
+        {"name": "BRTV-2", "url": "https://item.btime.com/27f22k4c98cqm8m4jv7magfho5b"},
+        {"name": "YouTube-2", "url": "https://www.youtube.com/watch?v=bgCwCFp78lU"}
       ]
     },
     {
@@ -89,39 +50,76 @@
       "title": "Interview Series about Legend of Zang Hai",
       "titleChinese": "藏海传媒体采访访谈合集",
       "role": "Zang Hai 藏海 (Lead)",
-      "category": [
-        "variety"
-      ],
-      "description": "Compilation of interviews from various media outlets including Xinhua News, People's Daily, CCTV8, Sina, Sohu, Baidu, YOUKU, SMG Entertainment, and BRTV.",
+      "category": ["variety"],
+      "description": "Compilation of interviews: 1.Xinhua News 新华网肖战  2.People's Daily New Media 人民日报新媒体肖战  3.CCTV8 星推荐肖战  4.CCTV8 & CCTV News 剧说很好看肖战  5.CCTV Drama CCTV电视剧肖战  6.Sina 新浪娱情Lab肖战  7.Sohu 狐厂大拷问肖战  8.Baidu 百度肖战  9.1.YOUKU1 优酷肖战1  9.2.YOUKU2 优酷肖战2  9.3.YOUKU3 优酷肖战3  10.SMG Entertainment 东方新娱乐肖战  11.BRTV 大戏看北京+每天都有戏肖战  12.CCTV8 (Zheng Xiaolong & Cao Yiwen) 央视导演双采  13.BRTV (Zheng Xiaolong & Cao Yiwen) 北卫导演双采  14.BRTV Daily Entertainment Express(Cao Yiwen) 每日文娱播报曹译文  15.1.Beijing Youth Daily(Cao Yiwen) 北京青年报曹译文  15.2.Beijing Youth Daily (Zheng Xiaolong) 北京青年报郑晓龙  16.1.Beijing Daily (Cao Yiwen) 北京日报曹译文  16.2.Beijing Daily (Zheng Xiaolong) 北京日报郑晓龙  17.Zhejiang Tide News (Cao Yiwen) 潮新闻曹译文  18.Interview collection of Zhang Ben 张本采访合集  19.Beijing Premiere BRTV (Liang Chao) 大戏看北京梁超  20.CCTV15 TV music interviews:The Orchestration of Strategy《影视留声机》乐鉴光影:谋局之音  21.CCTV15 TV music interviews:Zang Hai & Antu《影视留声机》乐鉴光影:海与辂  22.CCTV15 TV music interviews:The intangible cultural heritage《影视留声机》乐鉴光影:非遗生辉  23.CCTV15 TV music interviews:Captivating Individual Characters《影视留声机》乐鉴光影:侧影惊鸿  24.Zheng & Cao Interviewed by Taiwanese Veteran Producer Wang Weizhong 王伟忠x郑晓龙x曹译文视频播客",
       "platforms": [
-        {
-          "name": "YouTube-1",
-          "url": "https://www.youtube.com/watch?v=V7rVhVAagVE"
-        },
-        {
-          "name": "YouTube-2",
-          "url": "https://www.youtube.com/watch?v=rvq-FH14uA0"
-        },
-        {
-          "name": "YouTube(20-Part1)",
-          "url": "https://www.youtube.com/watch?v=WV_rQHdG0nI"
-        },
-        {
-          "name": "YouTube(21)",
-          "url": "https://www.youtube.com/watch?v=rkuBwN1Mk1A"
-        },
-        {
-          "name": "YouTube(22)",
-          "url": "https://www.youtube.com/watch?v=z-KOV1blZRo"
-        },
-        {
-          "name": "YouTube(23)",
-          "url": "https://www.youtube.com/watch?v=EfV1zOLMViA"
-        },
-        {
-          "name": "YouTube(24)",
-          "url": "https://www.youtube.com/watch?v=c6waPYDPsIc"
-        }
+        {"name": "Weibo-1", "url": "https://weibo.com/1699432410/PsoXN8zYq"},
+        {"name": "YouTube-1", "url": "https://www.youtube.com/watch?v=V7rVhVAagVE"},
+        {"name": "Weibo-2", "url": "https://weibo.com/2803301701/Pt7EcelZ8"},
+        {"name": "YouTube-2", "url": "https://www.youtube.com/watch?v=rvq-FH14uA0"},
+        {"name": "Weibo-3.1", "url": "https://weibo.com/2286908003/Ptc7i03B5"},
+        {"name": "Weibo-3.2", "url": "https://weibo.com/2030112487/PtkEZwg2M"},
+        {"name": "YouTube-3.1", "url": "https://www.youtube.com/watch?v=LyFDt6J54Mo"},
+        {"name": "YouTube-3.2", "url": "https://www.youtube.com/watch?v=uTkzxORwoQc"},
+        {"name": "Weibo-4", "url": "https://weibo.com/2656274875/PtShi620G"},
+        {"name": "YouTube-4", "url": "https://www.youtube.com/watch?v=7fk1h9jC4_8"},
+        {"name": "Weibo-5", "url": "https://weibo.com/2030112487/PtIQNnNrg"},
+        {"name": "YouTube-5", "url": "https://www.youtube.com/watch?v=df2h2UNBLis"},
+        {"name": "Weibo-6", "url": "https://weibo.com/1642592432/Pt7Vvwhz9"},
+        {"name": "YouTube-6", "url": "https://www.youtube.com/watch?v=JzrelRPWisA"},
+        {"name": "Weibo-7", "url": "https://weibo.com/6525010965/Pt7H4wRRA"},
+        {"name": "YouTube-7", "url": "https://www.youtube.com/watch?v=xrqs2V10u54"},
+        {"name": "Weibo-8", "url": "https://weibo.com/5909962605/PticMnqIn"},
+        {"name": "YouTube-8", "url": "https://www.youtube.com/watch?v=f1DJPJ5cSoU"},
+        {"name": "Weibo-9.1", "url": "https://weibo.com/1763415704/PsFfI3qAE"},
+        {"name": "优酷-9.1", "url": "https://v.youku.com/video?vid=XNjQ3MzU0NDAyMA%3D%3D"},
+        {"name": "YouTube-9.1", "url": "https://www.youtube.com/watch?v=guRSCfcRfQU"},
+        {"name": "Weibo-9.2", "url": "https://weibo.com/1763415704/PtAC0ydkn"},
+        {"name": "优酷-9.2", "url": "https://v.youku.com/video?vid=XNjQ3NDU5NzU2NA%3D%3D"},
+        {"name": "YouTube-9.2", "url": "https://www.youtube.com/watch?v=iwuaB551b9Y"},
+        {"name": "YouTube-9.3", "url": "https://www.youtube.com/watch?v=hAoJUXSUnWQ"},
+        {"name": "Weibo-10", "url": "https://weibo.com/1767910704/PtUwclJA7"},
+        {"name": "YouTube-10", "url": "https://www.youtube.com/watch?v=XkZ9jZU2KUI"},
+        {"name": "Weibo-11", "url": "https://weibo.com/6868583654/Pxeh6daPg"},
+        {"name": "YouTube-11.1", "url": "https://www.youtube.com/watch?v=S80Up1eJyM0"},
+        {"name": "YouTube-11.2", "url": "https://www.youtube.com/watch?v=Qy96xZdVXXQ"},
+        {"name": "Weibo-12.1", "url": "https://weibo.com/2030112487/Pvu6CAR0Y"},
+        {"name": "Weibo-12.2", "url": "https://weibo.com/2030112487/PvikEpv5c"},
+        {"name": "Weibo-12.3", "url": "https://weibo.com/2030112487/PvCZOp9tj"},
+        {"name": "Weibo-12.4", "url": "https://weibo.com/2030112487/PvU9WevUI"},
+        {"name": "YouTube-12", "url": "https://www.youtube.com/watch?v=hN1ah3351i8"},
+        {"name": "Weibo-13.1", "url": "https://weibo.com/6868583654/PxxxZ5gZX"},
+        {"name": "Weibo-13.2", "url": "https://weibo.com/6868583654/PxGCbaU15"},
+        {"name": "YouTube-13.1", "url": "https://www.youtube.com/watch?v=1qJ9kkp-mzY"},
+        {"name": "YouTube-13.2", "url": "https://www.youtube.com/watch?v=IaAdFuXlTCc"},
+        {"name": "YouTube-14", "url": "https://www.youtube.com/watch?v=Yg91jA-vpk0"},
+        {"name": "YouTube-15.1", "url": "https://www.youtube.com/watch?v=etLt1mfwsTE"},
+        {"name": "YouTube-15.2", "url": "https://www.youtube.com/watch?v=Sx0M2-nCbnk"},
+        {"name": "Weibo-16.1", "url": "https://weibo.com/1893892941/Pwf4VxKJx"},
+        {"name": "YouTube-16.1", "url": "https://www.youtube.com/watch?v=CCMp_9k-rXY"},
+        {"name": "Weibo-16.2", "url": "https://weibo.com/1893892941/PweWbpGtf"},
+        {"name": "YouTube-16.2", "url": "https://www.youtube.com/watch?v=uhLVUDzt8cc"},
+        {"name": "YouTube-17", "url": "https://www.youtube.com/watch?v=bbCbaYFzTY8"},
+        {"name": "YouTube-18", "url": "https://www.youtube.com/watch?v=BTtaWaApAmA"},
+        {"name": "Weibo-19", "url": "https://weibo.com/6868583654/PxszMu1US"},
+        {"name": "YouTube-19", "url": "https://www.youtube.com/watch?v=h21hxawNDbo"},
+        {"name": "央视频(20-上)", "url": "https://w.yangshipin.cn/video?type=0&vid=h000007ptgr"},
+        {"name": "央视频(20-下)", "url": "https://w.yangshipin.cn/video?type=0&vid=y0000244miz&ptag=4_3.1.5.23669_sina&from=living"},
+        {"name": "CCTV.COM(20-上)", "url": "https://tv.cctv.com/2025/07/23/VIDEBT4nojt6cnLncBgNaNf8250723.shtml?spm=C22422.P2ROneGSUiaU.EHAJdoNLQNFv.35"},
+        {"name": "CCTV.COM(20-下)", "url": "https://tv.cctv.com/2025/07/30/VIDEay7lltn2k1yGhHZMDxdm250730.shtml?spm=C22422.P2ROneGSUiaU.EHAJdoNLQNFv.36"},
+        {"name": "YouTube(20-Part1)", "url": "https://www.youtube.com/watch?v=WV_rQHdG0nI"},
+        {"name": "YouTube(20-Part2)", "url": "https://www.youtube.com/watch?v=VniJNuVuPc4"},
+        {"name": "央视频(21)", "url": "https://w.yangshipin.cn/video?type=0&vid=y000020hcmf&ptag=4_3.1.3.23662_wxf&from=living"},
+        {"name": "CCTV.COM(21)", "url": "https://tv.cctv.com/2025/08/06/VIDEk1HGwe14YuZH0cHCA0Vj250806.shtml?spm=C22422.P2ROneGSUiaU.EHAJdoNLQNFv.35"},
+        {"name": "YouTube(21)", "url": "https://www.youtube.com/watch?v=rkuBwN1Mk1A"},
+        {"name": "央视频(22)", "url": "https://m.yangshipin.cn/portrait_video?vid=v0000819b24&serverFrom=510103&pageContext=btype%3Dforum%26cpid%3D22309315576417814%26ctype%3Dcpid%26from%3D100013%26state%3Dinit%26ts%3D1755092593%26vid%3Dv0000819b24"},
+        {"name": "CCTV.COM(22)", "url": "https://tv.cctv.com/2025/08/13/VIDEcXEZTkmWli6VcPw66ivI250813.shtml"},
+        {"name": "YouTube(22)", "url": "https://www.youtube.com/watch?v=z-KOV1blZRo"},
+        {"name": "央视频(23)", "url": "https://m.yangshipin.cn/portrait_video?vid=k000050a5kq&serverFrom=search&pageContext=btype%3Dsearch%26keyword%3D%25E4%25BE%25A7%25E5%25BD%25B1%25E6%2583%258A%25E9%25B8%25BF%2B%25E8%2597%258F%25E6%25B5%25B7%25E4%25BC%25A0%26pagenum%3D0%26searchAction%3D0%26state%3Dinit"},
+        {"name": "CCTV.COM(23)", "url": "https://tv.cctv.com/2025/08/20/VIDE9x8v9euwCIBBfQUbSfvr250820.shtml?spm=C22422.P2ROneGSUiaU.EHAJdoNLQNFv.36"},
+        {"name": "YouTube(23)", "url": "https://www.youtube.com/watch?v=EfV1zOLMViA"},
+        {"name": "今日头条(24)", "url": "https://www.toutiao.com/video/7540202487564550696/?app=news_article&category_new=profile_video_immerse&module_name=Android_tt_url&share_did=MS4wLjACAAAAcM1JNtD0Gvg8yg_Fgc1ijomcgJHP1D6dXw7pKErFI6x8xtVQ9IX_tfZQUOV6f-BG&share_token=1aa15894-7d28-4fcb-87c1-dada3835c1ac&share_uid=MS4wLjABAAAAUamiuJ_DV69VejSDuNnc-8SuX3HhsZUvci2mLFoOA433cJnLNr_GEVQbiZI8m47d&timestamp=1755622348&tt_from=copy_link&upstream_biz=client_share&utm_campaign=client_share&utm_medium=toutiao_android&utm_source=copy_link&source=m_redirect"},
+        {"name": "YouTube(24)", "url": "https://www.youtube.com/watch?v=c6waPYDPsIc"}
       ]
     },
     {
@@ -130,360 +128,197 @@
       "title": "Legend of Zang Hai",
       "titleChinese": "藏海传",
       "role": "Zang Hai 藏海 (Lead)",
-      "category": [
-        "dramas"
-      ],
+      "category": ["dramas"],
       "description": "The series tells the story of the son of the Chief Astronomer of the Great Yong Kingdom, who experienced the destruction of his entire family. Ten years later, he returns to the capital under the alias Zang Hai, using the architectural skills and strategic prowess he has honed over the years to outwit the corrupt officials, uncover the conspiracy, and join forces with his beloved friends to defend the nation.",
       "platforms": [
-        {
-          "name": "优酷",
-          "url": "https://v.youku.com/video?spm=a2hkm.8166622.PhoneSokuProgramSeries_1.dposter_2&s=06efbfbd08efbfbdefbf&vid=XNjQ1MTQzNzk2OA%3D%3D"
-        },
-        {
-          "name": "YOUKU",
-          "url": "https://www.youku.tv/v/v_show/id_XNjQ1MTUxNjIxNg==.html?spm=a2h0c.8166622.PhoneSokuProgram_1.3&s=aeabb0a75800433fad85"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLxbgQdcnIafjZhKxxnSFLZuHmQzEF9Zb7"
-        },
-        {
-          "name": "Rakuten Viki",
-          "url": "https://www.viki.com/tv/41118c-legend-of-zang-hai"
-        }
+        {"name": "优酷", "url": "https://v.youku.com/video?spm=a2hkm.8166622.PhoneSokuProgramSeries_1.dposter_2&s=06efbfbd08efbfbdefbf&vid=XNjQ1MTQzNzk2OA%3D%3D"},
+        {"name": "YOUKU", "url": "https://www.youku.tv/v/v_show/id_XNjQ1MTUxNjIxNg==.html?spm=a2h0c.8166622.PhoneSokuProgram_1.3&s=aeabb0a75800433fad85"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLxbgQdcnIafjZhKxxnSFLZuHmQzEF9Zb7"},
+        {"name": "Rakuten Viki", "url": "https://www.viki.com/tv/41118c-legend-of-zang-hai"}
       ]
     },
     {
       "id": "talk-show-part2-condor-heroes",
       "date": "2025-02-09",
       "title": "Talk Show Part 2: Legends of the Condor Heroes The Gallants",
-      "titleChinese": "射雕英雄传侠之大者特别对谈（下）",
+      "titleChinese": "射雕英雄传侠之大者特别对谈(下)",
       "role": "Guo Jing 郭靖 (Lead)",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Interviews and behind-the-scenes about Legends of the Condor Heroes The Gallants.",
       "platforms": [
-        {
-          "name": "Bilibili",
-          "url": "https://www.bilibili.com/video/BV17mNXeJEsN/?spm_id_from=333.1387.search.video_card.click"
-        },
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/tv/show/1034:5132241161093136?from=old_pc_videoshow"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=Ae182PJGvCA"
-        }
+        {"name": "Bilibili", "url": "https://www.bilibili.com/video/BV17mNXeJEsN/?spm_id_from=333.1387.search.video_card.click"},
+        {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:5132241161093136?from=old_pc_videoshow"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Ae182PJGvCA"}
       ]
     },
     {
       "id": "talk-show-part1-condor-heroes",
       "date": "2025-01-29",
       "title": "Talk Show Part 1: Legends of the Condor Heroes The Gallants",
-      "titleChinese": "射雕英雄传侠之大者特别对谈（上）",
+      "titleChinese": "射雕英雄传侠之大者特别对谈(上)",
       "role": "Guo Jing 郭靖 (Lead)",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Interviews and behind-the-scenes about Legends of the Condor Heroes The Gallants.",
       "platforms": [
-        {
-          "name": "Bilibili",
-          "url": "https://www.bilibili.com/video/BV1LuFheMEgE/"
-        },
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/tv/show/1034:5128009334849543?from=old_pc_videoshow"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=1q-PnHHS73I"
-        }
+        {"name": "Bilibili", "url": "https://www.bilibili.com/video/BV1LuFheMEgE/"},
+        {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:5128009334849543?from=old_pc_videoshow"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=1q-PnHHS73I"}
       ]
     },
     {
       "id": "lan-yu-show-condor-heroes",
       "date": "2025-01-29",
-      "title": "Lan Yu Show: The New Year's Roundtable Meeting",
-      "titleChinese": "蓝羽会客厅·新春圆桌会之《射雕英雄传：侠之大者》",
+      "title": "Lan Yu Show·The New Year's Roundtable Meeting: Legends of the Condor Heroes The Gallants",
+      "titleChinese": "蓝羽会客厅·新春圆桌会之《射雕英雄传:侠之大者》",
       "role": "Guo Jing 郭靖 (Lead)",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Interviews and behind-the-scenes about Legends of the Condor Heroes The Gallants.",
       "platforms": [
-        {
-          "name": "CCTV.COM",
-          "url": "https://tv.cctv.com/2025/01/29/VIDEImPwng68RrpZ87MWyaMg250129.shtml"
-        },
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/tv/show/1034:5128276054835293?from=old_pc_videoshow"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=gHgZAt8BohY"
-        }
+        {"name": "CCTV.COM", "url": "https://tv.cctv.com/2025/01/29/VIDEImPwng68RrpZ87MWyaMg250129.shtml"},
+        {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:5128276054835293?from=old_pc_videoshow"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=gHgZAt8BohY"}
       ]
     },
     {
       "id": "new-year-greetings-condor-heroes",
       "date": "2025-01-29",
       "title": "New Year's Greetings: Legends of the Condor Heroes The Gallants",
-      "titleChinese": "《射雕英雄传：侠之大者》新春拜年会",
+      "titleChinese": "《射雕英雄传:侠之大者》新春拜年会",
       "role": "Guo Jing 郭靖 (Lead)",
-      "category": [
-        "variety"
-      ],
-      "description": "New Year's greetings event for Legends of the Condor Heroes The Gallants.",
+      "category": ["variety"],
+      "description": "Interviews and behind-the-scenes about Legends of the Condor Heroes The Gallants.",
       "platforms": [
-        {
-          "name": "中国新闻网",
-          "url": "https://m.chinanews.com/wap/detail/chs/zb/5744.shtml"
-        },
-        {
-          "name": "优酷",
-          "url": "https://v.youku.com/video?s=aafd4926d195453ab4df"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=2aumtAO4uXk"
-        }
+        {"name": "中国新闻网", "url": "https://m.chinanews.com/wap/detail/chs/zb/5744.shtml"},
+        {"name": "优酷", "url": "https://v.youku.com/video?s=aafd4926d195453ab4df"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=2aumtAO4uXk&t=82s"}
       ]
     },
     {
       "id": "legends-condor-heroes-gallants",
       "date": "2025-01-29",
       "title": "Legends of the Condor Heroes: The Gallants",
-      "titleChinese": "射雕英雄传：侠之大者",
+      "titleChinese": "射雕英雄传:侠之大者",
       "role": "Guo Jing 郭靖 (Lead)",
-      "category": [
-        "movies"
-      ],
-      "description": "In a turbulent era of power struggles, Guo Jing embarks on a journey, honing his formidable skills to shape his destiny. Despite mastering legendary martial arts, he faces envy from all sides. Yet, with a pure heart, he and Huang Rong brave the chaos, fighting to protect the Southern Song's borders.",
+      "category": ["movies"],
+      "description": "In a turbulent era of power struggles, Guo Jing (played by Xiao Zhan) embarks on a journey, honing his formidable skills to shape his destiny. Despite mastering legendary martial arts, he faces envy from all sides. Yet, with a pure heart, he and Huang Rong (played by Zhuang Dafen) brave the chaos, fighting to protect the Southern Song's borders.",
       "platforms": [
-        {
-          "name": "Prime Video",
-          "url": "https://www.primevideo.com/dp/amzn1.dv.gti.44ec30b1-5828-4ff0-ab4e-ed1f5e9713cc?autoplay=0&ref_=atv_cf_strg_wb"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=liOBM-b5HZg"
-        },
-        {
-          "name": "Apple TV",
-          "url": "https://tv.apple.com/ca/movie/legends-of-the-condor-heroes-the-gallants/umc.cmc.6medbn8jz8tlmuhcibrkeggd2?action=play"
-        },
-        {
-          "name": "优酷",
-          "url": "https://v.youku.com/video?vid=XNjQ2NjA3OTE5Ng%3D%3D"
-        },
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/mzc00200vw6f142/e41009yghfh.html"
-        },
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_hzvqba6v0o.html"
-        },
-        {
-          "name": "芒果TV",
-          "url": "https://w.mgtv.com/b/706801/22694149.html?fpa=1413&fpos=6"
-        },
-        {
-          "name": "Bilibili",
-          "url": "https://www.bilibili.com/bangumi/play/ep1566136?from_spmid=666.19.0.0"
-        }
+        {"name": "Prime Video", "url": "https://www.primevideo.com/dp/amzn1.dv.gti.44ec30b1-5828-4ff0-ab4e-ed1f5e9713cc?autoplay=0&ref_=atv_cf_strg_wb"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=liOBM-b5HZg"},
+        {"name": "Apple TV", "url": "https://tv.apple.com/ca/movie/legends-of-the-condor-heroes-the-gallants/umc.cmc.6medbn8jz8tlmuhcibrkeggd2?action=play"},
+        {"name": "优酷", "url": "https://v.youku.com/video?vid=XNjQ2NjA3OTE5Ng%3D%3D"},
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc00200vw6f142/e41009yghfh.html"},
+        {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_hzvqba6v0o.html"},
+        {"name": "芒果TV", "url": "https://w.mgtv.com/b/706801/22694149.html?fpa=1413&fpos=6"},
+        {"name": "Bilibili", "url": "https://www.bilibili.com/bangumi/play/ep1566136?from_spmid=666.19.0.0"},
+        {"name": "咪咕视频", "url": "https://www.miguvideo.com/p/detail/951701301?lastLocation=6d97aa391d86420188f2c3103a1b3b55%2372c4c89448b24107b94d888d5aa99d4c"}
+        
       ]
     },
     {
       "id": "beijing-spring-festival-gala-2025",
       "date": "2025-01-29",
       "title": "Beijing Spring Festival Gala",
-      "titleChinese": "北京春晚舞台：灯塔",
+      "titleChinese": "北京春晚舞台:灯塔",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Beijing Spring Festival Gala 2025.",
       "platforms": [
-        {
-          "name": "QQ.COM",
-          "url": "https://news.qq.com/rain/a/20250129A06JDW00?suid=&media_id="
-        },
-        {
-          "name": "iQIYI",
-          "url": "https://www.iq.com/play/2025%E5%8C%97%E4%BA%AC%E6%98%A5%E6%99%9A-%E8%82%96%E6%88%98%E6%AD%8C%E6%9B%B2%E3%80%8A%E7%81%AF%E5%A1%94%E3%80%8B-2025-15lulj5zwyg?lang=en_us"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=GUJy4QTe2_k"
-        }
+        {"name": "QQ.COM", "url": "https://news.qq.com/rain/a/20250129A06JDW00?suid=&media_id="},
+        {"name": "iQIYI", "url": "https://www.iq.com/play/2025%E5%8C%97%E4%BA%AC%E6%98%A5%E6%99%9A-%E8%82%96%E6%88%98%E6%AD%8C%E6%9B%B2%E3%80%8A%E7%81%AF%E5%A1%94%E3%80%8B-2025-15lulj5zwyg?lang=en_us"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=GUJy4QTe2_k"}
       ]
     },
     {
       "id": "cctv-news-conversation-condor-heroes",
       "date": "2025-01-25",
-      "title": "Conversation between CCTV News and Crew",
+      "title": "Conversation between CCTV News and Crew of Legends of the Condor Heroes",
       "titleChinese": "央视新闻对话《射雕英雄传侠之大者》团队",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
-      "description": "Interview with CCTV News.",
+      "category": ["variety"],
+      "description": "Interview with CCTV News about Legends of the Condor Heroes.",
       "platforms": [
-        {
-          "name": "央视新闻",
-          "url": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=3555837838016456183&source=50001&sub_source=50001_006"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=hSYrpewz-lc"
-        }
+        {"name": "央视新闻", "url": "https://content-static.cctvnews.cctv.com/snow-book/index.html?item_id=3555837838016456183&source=50001&sub_source=50001_006"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=hSYrpewz-lc"}
       ]
     },
     {
       "id": "peoples-daily-interview-condor-heroes",
       "date": "2025-01-25",
-      "title": "Interview by People's Daily",
+      "title": "Interview by People's Daily about Legends of the Condor Heroes",
       "titleChinese": "人民日报对话徐克肖战",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Interview about Legends of the Condor Heroes.",
       "platforms": [
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/2803301701/PbePW4iaJ"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=x0VoM4bQC3g"
-        }
-      ]
-    },
-    {
-      "id": "greater-bay-area-film-concert-2024",
-      "date": "2024-09-22",
-      "title": "The Greater Bay Area Film Concert 2024",
-      "titleChinese": "2024 湾区升明月电影音乐晚会",
-      "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at The Greater Bay Area Film Concert 2024.",
-      "platforms": [
-        {
-          "name": "中国新闻网",
-          "url": "https://www.chinanews.com.cn/shipin/cns-d/2024/09-23/news1000725.shtml"
-        },
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=iv49foV0oPU"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=i-s5h4o2rmo"
-        }
+        {"name": "Weibo", "url": "https://weibo.com/2803301701/PbePW4iaJ"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=x0VoM4bQC3g"}
       ]
     },
     {
       "id": "the-greater-bay-area-film-concert-2024",
       "date": "2024-09-22",
       "title": "The Greater Bay Area Film Concert 2024",
-      "titleChinese": "2024 湾区升明月电影音乐晚会：这世界那么多人；往事随风",
+      "titleChinese": "2024 湾区升明月电影音乐晚会:1.这世界那么多人  2.往事随风",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at The Greater Bay Area Film Concert 2024.",
+      "category": ["stage performances"],
+      "description": "Stage performance at The Greater Bay Area Film Concert 2024. Performed two songs: 1.这世界那么多人 (This World Has So Many People) 2.往事随风 (Memories in the Wind).",
       "platforms": [
-        {
-          "name": "中国新闻网",
-          "url": "https://www.chinanews.com.cn/shipin/cns-d/2024/09-23/news1000725.shtml"
-        },
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=iv49foV0oPU"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=i-s5h4o2rmo"
-        }
+        {"name": "中国新闻网1", "url": "https://www.chinanews.com.cn/shipin/cns-d/2024/09-23/news1000725.shtml"},
+        {"name": "Sina1", "url": "https://video.sina.cn/finance/2024-09-23/detail-incqafyf0629406.d.html?vt=4"},
+        {"name": "Facebook1(凤凰卫视)", "url": "https://www.facebook.com/PhoenixTVHK/videos/%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E5%A4%AA%E5%A5%BD%E8%81%BD%E4%BA%86%E8%8E%AB%E6%96%87%E8%94%9A%E8%82%96%E6%88%B0%E7%89%BD%E6%89%8B%E5%90%88%E5%94%B1%E9%80%99%E4%B8%96%E7%95%8C%E9%82%A3%E9%BA%BC%E5%A4%9A%E4%BA%BA/490703023831493/"},
+        {"name": "YouTube1-1(凤凰卫视)", "url": "https://www.youtube.com/watch?v=iv49foV0oPU"},
+        {"name": "YouTube1-2(中国新闻社)", "url": "https://www.youtube.com/watch?v=qNJb4g1QELk"},
+        {"name": "YouTube1-3(莫文蔚版)", "url": "https://www.youtube.com/watch?v=8GpqCj9EECQ"},
+        {"name": "X(China Daily)1-1", "url": "https://x.com/ChinaDaily/status/1838029425130238412"},
+        {"name": "X(凤凰卫视)1-2", "url": "https://x.com/PhoenixTVHK/status/1837904700412432785"},
+        {"name": "Sina2", "url": "https://k.sina.cn/article_1643971635_m61fd0433033013a1i.html?from=movie"},
+        {"name": "凤凰网2", "url": "https://v.ifeng.com/c/8d61URNjqqt"},
+        {"name": "Facebook2", "url": "https://www.facebook.com/PhoenixTVHK/videos/%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E8%B6%85%E7%A9%A9%E7%8F%BE%E5%A0%B4%E8%82%96%E6%88%B0%E5%91%88%E7%8F%BE%E9%AB%98%E9%9F%B3%E8%88%9E%E5%8F%B0%E5%BE%80%E4%BA%8B%E9%9A%A8%E9%A2%A8/1463277994388769/"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=i-s5h4o2rmo"}
       ]
     },
     {
       "id": "beijing-cultural-forum-2024",
       "date": "2024-09-20",
       "title": "2024 The Beijing Cultural Forum's Artistic Performance",
-      "titleChinese": "2024 北京文化论坛专场文艺演出：月亮代表我的心",
+      "titleChinese": "2024 北京文化论坛专场文艺演出:月亮代表我的心",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Beijing Cultural Forum 2024.",
       "platforms": [
-        {
-          "name": "Sina",
-          "url": "https://k.sina.cn/article_1644948230_m620beb06033014hme.html"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=ARChdSyNrvw"
-        }
+        {"name": "Sina", "url": "https://k.sina.cn/article_1644948230_m620beb06033014hme.html"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=ARChdSyNrvw"}
       ]
     },
     {
       "id": "beijing-spring-festival-gala-2024",
       "date": "2024-02-10",
       "title": "Beijing Spring Festival Gala 2024",
-      "titleChinese": "北京春晚舞台：如愿",
+      "titleChinese": "北京春晚舞台:如愿",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Beijing Spring Festival Gala 2024.",
       "platforms": [
-        {
-          "name": "北京日报",
-          "url": "https://xinwen.bjd.com.cn/content/s65c784bde4b06c5601ebadfd.html"
-        },
-        {
-          "name": "iQIYI",
-          "url": "https://www.iq.com/play/%E8%82%96%E6%88%98%E6%AD%8C%E6%9B%B2%E3%80%8A%E5%A6%82%E6%84%BF%E3%80%8B-2024-1hqd7mcdfp8?lang=en_us"
-        }
+        {"name": "北京日报", "url": "https://xinwen.bjd.com.cn/content/s65c784bde4b06c5601ebadfd.html"},
+        {"name": "iQIYI", "url": "https://www.iq.com/play/%E8%82%96%E6%88%98%E6%AD%8C%E6%9B%B2%E3%80%8A%E5%A6%82%E6%84%BF%E3%80%8B-2024-1hqd7mcdfp8?lang=en_us"}
       ]
     },
     {
       "id": "china-internet-audiovisual-gala-2024",
       "date": "2024-02-03",
       "title": "2024 China Internet Audio-Visual Annual Gala",
-      "titleChinese": "2024中国网络视听年度盛典",
+      "titleChinese": "2024中国网络视听年度盛典:1.第一篇章《同梦·不负韶华》  2.同路人",
       "role": "Narrator & Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Narrator of Chapter 1: Seize the Day and singer of Fellow Traveler.",
+      "category": ["stage performances"],
+      "description": "1.Narrator of Chapter 1: Seize the Day. 2.Singer of the song: Fellow Traveler.",
       "platforms": [
-        {
-          "name": "新华网",
-          "url": "http://www.news.cn/politics/20240128/9f4d386a26884392a4b67c29d6640980/c.html"
-        },
-        {
-          "name": "抖音",
-          "url": "https://www.douyin.com/video/7334645390165200169"
-        },
-        {
-          "name": "Bilibili",
-          "url": "https://www.bilibili.com/video/BV1J64y1374c/"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=SPOZ_Um_dpA"
-        }
+        {"name": "新华网1", "url": "http://www.news.cn/politics/20240128/9f4d386a26884392a4b67c29d6640980/c.html"},
+        {"name": "抖音1", "url": "https://www.douyin.com/video/7334645390165200169"},
+        {"name": "Bilibili1", "url": "https://www.bilibili.com/video/BV1J64y1374c/"},
+        {"name": "Tencent2", "url": "https://v.qq.com/x/cover/mzc00200wlrpuxb/p0048hjuvou.html"},
+        {"name": "中国新闻网2-1", "url": "https://www.chinanews.com.cn/yl/shipin/cns/2023/10-16/news972808.shtml"},
+        {"name": "中国新闻网2-2", "url": "https://www.chinanews.com.cn/gn/2023/10-16/10094669.shtml"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=SPOZ_Um_dpA"}
       ]
     },
     {
@@ -492,27 +327,13 @@
       "title": "Sunshine by My Side",
       "titleChinese": "骄阳伴我",
       "role": "Sheng Yang 盛阳 (Lead)",
-      "category": [
-        "dramas"
-      ],
-      "description": "This drama tells the story of an advertising director and a newcomer designer who meet by chance. The two people with completely different personalities gradually develop feelings for each other in their daily interactions.",
+      "category": ["dramas"],
+      "description": "This drama tells the story of an advertising director Jian Bing (played by Bai Baihe) and a newcomer designer Sheng Yang (played by Xiao Zhan) who meet by chance. The two people with completely different personalities gradually develop feelings for each other in their daily interactions. This leads to a hilarious yet positive and inspiring story.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/mzc00200t71kuy5/e0047g3kvgs.html"
-        },
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_15kzchdfiqk.html?vfm=2008_aldbd&fv=p_02_01"
-        },
-        {
-          "name": "iQIYI",
-          "url": "https://www.iq.com/album/%E9%A9%95%E9%99%BD%E4%BC%B4%E6%88%91-2023-tq1cyfu2j5?lang=zh_tw"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLQqbdnAgoRmbSsGj7qT3ARvqvXe3SOWwM"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc00200t71kuy5/e0047g3kvgs.html"},
+        {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_15kzchdfiqk.html?vfm=2008_aldbd&fv=p_02_01"},
+        {"name": "iQIYI", "url": "https://www.iq.com/album/%E9%A9%95%E9%99%BD%E4%BC%B4%E6%88%91-2023-tq1cyfu2j5?lang=zh_tw"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLQqbdnAgoRmbSsGj7qT3ARvqvXe3SOWwM"}
       ]
     },
     {
@@ -521,73 +342,42 @@
       "title": "The Longest Promise",
       "titleChinese": "玉骨遥",
       "role": "Shi Ying 时影 (Lead)",
-      "category": [
-        "dramas"
-      ],
-      "description": "In a mystical realm called Yunhuang, the Kongsang people, the Jiao tribe, and the Ice tribe coexist. The aloof and enigmatic Kongsang Crown Prince Shi Ying and the passionate and righteous Zhu Yan face challenges to protect the Kongsang Dream-Flower Dynasty.",
+      "category": ["dramas"],
+      "description": "In a mystical realm called Yunhuang, the Kongsang people, the Jiao tribe, and the Ice tribe coexist. The aloof and enigmatic Kongsang Crown Prince Shi Ying (played by Xiao Zhan) and the passionate and righteous Zhu Yan, the Chieftain's Daughter (played by Ren Min), are bound by a fateful encounter with a flower (Xue Hanwei). Together, they face challenges to protect the Kongsang Dream-Flower Dynasty.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/mzc002003rb9ntl/o0046yvt2fv.html"
-        },
-        {
-          "name": "Netflix",
-          "url": "https://www.netflix.com/ca/title/81633653"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLGBZFpiWG8JXhPifLlHJz9wuB7Nv2YRr6"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc002003rb9ntl/o0046yvt2fv.html"},
+        {"name": "Netflix", "url": "https://www.netflix.com/ca/title/81633653"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLGBZFpiWG8JXhPifLlHJz9wuB7Nv2YRr6"}
       ]
     },
     {
       "id": "greater-bay-area-film-concert-2023",
       "date": "2023-06-29",
       "title": "The Greater Bay Area Film Concert 2023",
-      "titleChinese": "湾区升明月2023大湾区电影音乐晚会：潇洒走一回",
+      "titleChinese": "湾区升明月2023大湾区电影音乐晚会:潇洒走一回",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at The Greater Bay Area Film Concert 2023.",
       "platforms": [
-        {
-          "name": "凤凰网",
-          "url": "https://js.ifeng.com/c/49AnPJQnNcU"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=49AnPJQnNcU"
-        }
+        {"name": "凤凰网", "url": "https://js.ifeng.com/c/49AnPJQnNcU"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=49AnPJQnNcU"}
       ]
     },
     {
       "id": "show-great-shows-youth-memories",
-      "date": "2023-06-18",
+      "date": "2023-06-18 & 2023-06-25",
       "title": "Show of Great Shows: The Youth Memories",
-      "titleChinese": "剧说很好看：梦中的那片海",
+      "titleChinese": "剧说很好看:梦中的那片海",
       "role": "Xiao Chunsheng 肖春生 (Lead)",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Behind-the-scenes and interviews about The Youth Memories.",
       "platforms": [
-        {
-          "name": "央视频1",
-          "url": "https://w.yangshipin.cn/video?type=0&vid=t000028qt7y"
-        },
-        {
-          "name": "CCTV.COM1",
-          "url": "https://tv.cctv.com/2023/06/18/VIDEpwqsabN3o0VEW0u4WIMc230618.shtml"
-        },
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=h6OG10lWir4&t=932s"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=0caKdpLrG9A"
-        }
+        {"name": "央视频1", "url": "https://w.yangshipin.cn/video?type=0&vid=t000028qt7y"},
+        {"name": "央视频2", "url": "https://w.yangshipin.cn/video?type=0&vid=p000037v9d4&ptag=4_2.8.1.23336_sina"},
+        {"name": "CCTV.COM1", "url": "https://tv.cctv.com/2023/06/18/VIDEpwqsabN3o0VEW0u4WIMc230618.shtml"},
+        {"name": "CCTV.COM2", "url": "https://tv.cctv.com/2023/06/25/VIDEQjw87amDHR2I0cmsxX8g230625.shtml?spm=C53090171355.PaxHVtmpGFpz.0.0"},
+        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=h6OG10lWir4&t=932s"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=0caKdpLrG9A"}
       ]
     },
     {
@@ -596,73 +386,40 @@
       "title": "The Youth Memories",
       "titleChinese": "梦中的那片海",
       "role": "Xiao Chunsheng 肖春生 (Lead)",
-      "category": [
-        "dramas"
-      ],
+      "category": ["dramas"],
       "description": "The Youth Memories is a show about a group of youths and their struggles as they chase their dreams in 1970's Beijing.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/mzc002007vp35qj/s0046m7x9we.html?ptag=11972"
-        },
-        {
-          "name": "WeTV",
-          "url": "https://wetv.vip/zh-tw/play/sp6ws3r9o3upf7l-%E5%A4%A2%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7/c0046cmle6l-%E5%A4%A2%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7_01"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLRBClVey5BqwM9E2uvd2rVf_mekyic98m"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc002007vp35qj/s0046m7x9we.html?ptag=11972"},
+        {"name": "WeTV", "url": "https://wetv.vip/zh-tw/play/sp6ws3r9o3upf7l-%E5%A4%A2%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7/c0046cmle6l-%E5%A4%A2%E4%B8%AD%E7%9A%84%E9%82%A3%E7%89%87%E6%B5%B7_01"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLRBClVey5BqwM9E2uvd2rVf_mekyic98m"}
       ]
     },
     {
       "id": "the-oath-of-love",
       "date": "2022-03-15",
       "title": "The Oath of Love",
-      "titleChinese": "余生，请多指教",
+      "titleChinese": "余生,请多指教",
       "role": "Gu Wei 顾魏 (Lead)",
-      "category": [
-        "dramas"
-      ],
-      "description": "Gu Wei is a very solemn surgeon. As Zhi Xiao's father progresses through treatment, she and Dr. Gu become close. She helps him learn how to enjoy life, and he helps her focus on what she truly wants in life.",
+      "category": ["dramas"],
+      "description": "Gu Wei is a very solemn surgeon, although glimpses of his warm heart can be seen from time to time. As Zhi Xiao's father progresses through treatment, she and Dr. Gu become close—she helps him learn how to enjoy life, and he helps her focus on what she truly wants in life.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/mzc00200opqzg5p/i0042znd9iv.html?ptag=11972"
-        },
-        {
-          "name": "WeTV",
-          "url": "https://wetv.vip/zh-cn/play/et4xynjronzthfj-%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/c0042mhbdbu-%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99_01"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLMX26aiIvX5pKLsGYgPFP0gDFVVjGbf0k"
-        },
-        {
-          "name": "Rakuten Viki",
-          "url": "https://www.viki.com/tv/36966c-the-oath-of-love"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc00200opqzg5p/i0042znd9iv.html?ptag=11972"},
+        {"name": "WeTV", "url": "https://wetv.vip/zh-cn/play/et4xynjronzthfj-%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99/c0042mhbdbu-%E4%BD%99%E7%94%9F%EF%BC%8C%E8%AF%B7%E5%A4%9A%E6%8C%87%E6%95%99_01"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLMX26aiIvX5pKLsGYgPFP0gDFVVjGbf0k"},
+        {"name": "Rakuten Viki", "url": "https://www.viki.com/tv/36966c-the-oath-of-love?utm_source=global_search_or_media_action&utm_campaign=36966c#episodes"}
       ]
     },
     {
       "id": "china-internet-audiovisual-gala-2022",
       "date": "2022-02-02",
       "title": "2022 China Internet Audio-Visual Annual Gala",
-      "titleChinese": "2022年中国网络视听年度盛典：只道是寻常",
+      "titleChinese": "2022年中国网络视听年度盛典:只道是寻常",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at 2022 China Internet Audio-Visual Annual Gala.",
       "platforms": [
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/tv/show/1034:4732588779307117?from=old_pc_videoshow"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=IWou9xlKSl0&list=PLxbgQdcnIafgy2d95lKn_QVqNxtvgkXmX&index=9"
-        }
+        {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:4732588779307117?from=old_pc_videoshow"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=IWou9xlKSl0&list=PLxbgQdcnIafgy2d95lKn_QVqNxtvgkXmX&index=9"}
       ]
     },
     {
@@ -671,166 +428,109 @@
       "title": "Ace Troops",
       "titleChinese": "王牌部队",
       "role": "Gu Yiye 顾一野 (Lead)",
-      "category": [
-        "dramas"
-      ],
-      "description": "From humble beginnings to forged bonds, two recruits clash over their differences, only to become comrades-in-arms. Through battles, demining, and flood relief, they weathered the military's transformation. Their story is one of rivalry, camaraderie, and the unbreakable spirit of soldiers.",
+      "category": ["dramas"],
+      "description": "From humble beginnings to forged bonds, two recruits - miner's son Gao Liang and military family scion Gu Yiye - clash over their differences, only to become comrades-in-arms. Through battles, demining in Guangxi, Hong Kong garrison, and the '98 flood relief, they weathered the military's transformation from mechanization to informatization. Their story is one of rivalry, camaraderie, and the unbreakable spirit of soldiers.",
       "platforms": [
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_1u9rlrabn5w.html?vfm=2008_aldbd&fv=p_02_01"
-        },
-        {
-          "name": "iQIYI",
-          "url": "https://www.iq.com/play/ace-troops-episode-1-nlcx80xlds?lang=en_us"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLlCrV9TCfzMYAXQEBxvu6aoqBlXFLVs6x"
-        }
+        {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_1u9rlrabn5w.html?vfm=2008_aldbd&fv=p_02_01"},
+        {"name": "iQIYI", "url": "https://www.iq.com/play/ace-troops-episode-1-nlcx80xlds?lang=en_us"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLlCrV9TCfzMYAXQEBxvu6aoqBlXFLVs6x"}
       ]
     },
     {
       "id": "jackie-chan-film-week-2021",
       "date": "2021-10-16",
       "title": "6th Jackie Chan International Action Film Week",
-      "titleChinese": "第六届成龙国际动作电影周：中华力量",
+      "titleChinese": "第六届成龙国际动作电影周:中华力量",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at 6th Jackie Chan International Action Film Week.",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=U65WI4DT-c8"
-        },
-        {
-          "name": "Weibo",
-          "url": "https://m.weibo.cn/status/4693030101847226#&video"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=U65WI4DT-c8"},
+        {"name": "Weibo", "url": "https://m.weibo.cn/status/4693030101847226#&video"}
       ]
     },
     {
       "id": "hangzhou-asian-games-countdown",
       "date": "2021-09-10",
       "title": "One-year Countdown to Hangzhou Asian Games 2022",
-      "titleChinese": "2022杭州亚运会倒计时一周年：我们都将奔赴美好未来",
+      "titleChinese": "2022杭州亚运会倒计时一周年:我们都将奔赴美好未来",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance for Hangzhou Asian Games countdown event.",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=T2f0LjV29Rs"
-        },
-        {
-          "name": "抖音",
-          "url": "https://www.douyin.com/video/7006292054959590669"
-        },
-        {
-          "name": "iQIYI",
-          "url": "https://www.iq.com/play/%E3%80%8A%E6%88%91%E4%BB%AC%E9%83%BD%E5%B0%86%E5%A5%94%E8%B5%B4%E7%BE%8E%E5%A5%BD%E6%9C%AA%E6%9D%A5%E3%80%8B%E5%A4%AA%E7%BB%9D%E4%BA%86-%E8%82%96%E6%88%98%E6%9D%AD%E5%B7%9E%E4%BA%9A%E8%BF%90%E4%BC%9A%E5%80%92%E8%AE%A1%E6%97%B6%E5%90%AF%E5%8A%A8-2021-p4ghq73y84?lang=en_us"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=T2f0LjV29Rs"},
+        {"name": "抖音", "url": "https://www.douyin.com/video/7006292054959590669"},
+        {"name": "iQIYI", "url": "https://www.iq.com/play/%E3%80%8A%E6%88%91%E4%BB%AC%E9%83%BD%E5%B0%86%E5%A5%94%E8%B5%B4%E7%BE%8E%E5%A5%BD%E6%9C%AA%E6%9D%A5%E3%80%8B%E5%A4%AA%E7%BB%9D%E4%BA%86-%E8%82%96%E6%88%98%E6%9D%AD%E5%B7%9E%E4%BA%9A%E8%BF%90%E4%BC%9A%E5%80%92%E8%AE%A1%E6%97%B6%E5%90%AF%E5%8A%A8-2021-p4ghq73y84?lang=en_us"}
       ]
     },
     {
       "id": "jd-618-extravaganza-2021",
       "date": "2021-05-31",
       "title": "Ignite the Night: JD.com's 618 Extravaganza",
-      "titleChinese": "618沸腾之夜",
+      "titleChinese": "618沸腾之夜:1.让我留在你身边  2.竹石",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at JD.com's 618 shopping festival.",
+      "category": ["stage performances"],
+      "description": "Stage performance at JD.com's 618 shopping festival. Performed two songs: 1.让我留在你身边 2.竹石",
       "platforms": [
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/tv/show/1034:4643045698896064?from=old_pc_videoshow"
-        },
-        {
-          "name": "QQ音乐",
-          "url": "https://y.qq.com/n/yqq/mv/m/012QLDZ93uHidM.html"
-        }
+        {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:4643045698896064?from=old_pc_videoshow"},
+        {"name": "QQ音乐1", "url": "https://y.qq.com/n/yqq/mv/m/012QLDZ93uHidM.html"},
+        {"name": "Weixin1", "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTgzMTAwMA==&mid=2653134655&idx=2&sn=0197783545201f582de163d7a1c731a0&chksm=bd78b9888a0f309eca0ef5919830ae4e6f21d07c0879377a3124cbebfb371203aa62f9b7cba1&scene=27"},
+        {"name": "Tencent2", "url": "https://v.qq.com/x/page/n3251xpi3sg.html"},
+        {"name": "QQ音乐2", "url": "https://y.qq.com/n/yqq/mv/m/013OBtIl3xdi1k.html"}
       ]
     },
     {
       "id": "winter-dreams-promise-ice-hockey",
       "date": "2021-03-05",
       "title": "The Winter Dream's Promise: Ice Hockey",
-      "titleChinese": "冬梦之约：冰球运动",
+      "titleChinese": "冬梦之约:冰球运动",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "BRTV's Winter Olympics venue music reality show.",
       "platforms": [
-        {
-          "name": "央视频",
-          "url": "https://w.yangshipin.cn/video?type=0&vid=h000016zrzb"
-        }
+        {"name": "央视频", "url": "https://w.yangshipin.cn/video?type=0&vid=h000016zrzb"}
       ]
     },
     {
       "id": "winter-dreams-promise-stage",
       "date": "2021-03-05",
       "title": "The Winter Dream's Promise",
-      "titleChinese": "冬梦之约舞台",
+      "titleChinese": "冬梦之约舞台:1.冬梦  2.Something just like this",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at The Winter Dream's Promise event.",
+      "category": ["stage performances"],
+      "description": "Stage performance at The Winter Dream's Promise event. Performed two songs: 1.冬梦 2.Something just like this",
       "platforms": [
-        {
-          "name": "央视频1",
-          "url": "https://w.yangshipin.cn/video?type=0&vid=f000099v8tv&cid=nxigpbeei12heg7&ptag=4_2.2.3.23078_wxf"
-        },
-        {
-          "name": "优酷",
-          "url": "https://v.youku.com/video?vid=XNTExNTc4Njk4MA%3D%3D"
-        }
+        {"name": "央视频1", "url": "https://w.yangshipin.cn/video?type=0&vid=f000099v8tv&cid=nxigpbeei12heg7&ptag=4_2.2.3.23078_wxf"},
+        {"name": "优酷1", "url": "https://v.youku.com/video?vid=XNTExNTc4Njk4MA%3D%3D"},
+        {"name": "央视频2", "url": "https://w.yangshipin.cn/video?type=0&vid=d000060rs23&cid=nxigpbeei12heg7"},
+        {"name": "QQ音乐2", "url": "https://y.qq.com/n/ryqq/mv/013hmD2t1Amwmi"},
+        {"name": "土豆2", "url": "https://play.tudou.com/v_show/id_XNTE0MzQ5NjkyMA==.html"},
+        {"name": "Sina1+2", "url": "https://k.sina.cn/article_6511453608_m1841ce5a803300ygmc.html"}
       ]
     },
     {
       "id": "smg-spring-festival-gala-2021",
       "date": "2021-02-12",
       "title": "SMG Spring Festival Gala 2021",
-      "titleChinese": "2021年东方卫视春节晚会",
+      "titleChinese": "2021年东方卫视春节晚会:异乡人  用尽我的一切奔向你",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at SMG Spring Festival Gala 2021.",
+      "category": ["stage performances"],
+      "description": "Stage performance at SMG Spring Festival Gala 2021. Performed two songs: 异乡人 and 用尽我的一切奔向你",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=Xykyd0Cl2nw"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Xykyd0Cl2nw"}
       ]
     },
     {
       "id": "beijing-spring-festival-gala-2021",
       "date": "2021-02-12",
       "title": "Beijing Spring Festival Gala 2021",
-      "titleChinese": "北京春晚舞台：给所有知道我名字的人",
+      "titleChinese": "北京春晚舞台:给所有知道我名字的人",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Beijing Spring Festival Gala 2021.",
       "platforms": [
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_1b07bvfwzss.html?list=140w677p0ya"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=hqXcmqgJP7U"
-        }
+        {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_1b07bvfwzss.html?list=140w677p0ya"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=hqXcmqgJP7U"}
       ]
     },
     {
@@ -839,19 +539,11 @@
       "title": "Douluo Continent",
       "titleChinese": "斗罗大陆",
       "role": "Tang San 唐三 (Lead)",
-      "category": [
-        "dramas"
-      ],
-      "description": "A gifted young man, Tang San, and his father forge an unbreakable bond. Tang San enrolls at academies where he and six other talented youths form the Shrek Seven Devils. Through trials and tribulations, they uncover a sinister plot and emerge victorious.",
+      "category": ["dramas"],
+      "description": "A gifted young man, Tang San (played by Xiao Zhan), and his alcoholic father, Tang Hao, forge an unbreakable bond. As Tang San's martial soul awakens, his father reveals a secret about his mother. Determined to fulfill his promise, Tang San enrolls at Nuoding Academy and Shrek Academy, where he and six other talented youths form the Shrek Seven Devils. Through trials and tribulations, they uncover a sinister plot by the Martial Soul Hall, ultimately emerging victorious and becoming the pinnacle of the Douluo Continent.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/mzc00200js3mdvw/q00354i139r.html?ptag=11974"
-        },
-        {
-          "name": "Rakuten Viki",
-          "url": "https://www.viki.com/tv/36952c-douluo-continent"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc00200js3mdvw/q00354i139r.html?ptag=11974"},
+        {"name": "Rakuten Viki", "url": "https://www.viki.com/tv/36952c-douluo-continent?utm_source=global_search_or_media_action&utm_campaign=36952c#episodes"}
       ]
     },
     {
@@ -860,124 +552,77 @@
       "title": "Douluo Continent Launch Event",
       "titleChinese": "斗罗大陆发布会",
       "role": "Tang San 唐三 (Lead)",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "TV series premiere event of Douluo Continent.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/mzc00200js3mdvw/p0035nypt0c.html"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=Xpz7jfSKU-s"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc00200js3mdvw/p0035nypt0c.html"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Xpz7jfSKU-s"}
       ]
     },
     {
       "id": "iqiyi-shout-out-for-love-2021",
       "date": "2021-01-15",
       "title": "2021 iQIYI Shout Out For Love Gala",
-      "titleChinese": "2021爱奇艺为爱尖叫晚会：余年",
+      "titleChinese": "2021爱奇艺为爱尖叫晚会:余年",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at 2021 iQIYI Shout Out For Love Gala.",
       "platforms": [
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_1g73ftahgvs.html"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=Mr2XecnJa8E"
-        }
+        {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_1g73ftahgvs.html?ht=0&ischarge=false&tvname=%E3%80%8A%E4%B8%BA%E7%88%B1%E5%B0%96%E5%8F%AB%E6%99%9A%E4%BC%9A%E3%80%8B%E7%BA%AF%E4%BA%AB%EF%BC%9A%E8%82%96%E6%88%98%E3%80%8A%E4%BD%99%E5%B9%B4%E3%80%8B&vid=3ebc0e1761e0f6da74e836e5c7443d88&lt=4&vtype=0&f_block=tabbed_wonderful_short_bk-undefined&s2=wna_tvg_1st&s3=wna_tvg_shorts&s4=image_2&vfrm=playlist&vfrmblk=sv_content&vfrmrst=4&pb2=bkt%3D%26c1%3D6%26childinfo%3D%26e%3D%26fatherid%3D%26position%3D5%26r_area%3D%26r_source%3D%26recext%3D%26sc1%3D6%26sqpid%3D%26stype%3D%26tagemode%3D0&ab=8883_A%2C10385_B%2C10274_A%2C8739_B%2C9419_B%2C9922_C%2C9379_B%2C10590_A%2C10276_A%2C8004_B%2C5257_B%2C10566_C%2C9776_A%2C8873_E%2C10123_A%2C7423_C%2C8401_A%2C6249_C%2C7996_B%2C10793_C%2C9576_B%2C10358_B%2C9365_B%2C5465_B%2C6843_B%2C10897_A%2C6578_B%2C6312_B%2C6091_B%2C8690_C%2C8737_D%2C8742_A%2C10193_B%2C10596_B%2C9484_B%2C10803_A%2C6752_C%2C10311_B%2C10698_B%2C10237_A%2C10188_B%2C8971_A%2C7332_B%2C9683_B%2C10383_B%2C8665_E%2C10575_B%2C6237_B%2C9569_B%2C11004_A%2C8983_A%2C7024_C%2C5592_B%2C9117_A%2C6031_B%2C10509_B%2C7581_A%2C9506_B%2C9517_D%2C10216_A%2C9394_B%2C8542_B%2C6050_B%2C9167_D%2C10637_A%2C10551_B%2C9469_B%2C10633_B%2C8812_B%2C10598_A%2C6832_C%2C7074_C%2C7682_C%2C8867_B%2C5924_D%2C6151_C%2C5468_B%2C10447_B%2C11014_B%2C10825_C%2C6704_C%2C10530_B%2C8808_B%2C10765_C%2C8497_B%2C8342_B%2C8871_C%2C9790_B%2C9355_B%2C10389_B%2C8760_B%2C10624_B%2C10627_D%2C9292_B%2C6629_B%2C5670_B%2C9158_A%2C9805_B%2C10541_B%2C9959_B%2C10999_C%2C6082_B%2C5335_B%2C10271_A"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Mr2XecnJa8E"}
       ]
     },
     {
       "id": "marvelous-city-chongqing",
       "date": "2021-01-12",
       "title": "Marvelous City S1 Ep2: Chongqing",
-      "titleChinese": "奇妙之城第一季 第二集：重庆",
+      "titleChinese": "奇妙之城第一季 第二集:重庆",
       "role": "Celebrity Host",
-      "category": [
-        "variety"
-      ],
-      "description": "A documentary series that explores the human stories behind the artisans, foodies, and artists who embody the spirit of urban life.",
+      "category": ["variety"],
+      "description": "This is a documentary series that explores the human stories behind the artisans, foodies, and artists who embody the spirit of urban life. Told from the perspective of celebrity hosts, the series uncovers the hidden wonders that lie within the everyday fabric of each city.",
       "platforms": [
-        {
-          "name": "优酷",
-          "url": "https://v.youku.com/video?spm=a2hkm.8166622.PhoneSokuProgram_2.dselectbutton_2&vid=XNTA1NjM0MDg4MA=="
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=e601XtWLcr8"
-        }
+        {"name": "优酷", "url": "https://v.youku.com/video?spm=a2hkm.8166622.PhoneSokuProgram_2.dselectbutton_2&vid=XNTA1NjM0MDg4MA=="},
+        {"name": "Youku", "url": "https://www.youku.tv/v/v_show/id_XNTkyNDcwOTMzMg==.html?s=addfb4a9b2184a2d9158&spm=a2hje.13141534.1_2.d_zj2_2&scm=20140719.apircmd.242627.video_XNTkyNDcwOTMzMg=="},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=e601XtWLcr8"}
       ]
     },
     {
       "id": "smg-countdown-party-2021",
       "date": "2020-12-31",
       "title": "SMG Countdown Party 2021",
-      "titleChinese": "2021东方卫视跨年盛典",
+      "titleChinese": "2021东方卫视跨年盛典:1.相爱后动物感伤  2.别问我什么是迪斯科  3.野子",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at SMG Countdown Party 2021.",
+      "category": ["stage performances"],
+      "description": "Stage performance at SMG Countdown Party 2021. Performed three songs: 1.相爱后动物感伤 2.别问我什么是迪斯科 3.野子",
       "platforms": [
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=ihf9Mb6W7f4"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=qppP9bt2e40"
-        },
-        {
-          "name": "YouTube3",
-          "url": "https://www.youtube.com/watch?v=1xnvLhlptKk"
-        }
+        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=ihf9Mb6W7f4"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=qppP9bt2e40"},
+        {"name": "YouTube3", "url": "https://www.youtube.com/watch?v=1xnvLhlptKk"}
       ]
     },
     {
       "id": "tencent-all-star-night-2020",
       "date": "2020-12-20",
       "title": "Tencent Video All Star Night 2020",
-      "titleChinese": "腾讯星光大赏",
+      "titleChinese": "腾讯星光大赏:1.余生,请多指教  2.最幸运的幸运",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at Tencent Video All Star Night 2020.",
+      "category": ["stage performances"],
+      "description": "Stage performance at Tencent Video All Star Night 2020. Performed two songs: 1.余生,请多指教 2.最幸运的幸运",
       "platforms": [
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=iIU61IEZydQ"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=snpbIm_8tyg"
-        }
+        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=iIU61IEZydQ"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=snpbIm_8tyg"}
       ]
     },
     {
       "id": "everybody-standby-s2",
       "date": "2020-12-05",
       "title": "Everybody Standby S2",
-      "titleChinese": "演员请就位第二季",
+      "titleChinese": "演员请就位第二季:用尽我的一切奔向你",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Everybody Standby Season 2.",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=EL9jpQGDfYU"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=EL9jpQGDfYU"}
       ]
     },
     {
@@ -986,81 +631,45 @@
       "title": "The Wolf",
       "titleChinese": "狼殿下",
       "role": "Ji Chong 疾冲",
-      "category": [
-        "dramas"
-      ],
-      "description": "A young wolf raised in the pack is mistaken for a murderer and hunted relentlessly. Years later, they reunite, their past misunderstandings unraveling a new tale.",
+      "category": ["dramas"],
+      "description": "A young wolf raised in the pack is mistaken for a murderer and hunted relentlessly. Though the truth is uncovered, a sibling's interference leads the wolf to believe the noblewoman has betrayed him. He vanishes, only to be secretly adopted by a passing traveler. Years later, they reunite, their past misunderstandings unraveling a new tale.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/rj22lk3mjdlxfet/n0035l8ajq6.html?ptag=11972"
-        },
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_ryscd5za9s.html?vfm=2008_aldbd&fv=p_02_01"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLpghCOjR4QqrKjwKw-jkbWAbH6g08q1SR"
-        },
-        {
-          "name": "Rakuten Viki",
-          "url": "https://www.viki.com/tv/35890c-the-wolf"
-        },
-        {
-          "name": "Prime Video",
-          "url": "https://www.primevideo.com/dp/amzn1.dv.gti.e8ffe5ab-ce63-4acf-8b0f-8d831275a3e3"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/rj22lk3mjdlxfet/n0035l8ajq6.html?ptag=11972"},
+        {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_ryscd5za9s.html?vfm=2008_aldbd&fv=p_02_01"},
+        {"name": "iQIYI", "url": "https://www.iq.com/play/2f3t4gx3rf9?source_caller=ui&shortlink=GoogleTraffic&pid=Google%20Traffic&deep_link_value=%257B%2522biz_id%2522%253A%2522102%2522%252C%2522biz_plugin%2522%253A%2522qiyiplayer%2522%252C%2522biz_params%2522%253A%257B%2522biz_sub_id%2522%253A%2522101%2522%252C%2522biz_params%2522%253A%2522aid%253D8752932918020601%2526tvid%253D1578361576507000%2526ctype%253D0%2526pc%253D0%2526video_type%253D0%2526playMode%253D1%2522%257D%252C%2522biz_extend_params%2522%253A%2522%2522%252C%2522biz_dynamic_params%2522%253A%2522%2522%252C%2522biz_statistics%2522%253A%2522%2522%257D&version=2&af_channel=Mediaaction"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLpghCOjR4QqrKjwKw-jkbWAbH6g08q1SR"},
+        {"name": "Rakuten Viki", "url": "https://www.viki.com/tv/35890c-the-wolf#episodes"},
+        {"name": "Prime Video", "url": "https://www.primevideo.com/dp/amzn1.dv.gti.e8ffe5ab-ce63-4acf-8b0f-8d831275a3e3?autoplay=0&ref_=atv_cf_strg_wb"}
       ]
     },
     {
       "id": "double-ninth-festival-2020",
       "date": "2020-10-25",
       "title": "Celebrating the Double Ninth Festival",
-      "titleChinese": "CCTV3《岁岁又重阳》重阳节特别节目",
+      "titleChinese": "CCTV3《岁岁又重阳》重阳节特别节目:夜空中最亮的星",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Double Ninth Festival celebration.",
       "platforms": [
-        {
-          "name": "CCTV.COM",
-          "url": "https://tv.cctv.com/2020/10/25/VIDEvmcOE8DiMhWfYQoDPcQO201025.shtml"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=l60mfjxNlXU"
-        }
+        {"name": "CCTV.COM", "url": "https://tv.cctv.com/2020/10/25/VIDEvmcOE8DiMhWfYQoDPcQO201025.shtml"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=l60mfjxNlXU"}
       ]
     },
     {
       "id": "heroes-in-harms-way",
       "date": "2020-09-17",
       "title": "Heroes in Harm's Way: Happiness Community",
-      "titleChinese": "最美逆行者：幸福社区",
+      "titleChinese": "最美逆行者:幸福社区",
       "role": "Cai Ding 蔡丁",
-      "category": [
-        "dramas"
-      ],
+      "category": ["dramas"],
       "description": "The COVID-19 pandemic in China serves as the backdrop for this 7-part series.",
       "platforms": [
-        {
-          "name": "CCTV1",
-          "url": "https://tv.cctv.com/2020/09/21/VIDEnAR2exiunMHhn41cbvlI200921.shtml"
-        },
-        {
-          "name": "央视频",
-          "url": "https://w.yangshipin.cn/video?type=0&vid=g000022hfsl"
-        },
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=ttmwU8mYYac"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=jC_1ErkEaVY"
-        }
+        {"name": "CCTV1", "url": "https://tv.cctv.com/2020/09/21/VIDEnAR2exiunMHhn41cbvlI200921.shtml"},
+        {"name": "CCTV2", "url": "https://tv.cctv.com/2020/09/21/VIDEG7oR7FWKequmjWI7bHx3200921.shtml?spm=C55853485115.PhO6T4rt8QwC.0.0"},
+        {"name": "央视频1", "url": "https://w.yangshipin.cn/video?type=0&vid=g000022hfsl"},
+        {"name": "央视频2", "url": "https://w.yangshipin.cn/video?type=0&vid=h0000813lav"},
+        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=ttmwU8mYYac"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=jC_1ErkEaVY"}
       ]
     },
     {
@@ -1069,40 +678,24 @@
       "title": "Interview by Sina Entertainment",
       "titleChinese": "新浪娱乐肖战专访",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Interview with Sina Entertainment.",
       "platforms": [
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/tv/show/1034:4517246840799288?from=old_pc_videoshow"
-        },
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_19rxto06z0.html"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=Yffra_FYQwc"
-        }
+        {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:4517246840799288?from=old_pc_videoshow"},
+        {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_19rxto06z0.html"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Yffra_FYQwc"}
       ]
     },
     {
       "id": "international-nurses-day-2020",
       "date": "2020-05-09",
       "title": "Celebrate International Nurses Day",
-      "titleChinese": "《国际护士节》特别节目：竹石",
+      "titleChinese": "《国际护士节》特别节目:竹石",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance for International Nurses Day celebration.",
       "platforms": [
-        {
-          "name": "Sina",
-          "url": "https://zx.sina.cn/entactivity/xiaozhan/2021-01-29/detail-ikftssap1802000.d.html"
-        }
+        {"name": "Sina", "url": "https://zx.sina.cn/entactivity/xiaozhan/2021-01-29/detail-ikftssap1802000.d.html?cre=wappage&mod=r&loc=3&r=0&rfunc=84&tj=wap_news_relate"}
       ]
     },
     {
@@ -1111,95 +704,56 @@
       "title": "Interview by Economic View from China News Service",
       "titleChinese": "中新经纬肖战专访",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Interview with China News Service Economic View.",
       "platforms": [
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/tv/show/1034:4501725994745871?from=old_pc_videoshow"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=EWFVrsA58oU"
-        }
+        {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:4501725994745871?from=old_pc_videoshow"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=EWFVrsA58oU"}
       ]
     },
     {
       "id": "everlasting-classics-2020",
       "date": "2020-01-26",
       "title": "Everlasting Classics",
-      "titleChinese": "《经典咏流传》第三季",
+      "titleChinese": "《经典咏流传》第三季:1.千年一声唱  2.竹石",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at Everlasting Classics Season 3.",
+      "category": ["stage performances"],
+      "description": "Stage performance at Everlasting Classics Season 3. Performed two songs: 1.千年一声唱 2.竹石",
       "platforms": [
-        {
-          "name": "CCTV.COM1",
-          "url": "https://tv.cctv.com/2020/01/26/VIDEG4OFtTbBZcO4PlK8AmyW200126.shtml"
-        },
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=mmu9qLIMMuY"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=YmKTxosE0pE"
-        }
+        {"name": "CCTV.COM1", "url": "https://tv.cctv.com/2020/01/26/VIDEG4OFtTbBZcO4PlK8AmyW200126.shtml"},
+        {"name": "CCTV.COM2", "url": "https://tv.cctv.com/2020/01/26/VIDEnwSofzp8gXf3paAqayE2200126.shtml?spm=C52056131267.P6AQcZyePmUN.0.0"},
+        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=mmu9qLIMMuY"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=YmKTxosE0pE"}
       ]
     },
     {
       "id": "beijing-spring-festival-gala-2020",
       "date": "2020-01-25",
       "title": "Beijing Spring Festival Gala 2020",
-      "titleChinese": "北京春晚舞台",
+      "titleChinese": "北京春晚舞台:1.沧海一声笑  2.壮志在我胸",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at Beijing Spring Festival Gala 2020.",
+      "category": ["stage performances"],
+      "description": "Stage performance at Beijing Spring Festival Gala 2020. Performed two songs: 1.沧海一声笑 2.壮志在我胸",
       "platforms": [
-        {
-          "name": "抖音",
-          "url": "https://www.douyin.com/video/6785863696775187720"
-        },
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_19rvy6dnbw.html"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=YZhtDJJRPEc"
-        }
+        {"name": "抖音1", "url": "https://www.douyin.com/video/6785863696775187720"},
+        {"name": "抖音2", "url": "https://www.douyin.com/user/MS4wLjABAAAAU-9q9jD8WQyj7jJHsSfxPGHxyVajJBaGu7A8hn24cio?from_tab_name=main&modal_id=6785903440527641864&relation=0&vid=6785863696775187720"},
+        {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_19rvy6dnbw.html"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=YZhtDJJRPEc"}
       ]
     },
     {
       "id": "cmg-spring-festival-gala-2020",
       "date": "2020-01-24",
       "title": "CMG Spring Festival Gala: I Like You Because You Like Me",
-      "titleChinese": "央视春晚：喜欢你喜欢我",
+      "titleChinese": "央视春晚:喜欢你喜欢我",
       "role": "A Dentist (Lead)",
-      "category": [
-        "variety",
-        "stage performances"
-      ],
-      "description": "The short play tells the story of tea house owner Xie Na. Dentist Xiao Zhan, who met Xie Na online, bravely comes to confess his love.",
+      "category": ["variety", "stage performances"],
+      "description": "The short play tells the story of tea house owner Xie Na, who has played matchmaker for many customers, but her own love life remains a blank slate. Dentist Xiao Zhan, who met Xie Na online, bravely comes to confess his love.",
       "platforms": [
-        {
-          "name": "抖音",
-          "url": "https://www.douyin.com/video/6927619076466478343"
-        },
-        {
-          "name": "CCTV.COM",
-          "url": "https://tv.cctv.com/2020/01/25/VIDEfNtgACc8baqFL6DqhlB5200125.shtml"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=XGb3WueZ8dI"
-        }
+        {"name": "抖音", "url": "https://www.douyin.com/video/6927619076466478343"},
+        {"name": "CCTV.COM", "url": "https://tv.cctv.com/2020/01/25/VIDEfNtgACc8baqFL6DqhlB5200125.shtml?spm=C88599.PAZ9IA5B3QsX.E2jnZ4cc7gEy.63"},
+        {"name": "iQIYI", "url": "https://www.iq.com/play/%E5%B0%8F%E5%93%81%E3%80%8A%E5%96%9C%E6%AC%A2%E4%BD%A0%E5%96%9C%E6%AC%A2%E6%88%91%E3%80%8B%E8%82%96%E6%88%98%E8%B0%A2%E5%A8%9C%E4%B8%8A%E6%BC%94%E2%80%9C%E5%A7%90%E5%BC%9F%E6%81%8B%E2%80%9D%E2%80%942020%E5%A4%AE%E8%A7%86%E6%98%A5%E6%99%9A-2020-19rwamg4nk?lang=es_mx"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=XGb3WueZ8dI"}
       ]
     },
     {
@@ -1208,149 +762,94 @@
       "title": "Who's the Murderer S5 Ep 11-12",
       "titleChinese": "《明星大侦探》第五季 第11-12期",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
-      "description": "The show was licensed from JTBC's Crime Scene. Episodes about solving murders on the Slow Northern Train.",
+      "category": ["variety"],
+      "description": "The show was licensed from JTBC's Crime Scene. Episode 11-12 are about solving murders on the Slow Northern Train.",
       "platforms": [
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=fZdewSQ4HWE"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=qG9YfhHjBYw"
-        }
+        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=fZdewSQ4HWE"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=qG9YfhHjBYw"}
       ]
     },
     {
       "id": "best-acting-family-rules",
       "date": "2020-01-08",
       "title": "The Best Acting Performances: Family Rules",
-      "titleChinese": "最美表演：家规",
+      "titleChinese": "最美表演:家规",
       "role": "the son (Lead)",
-      "category": [
-        "variety"
-      ],
-      "description": "A short performance about a filial son who takes out a loan to buy a car for his father.",
+      "category": ["variety"],
+      "description": "The mischievous and cheeky boy played by Xiao Zhan is also a filial and good-natured child. He takes out a loan to buy a car, enduring a frugal lifestyle for the next two years, all with the goal of letting his father ride in his four-wheeled vehicle and bask in the adoration in his father's eyes.",
       "platforms": [
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/5721872475/Iox9OrHpc"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=c8PaBbPAQZA"
-        }
+        {"name": "Weibo", "url": "https://weibo.com/5721872475/Iox9OrHpc"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=c8PaBbPAQZA"}
       ]
     },
     {
       "id": "best-acting-hearing-aid",
       "date": "2020-01-08",
       "title": "The Best Acting Performances: Buying Hearing Aid",
-      "titleChinese": "最美表演：买耳朵",
+      "titleChinese": "最美表演:买耳朵",
       "role": "Food delivery rider (Lead)",
-      "category": [
-        "variety"
-      ],
-      "description": "A performance about a food delivery worker who wants to buy his grandmother a hearing aid.",
+      "category": ["variety"],
+      "description": "Xiao Zhan took on the role of a food delivery worker, portraying a story about his deep concern for his grandmother and his desire to buy her a hearing aid.",
       "platforms": [
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/5721872475/IpjUWzy8C"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=gzTFUWmV_iQ"
-        }
+        {"name": "Weibo", "url": "https://weibo.com/5721872475/IpjUWzy8C"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=gzTFUWmV_iQ"}
       ]
     },
     {
       "id": "super-ip-ceremony-2020",
       "date": "2020-01-06",
       "title": "Super IP Ceremony",
-      "titleChinese": "阅文原创文学风云盛典：余年",
+      "titleChinese": "阅文原创文学风云盛典:余年",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at Super IP Ceremony.",
+      "category": ["stage performances"],
+      "description": "Stage performances at Super IP Ceremony.",
       "platforms": [
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=i3H95319FEk"
-        },
-        {
-          "name": "QQ音乐",
-          "url": "https://y.qq.com/n/ryqq/mv/v0033yoo3xl"
-        }
+        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=i3H95319FEk"},
+        {"name": "QQ音乐1", "url": "https://y.qq.com/n/ryqq/mv/v0033yoo3xl"},
+        {"name": "YouTube2-发言", "url": "https://www.youtube.com/watch?v=YVf7OJ2g2Nk"},
+        {"name": "YouTube3-领奖", "url": "https://www.youtube.com/watch?v=x92_XB3Snfo"}
       ]
     },
     {
       "id": "smg-countdown-party-2020",
       "date": "2019-12-31",
       "title": "SMG Countdown Party 2020",
-      "titleChinese": "2020东方卫视跨年盛典",
+      "titleChinese": "2020东方卫视跨年盛典:1.我们都是追梦人  2.跟着感觉走  3.余年  4.神奇",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at SMG Countdown Party 2020.",
+      "category": ["stage performances"],
+      "description": "Stage performance at SMG Countdown Party 2020. Performed four songs: 1.我们都是追梦人 2.跟着感觉走 3.余年 4.神奇",
       "platforms": [
-        {
-          "name": "YouTube1",
-          "url": "https://www.youtube.com/watch?v=cJtXk1pAq4s"
-        },
-        {
-          "name": "YouTube2",
-          "url": "https://www.youtube.com/watch?v=O96YBHQSx3M"
-        },
-        {
-          "name": "YouTube4",
-          "url": "https://www.youtube.com/watch?v=Z6uWaQjM5G4"
-        }
+        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=cJtXk1pAq4s"},
+        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=O96YBHQSx3M"},
+        {"name": "iQIYI3", "url": "https://www.iq.com/play/2020%E4%B8%9C%E6%96%B9%E8%B7%A8%E5%B9%B4-%E8%82%96%E6%88%98%E6%AD%8C%E6%9B%B2%E3%80%8A%E4%BD%99%E5%B9%B4%E3%80%8B-2019-19rwgj221g?lang=en_us"},
+        {"name": "YouTube4", "url": "https://www.youtube.com/watch?v=Z6uWaQjM5G4"}
       ]
     },
     {
       "id": "tencent-all-star-night-2019",
       "date": "2019-12-28",
       "title": "Tencent Video All Star Night 2019",
-      "titleChinese": "腾讯星光大赏：余年",
+      "titleChinese": "腾讯星光大赏:余年",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Tencent Video All Star Night 2019.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/mzc00200rgl0qf5/u003302az64.html"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=Mg66CFuREj4"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc00200rgl0qf5/u003302az64.html"},
+        {"name": "WeTV", "url": "https://www.iflix.com/zh-cn/play/iwu4p2pt4vd5la4-2019%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E9%97%AA%E8%80%80%E6%98%9F%E5%85%89%E6%97%A5/i0033j1z3mz-%E3%80%8A2019%E6%98%9F%E5%85%89%E5%A4%A7%E8%B5%8F%E3%80%8B%E8%82%96%E6%88%98%E6%BC%94%E5%94%B1%E3%80%8A%E4%BD%99%E5%B9%B4%E3%80%8B"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Mg66CFuREj4"}
       ]
     },
     {
       "id": "cctv-heart-to-heart-gutian",
       "date": "2019-12-13",
       "title": "CCTV Heart to Heart Gutian Tour",
-      "titleChinese": "CCTV 心连心古田慰问演出",
+      "titleChinese": "CCTV 心连心古田慰问演出:我们都是追梦人",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at CCTV Heart to Heart Gutian Tour.",
       "platforms": [
-        {
-          "name": "CCTV.COM",
-          "url": "https://tv.cctv.com/2019/12/27/VIDErYc4hSWejbJgpluX4OFu191227.shtml"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=WlPRr15FZxk"
-        }
+        {"name": "CCTV.COM", "url": "https://tv.cctv.com/2019/12/27/VIDErYc4hSWejbJgpluX4OFu191227.shtml"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=WlPRr15FZxk"}
       ]
     },
     {
@@ -1359,27 +858,13 @@
       "title": "Joy of Life",
       "titleChinese": "庆余年",
       "role": "Yan Bingyun 言冰云",
-      "category": [
-        "dramas"
-      ],
+      "category": ["dramas"],
       "description": "The story follows a young man of mysterious origins, who sets out from his coastal hometown to face a series of trials and tribulations in his family, the city streets, the martial world, and the imperial court.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/rjae621myqca41h/i0032qxbi2v.html?ptag=11972"
-        },
-        {
-          "name": "WeTV",
-          "url": "https://wetv.vip/en/play/e1028wfqyv7e32s-Joy%20of%20Life/g0032bnc6xu-EP1%3AJoy%20of%20Life"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLTB73Ibi_X3H0oT42WnzzY_6lo3pQjNMW"
-        },
-        {
-          "name": "Rakuten Viki",
-          "url": "https://www.viki.com/tv/36367c-joy-of-life"
-        }
+{"name": "Tencent", "url": "https://v.qq.com/x/cover/rjae621myqca41h/i0032qxbi2v.html?ptag=11972"},
+        {"name": "WeTV", "url": "https://wetv.vip/en/play/e1028wfqyv7e32s-Joy%20of%20Life/g0032bnc6xu-EP1%3AJoy%20of%20Life"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLTB73Ibi_X3H0oT42WnzzY_6lo3pQjNMW"},
+        {"name": "Rakuten Viki", "url": "https://www.viki.com/tv/36367c-joy-of-life"}
       ]
     },
     {
@@ -1388,54 +873,35 @@
       "title": "Our Song / Singing with Legends",
       "titleChinese": "我们的歌",
       "role": "Guest Performer",
-      "category": [
-        "variety",
-        "stage performances"
-      ],
+      "category": ["variety", "stage performances"],
       "description": "A reality competition show where singers from different generations collaborate to reinterpret classic songs.",
       "platforms": [
-        {
-          "name": "YouTube(cut)",
-          "url": "https://www.youtube.com/watch?v=u-ro3Ut8JGk"
-        },
-        {
-          "name": "YouTube(XZ合集)",
-          "url": "https://www.youtube.com/watch?v=anJKIZovysY"
-        }
+        {"name": "YouTube(cut)", "url": "https://www.youtube.com/watch?v=u-ro3Ut8JGk"},
+        {"name": "YouTube(XZ合集)", "url": "https://www.youtube.com/watch?v=anJKIZovysY"}
       ]
     },
     {
       "id": "hunan-tv-double11-carnival",
       "date": "2019-11-11",
       "title": "Hunan TV Double11 Carnival Festival",
-      "titleChinese": "湖南卫视双十一嗨爆夜",
+      "titleChinese": "湖南卫视双十一嗨爆夜:尚好的青春",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Hunan TV Double11 Carnival Festival.",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=B2cF9NzGO0Y"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=B2cF9NzGO0Y"}
       ]
     },
     {
       "id": "douyin-wonderful-night-2019",
       "date": "2019-10-19",
       "title": "Douyin Wonderful Night",
-      "titleChinese": "抖音美好奇妙夜",
+      "titleChinese": "抖音美好奇妙夜:你是此生最美的风景",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance at Douyin Wonderful Night.",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=84ofVOsZJRo"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=84ofVOsZJRo"}
       ]
     },
     {
@@ -1444,57 +910,36 @@
       "title": "Ai Si Bu Si Interview",
       "titleChinese": "爱思不Si",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
-      "description": "A micro-variety show that features hot topics and unique perspectives. Incisive interviews with hot-button figures across various industries.",
+      "category": ["variety"],
+      "description": "A micro-variety show that features 'hot topics' and 'unique perspectives.' The show conducts incisive interviews with 'hot-button figures' across various industries.",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=CFVUtZO7ufk"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=CFVUtZO7ufk"}
       ]
     },
     {
       "id": "i-love-you-china-cctv15",
       "date": "2019-10-4",
       "title": "I Love You, China on CCTV-15 Music Channel",
-      "titleChinese": "CCTV-15音乐频道《我爱你中国》",
+      "titleChinese": "CCTV-15音乐频道《我爱你中国》:我的中国心",
       "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
+      "category": ["stage performances"],
       "description": "Stage performance on CCTV-15 Music Channel.",
       "platforms": [
-        {
-          "name": "CCTV.COM",
-          "url": "https://tv.cctv.com/2019/10/04/VIDEV71YJNMa8rKyP2AubWZj191004.shtml"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=1lr_k8SaxRA"
-        }
+        {"name": "CCTV.COM", "url": "https://tv.cctv.com/2019/10/04/VIDEV71YJNMa8rKyP2AubWZj191004.shtml"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=1lr_k8SaxRA"}
       ]
     },
     {
       "id": "feel-the-world-xiamen",
       "date": "2019-09-30",
       "title": "Feel the World: Xiamen",
-      "titleChinese": "漫游旅行家：厦门篇",
+      "titleChinese": "漫游旅行家:厦门篇",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "A travel program featuring Xiamen.",
       "platforms": [
-        {
-          "name": "Weibo1",
-          "url": "https://weibo.com/6470719555/I9ivxtSww"
-        },
-        {
-          "name": "Weibo2",
-          "url": "https://weibo.com/6470719555/Ibuq2bihY"
-        }
+        {"name": "Weibo1", "url": "https://weibo.com/6470719555/I9ivxtSww"},
+        {"name": "Weibo2", "url": "https://weibo.com/6470719555/Ibuq2bihY"}
       ]
     },
     {
@@ -1503,23 +948,12 @@
       "title": "Jade Dynasty I",
       "titleChinese": "诛仙 I",
       "role": "Zhang Xiaofan 张小凡 (Lead)",
-      "category": [
-        "movies"
-      ],
-      "description": "The film follows the story of Zhang Xiaofan, a kindhearted village boy who becomes a disciple of the Qingyun Sect. He learns martial arts and becomes a master of the mythical realm, while experiencing complicated relationships with three women.",
+      "category": ["movies"],
+      "description": "The film follows the story of Zhang Xiaofan, a kindhearted and pure village boy who is thrown into a world of chaos after his village gets massacred, and then becomes a disciple of the Qingyun Sect. Zhang Xiaofan learns martial arts from three masters and becomes a master of the mythical realm, while at the same time, experiencing a complicated relationship with three beautiful women, Lu Xueqi, Tian Ling'er, and Bi Yao.",
       "platforms": [
-        {
-          "name": "Tubi TV",
-          "url": "https://tubitv.com/movies/581987/jade-dynasty"
-        },
-        {
-          "name": "Prime Video",
-          "url": "https://www.primevideo.com/detail/Jade-Dynasty/0JXMYFQKWNUA19OEUGB4XZPJDD"
-        },
-        {
-          "name": "Rakuten Viki",
-          "url": "https://www.viki.com/movies/36837c-jade-dynasty"
-        }
+        {"name": "Tubi TV", "url": "https://tubitv.com/movies/581987/jade-dynasty"},
+        {"name": "Prime Video", "url": "https://www.primevideo.com/detail/Jade-Dynasty/0JXMYFQKWNUA19OEUGB4XZPJDD"},
+        {"name": "Rakuten Viki", "url": "https://www.viki.com/movies/36837c-jade-dynasty"}
       ]
     },
     {
@@ -1528,19 +962,11 @@
       "title": "Compilation of Interviews about Movie: Jade Dynasty I",
       "titleChinese": "诛仙采访合集",
       "role": "Zhang Xiaofan",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Interviews after movie road show for Jade Dynasty.",
       "platforms": [
-        {
-          "name": "Weibo",
-          "url": "https://weibo.com/5735501478/I6WTAAsgX"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=E4J9dWT4k_U"
-        }
+        {"name": "Weibo", "url": "https://weibo.com/5735501478/I6WTAAsgX"},
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=E4J9dWT4k_U"}
       ]
     },
     {
@@ -1549,27 +975,13 @@
       "title": "The Untamed",
       "titleChinese": "陈情令",
       "role": "Wei Wuxian / Mo Xuanyu 魏无羡 / 莫玄羽 (Lead)",
-      "category": [
-        "dramas"
-      ],
-      "description": "A fantasy drama based on the novel Mo Dao Zu Shi. The story follows Wei Wuxian and Lan Wangji as they solve mysteries, face ghosts, and uncover dark secrets in the cultivation world.",
+      "category": ["dramas"],
+      "description": "A fantasy drama based on the novel Mo Dao Zu Shi by Mo Xiang Tong Xiu. The story follows Wei Wuxian and Lan Wangji as they solve mysteries, face ghosts, and uncover dark secrets in the cultivation world.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/vbb35hm6m6da1wc/w0031s4gikk.html?ptag=11972"
-        },
-        {
-          "name": "WeTV",
-          "url": "https://wetv.vip/en/play/gnwjazjgmg997xg-The%20Untamed/d0031smeq8n-EP01%3A%20The%20Untamed"
-        },
-        {
-          "name": "Netflix",
-          "url": "https://www.netflix.com/ca/title/81200228"
-        },
-        {
-          "name": "Rakuten Viki",
-          "url": "https://www.viki.com/tv/36657c-the-untamed"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/vbb35hm6m6da1wc/w0031s4gikk.html?ptag=11972"},
+        {"name": "WeTV", "url": "https://wetv.vip/en/play/gnwjazjgmg997xg-The%20Untamed/d0031smeq8n-EP01%3A%20The%20Untamed"},
+        {"name": "Netflix", "url": "https://www.netflix.com/ca/title/81200228"},
+        {"name": "Rakuten Viki", "url": "https://www.viki.com/tv/36657c-the-untamed"}
       ]
     },
     {
@@ -1578,86 +990,51 @@
       "title": "Battle Through the Heavens",
       "titleChinese": "斗破苍穹",
       "role": "Lin Xiuya 林修崖",
-      "category": [
-        "dramas"
-      ],
-      "description": "A fantasy drama based on the novel by Heavenly Silkworm Potato. The story follows Xiao Yan, a former genius, who embarks on a journey to regain his powers and avenge his mother's death.",
+      "category": ["dramas"],
+      "description": "A fantasy drama based on the novel Battle Through the Heavens by Heavenly Silkworm Potato. The story follows Xiao Yan, a former genius, who embarks on a journey to regain his powers and avenge his mother's death.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/5joaacfgqdo8q8v/n0027gzq84y.html?ptag=11972"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLpghCOjR4QqrN8DTJsVFY3wDLjYZX8A7H"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/5joaacfgqdo8q8v/n0027gzq84y.html?ptag=11972"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLpghCOjR4QqrN8DTJsVFY3wDLjYZX8A7H"}
       ]
     },
     {
       "id": "hi-star-interview",
       "date": "2018-06-11",
       "title": "Hi Star",
-      "titleChinese": "你好明星 （同道大叔采访）",
+      "titleChinese": "你好明星 (同道大叔采访)",
       "role": "Guest",
-      "category": [
-        "variety"
-      ],
-      "description": "Interview by Tongdao.",
+      "category": ["variety"],
+      "description": "Xiao Zhan Interviewed by Tongdao.",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/watch?v=8zXvCZfbREQ"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=8zXvCZfbREQ"}
       ]
     },
     {
       "id": "oh-my-emperor-s2",
       "date": "2018-05-23",
       "title": "Oh! My Emperor S2",
-      "titleChinese": "哦！我的皇帝陛下 第二季",
+      "titleChinese": "哦!我的皇帝陛下 第二季",
       "role": "Bei Tang Mo Ran 北堂墨染",
-      "category": [
-        "dramas"
-      ],
+      "category": ["dramas"],
       "description": "A captivating celestial romance unfolds in the enigmatic realm of Zodiac Nation, where star-powered abilities reign supreme.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/idcrbac503kxzap/p06761ymcqx.html"
-        },
-        {
-          "name": "WeTV",
-          "url": "https://wetv.vip/en/play/q3pceue59xfirit/k0027st7gbh-EP1%EF%BC%9AOh!_My_Emperor_SS2"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLxbgQdcnIafgZWz4BvNf_FXcfmXS_g0BK"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/idcrbac503kxzap/p06761ymcqx.html"},
+        {"name": "WeTV", "url": "https://wetv.vip/en/play/q3pceue59xfirit/k0027st7gbh-EP1%EF%BC%9AOh!_My_Emperor_SS2"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLxbgQdcnIafgZWz4BvNf_FXcfmXS_g0BK"}
       ]
     },
     {
       "id": "oh-my-emperor-s1",
       "date": "2018-04-25",
       "title": "Oh! My Emperor S1",
-      "titleChinese": "哦！我的皇帝陛下 第一季",
+      "titleChinese": "哦!我的皇帝陛下 第一季",
       "role": "Bei Tang Mo Ran 北堂墨染",
-      "category": [
-        "dramas"
-      ],
+      "category": ["dramas"],
       "description": "A captivating celestial romance unfolds in the enigmatic realm of Zodiac Nation, where star-powered abilities reign supreme.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/wxwaravazucarb1/t0635gds69v.html"
-        },
-        {
-          "name": "WeTV",
-          "url": "https://wetv.vip/en/play/vlk58kdlj1g0lup/l00273jfikp"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLs3DOuT3JlGTWokDapX8D6D-S9s9qbrgI"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/wxwaravazucarb1/t0635gds69v.html"},
+        {"name": "WeTV", "url": "https://wetv.vip/en/play/vlk58kdlj1g0lup/l00273jfikp"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLs3DOuT3JlGTWokDapX8D6D-S9s9qbrgI"}
       ]
     },
     {
@@ -1666,23 +1043,12 @@
       "title": "Super Star Academy",
       "titleChinese": "超星星学园",
       "role": "Fang Tianze 方天泽",
-      "category": [
-        "dramas"
-      ],
+      "category": ["dramas"],
       "description": "In a parallel world where star sign abilities reign supreme, Cheng Zhier is recruited by the prestigious Super Star Academy. There, she embarks on a captivating journey alongside the heir to the star sign legacy, Fang Tianze.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/7kcf8a09yt0mkzh/k0332np9ggo.html"
-        },
-        {
-          "name": "WeTV",
-          "url": "https://wetv.vip/zh-cn/play/63s2rqvbmfkbqzl-%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD/x0032pbhdbf-%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD_01"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLMX26aiIvX5r4DsfYoltPM1SmUC-FMcRr"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/7kcf8a09yt0mkzh/k0332np9ggo.html"},
+        {"name": "WeTV", "url": "https://wetv.vip/zh-cn/play/63s2rqvbmfkbqzl-%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD/x0032pbhdbf-%E8%B6%85%E6%98%9F%E6%98%9F%E5%AD%A6%E5%9B%AD_01"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLMX26aiIvX5r4DsfYoltPM1SmUC-FMcRr"}
       ]
     },
     {
@@ -1691,41 +1057,26 @@
       "title": "X File",
       "titleChinese": "燃烧吧少年",
       "role": "Contestant (X NINE member)",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "A reality competition show where idol groups compete in various challenges and performances.",
       "platforms": [
-        {
-          "name": "Tencent",
-          "url": "https://v.qq.com/x/cover/imzwsz2awsd230g/e0018j4lzz3.html"
-        },
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/playlist?list=PLmHvcli_9mkRH4oFQTVRkZHkiUVQRWw3n"
-        },
-        {
-          "name": "Bilibili(cut)",
-          "url": "https://www.bilibili.com/video/BV1ua411w7si/"
-        }
+        {"name": "Tencent", "url": "https://v.qq.com/x/cover/imzwsz2awsd230g/e0018j4lzz3.html"},
+        {"name": "YouTube", "url": "https://www.youtube.com/playlist?list=PLmHvcli_9mkRH4oFQTVRkZHkiUVQRWw3n"},
+        {"name": "Bilibili(cut)", "url": "https://www.bilibili.com/video/BV1ua411w7si/?spm_id_from=333.337.search-card.all.click"}
       ]
     },
     {
       "id": "xz-studio-youtube",
-      "date": "Updated by XZ Studio",
+      "date": "Updated by XZ.Studio",
       "title": "Xiao Zhan Studio on YouTube",
       "titleChinese": "肖战工作室",
       "role": "The Owner",
-      "category": [
-        "variety"
-      ],
+      "category": ["variety"],
       "description": "Contents released by Xiao Zhan Studio on YouTube including shorts, MVs, documentaries and behind-the-scenes.",
       "platforms": [
-        {
-          "name": "YouTube",
-          "url": "https://www.youtube.com/@xzstudio-1005/videos"
-        }
+        {"name": "YouTube", "url": "https://www.youtube.com/@xzstudio-1005/videos"}
       ]
     }
   ]
 }
+
