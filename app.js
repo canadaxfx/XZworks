@@ -306,7 +306,7 @@ function initializeMusicPlayer() {
     
     function updatePlayButton() {
         musicToggle.innerHTML = isPlaying ? 
-            '<span class="music-icon">⸏️</span>' : 
+            '<span class="music-icon">⏸️</span>' : 
             '<span class="music-icon">▶️</span>';
     }
 
