@@ -362,7 +362,7 @@
 
         .music-player {
             position:fixed;
-            bottom:20px;
+            bottom:8px;
             right:20px;
             z-index:1000;
             background-color:#ffffffe6;
@@ -577,7 +577,7 @@
 
         @media (max-width: 768px) {
             .music-player {
-                bottom:8px;
+                bottom:20px;
                 right:8px;
                 padding:4px 8px;
                 border-radius:25px
@@ -638,6 +638,17 @@
             color: var(--accent-color);
             font-size: 1.2rem;
         }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.site-footer {
+    margin-top: auto;
+}
+
     </style>
 
     <!-- Keep your Google Analytics -->
