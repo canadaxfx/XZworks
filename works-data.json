@@ -176,7 +176,7 @@
       "platforms": [
         {"name": "CCTV.COM", "url": "https://tv.cctv.com/2025/01/29/VIDEImPwng68RrpZ87MWyaMg250129.shtml"},
         {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:5128276054835293?from=old_pc_videoshow"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=gHgZAt8BohY"}
+        {"name": "YouTube(China Movie News)", "url": "https://www.youtube.com/watch?v=gHgZAt8BohY"}
       ]
     },
     {
@@ -190,7 +190,7 @@
       "platforms": [
         {"name": "中国新闻网", "url": "https://m.chinanews.com/wap/detail/chs/zb/5744.shtml"},
         {"name": "优酷", "url": "https://v.youku.com/video?s=aafd4926d195453ab4df"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=2aumtAO4uXk&t=82s"}
+        {"name": "YouTube(中国新闻社)", "url": "https://www.youtube.com/watch?v=2aumtAO4uXk&t=82s"}
       ]
     },
     {
@@ -225,7 +225,7 @@
       "platforms": [
         {"name": "QQ.COM", "url": "https://news.qq.com/rain/a/20250129A06JDW00?suid=&media_id="},
         {"name": "iQIYI", "url": "https://www.iq.com/play/2025%E5%8C%97%E4%BA%AC%E6%98%A5%E6%99%9A-%E8%82%96%E6%88%98%E6%AD%8C%E6%9B%B2%E3%80%8A%E7%81%AF%E5%A1%94%E3%80%8B-2025-15lulj5zwyg?lang=en_us"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=GUJy4QTe2_k"}
+        {"name": "YouTube(BRTV)", "url": "https://www.youtube.com/watch?v=GUJy4QTe2_k"}
       ]
     },
     {
@@ -266,15 +266,15 @@
         {"name": "中国新闻网1", "url": "https://www.chinanews.com.cn/shipin/cns-d/2024/09-23/news1000725.shtml"},
         {"name": "Sina1", "url": "https://video.sina.cn/finance/2024-09-23/detail-incqafyf0629406.d.html?vt=4"},
         {"name": "Facebook1(凤凰卫视)", "url": "https://www.facebook.com/PhoenixTVHK/videos/%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E5%A4%AA%E5%A5%BD%E8%81%BD%E4%BA%86%E8%8E%AB%E6%96%87%E8%94%9A%E8%82%96%E6%88%B0%E7%89%BD%E6%89%8B%E5%90%88%E5%94%B1%E9%80%99%E4%B8%96%E7%95%8C%E9%82%A3%E9%BA%BC%E5%A4%9A%E4%BA%BA/490703023831493/"},
-        {"name": "YouTube1-1(凤凰卫视)", "url": "https://www.youtube.com/watch?v=iv49foV0oPU"},
-        {"name": "YouTube1-2(中国新闻社)", "url": "https://www.youtube.com/watch?v=qNJb4g1QELk"},
-        {"name": "YouTube1-3(莫文蔚版)", "url": "https://www.youtube.com/watch?v=8GpqCj9EECQ"},
-        {"name": "X(China Daily)1-1", "url": "https://x.com/ChinaDaily/status/1838029425130238412"},
-        {"name": "X(凤凰卫视)1-2", "url": "https://x.com/PhoenixTVHK/status/1837904700412432785"},
+        {"name": "YouTube1.1(凤凰卫视)", "url": "https://www.youtube.com/watch?v=iv49foV0oPU"},
+        {"name": "YouTube1.2(中国新闻社)", "url": "https://www.youtube.com/watch?v=qNJb4g1QELk"},
+        {"name": "YouTube1.3(莫文蔚版)", "url": "https://www.youtube.com/watch?v=8GpqCj9EECQ"},
+        {"name": "X(China Daily)1.1", "url": "https://x.com/ChinaDaily/status/1838029425130238412"},
+        {"name": "X(凤凰卫视)1.2", "url": "https://x.com/PhoenixTVHK/status/1837904700412432785"},
         {"name": "Sina2", "url": "https://k.sina.cn/article_1643971635_m61fd0433033013a1i.html?from=movie"},
         {"name": "凤凰网2", "url": "https://v.ifeng.com/c/8d61URNjqqt"},
-        {"name": "Facebook2", "url": "https://www.facebook.com/PhoenixTVHK/videos/%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E8%B6%85%E7%A9%A9%E7%8F%BE%E5%A0%B4%E8%82%96%E6%88%B0%E5%91%88%E7%8F%BE%E9%AB%98%E9%9F%B3%E8%88%9E%E5%8F%B0%E5%BE%80%E4%BA%8B%E9%9A%A8%E9%A2%A8/1463277994388769/"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=i-s5h4o2rmo"}
+        {"name": "Facebook(凤凰卫视)2", "url": "https://www.facebook.com/PhoenixTVHK/videos/%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E8%B6%85%E7%A9%A9%E7%8F%BE%E5%A0%B4%E8%82%96%E6%88%B0%E5%91%88%E7%8F%BE%E9%AB%98%E9%9F%B3%E8%88%9E%E5%8F%B0%E5%BE%80%E4%BA%8B%E9%9A%A8%E9%A2%A8/1463277994388769/"},
+        {"name": "YouTube(Beijing Business Today)2", "url": "https://www.youtube.com/watch?v=i-s5h4o2rmo"}
       ]
     },
     {
@@ -287,7 +287,7 @@
       "description": "Stage performance at Beijing Cultural Forum 2024.",
       "platforms": [
         {"name": "Sina", "url": "https://k.sina.cn/article_1644948230_m620beb06033014hme.html"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=ARChdSyNrvw"}
+        {"name": "YouTube(BRTV)", "url": "https://www.youtube.com/watch?v=ARChdSyNrvw"}
       ]
     },
     {
@@ -313,12 +313,12 @@
       "description": "1.Narrator of Chapter 1: Seize the Day. 2.Singer of the song: Fellow Traveler.",
       "platforms": [
         {"name": "新华网1", "url": "http://www.news.cn/politics/20240128/9f4d386a26884392a4b67c29d6640980/c.html"},
-        {"name": "抖音1", "url": "https://www.douyin.com/video/7334645390165200169"},
+        {"name": "抖音(东方台)1", "url": "https://www.douyin.com/video/7334645390165200169"},
         {"name": "Bilibili1", "url": "https://www.bilibili.com/video/BV1J64y1374c/"},
         {"name": "Tencent2", "url": "https://v.qq.com/x/cover/mzc00200wlrpuxb/p0048hjuvou.html"},
-        {"name": "中国新闻网2-1", "url": "https://www.chinanews.com.cn/yl/shipin/cns/2023/10-16/news972808.shtml"},
-        {"name": "中国新闻网2-2", "url": "https://www.chinanews.com.cn/gn/2023/10-16/10094669.shtml"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=SPOZ_Um_dpA"}
+        {"name": "中国新闻网2.1", "url": "https://www.chinanews.com.cn/yl/shipin/cns/2023/10-16/news972808.shtml"},
+        {"name": "中国新闻网2.2", "url": "https://www.chinanews.com.cn/gn/2023/10-16/10094669.shtml"},
+        {"name": "YouTube(Tencent)2", "url": "https://www.youtube.com/watch?v=SPOZ_Um_dpA"}
       ]
     },
     {
@@ -376,8 +376,8 @@
         {"name": "央视频2", "url": "https://w.yangshipin.cn/video?type=0&vid=p000037v9d4&ptag=4_2.8.1.23336_sina"},
         {"name": "CCTV.COM1", "url": "https://tv.cctv.com/2023/06/18/VIDEpwqsabN3o0VEW0u4WIMc230618.shtml"},
         {"name": "CCTV.COM2", "url": "https://tv.cctv.com/2023/06/25/VIDEQjw87amDHR2I0cmsxX8g230625.shtml?spm=C53090171355.PaxHVtmpGFpz.0.0"},
-        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=h6OG10lWir4&t=932s"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=0caKdpLrG9A"}
+        {"name": "YouTube(CCTV电视剧)1", "url": "https://www.youtube.com/watch?v=h6OG10lWir4&t=932s"},
+        {"name": "YouTube(CCTV电视剧)2", "url": "https://www.youtube.com/watch?v=0caKdpLrG9A"}
       ]
     },
     {
@@ -445,8 +445,8 @@
       "category": ["stage performances"],
       "description": "Stage performance at 6th Jackie Chan International Action Film Week.",
       "platforms": [
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=U65WI4DT-c8"},
-        {"name": "Weibo", "url": "https://m.weibo.cn/status/4693030101847226#&video"}
+        {"name": "YouTube(中国音乐电视)", "url": "https://www.youtube.com/watch?v=U65WI4DT-c8"},
+        {"name": "Weibo(CCTV电视剧)", "url": "https://m.weibo.cn/status/4693030101847226#&video"}
       ]
     },
     {
@@ -458,8 +458,8 @@
       "category": ["stage performances"],
       "description": "Stage performance for Hangzhou Asian Games countdown event.",
       "platforms": [
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=T2f0LjV29Rs"},
-        {"name": "抖音", "url": "https://www.douyin.com/video/7006292054959590669"},
+        {"name": "YouTube(The 19th Asian Games Hangzhou)", "url": "https://www.youtube.com/watch?v=T2f0LjV29Rs"},
+        {"name": "抖音(杭州亚运品牌促进会)", "url": "https://www.douyin.com/video/7006292054959590669"},
         {"name": "iQIYI", "url": "https://www.iq.com/play/%E3%80%8A%E6%88%91%E4%BB%AC%E9%83%BD%E5%B0%86%E5%A5%94%E8%B5%B4%E7%BE%8E%E5%A5%BD%E6%9C%AA%E6%9D%A5%E3%80%8B%E5%A4%AA%E7%BB%9D%E4%BA%86-%E8%82%96%E6%88%98%E6%9D%AD%E5%B7%9E%E4%BA%9A%E8%BF%90%E4%BC%9A%E5%80%92%E8%AE%A1%E6%97%B6%E5%90%AF%E5%8A%A8-2021-p4ghq73y84?lang=en_us"}
       ]
     },
@@ -472,9 +472,9 @@
       "category": ["stage performances"],
       "description": "Stage performance at JD.com's 618 shopping festival. Performed two songs: 1.让我留在你身边 2.竹石",
       "platforms": [
-        {"name": "Weibo", "url": "https://weibo.com/tv/show/1034:4643045698896064?from=old_pc_videoshow"},
+        {"name": "Weibo(京东)", "url": "https://weibo.com/tv/show/1034:4643045698896064?from=old_pc_videoshow"},
         {"name": "QQ音乐1", "url": "https://y.qq.com/n/yqq/mv/m/012QLDZ93uHidM.html"},
-        {"name": "Weixin1", "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTgzMTAwMA==&mid=2653134655&idx=2&sn=0197783545201f582de163d7a1c731a0&chksm=bd78b9888a0f309eca0ef5919830ae4e6f21d07c0879377a3124cbebfb371203aa62f9b7cba1&scene=27"},
+        {"name": "Weixin(北京卫视)1", "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTgzMTAwMA==&mid=2653134655&idx=2&sn=0197783545201f582de163d7a1c731a0&chksm=bd78b9888a0f309eca0ef5919830ae4e6f21d07c0879377a3124cbebfb371203aa62f9b7cba1&scene=27"},
         {"name": "Tencent2", "url": "https://v.qq.com/x/page/n3251xpi3sg.html"},
         {"name": "QQ音乐2", "url": "https://y.qq.com/n/yqq/mv/m/013OBtIl3xdi1k.html"}
       ]
@@ -517,7 +517,7 @@
       "category": ["stage performances"],
       "description": "Stage performance at SMG Spring Festival Gala 2021. Performed two songs: 异乡人 and 用尽我的一切奔向你",
       "platforms": [
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Xykyd0Cl2nw"}
+        {"name": "YouTube(SMG音乐频道)", "url": "https://www.youtube.com/watch?v=Xykyd0Cl2nw"}
       ]
     },
     {
@@ -530,7 +530,7 @@
       "description": "Stage performance at Beijing Spring Festival Gala 2021.",
       "platforms": [
         {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_1b07bvfwzss.html?list=140w677p0ya"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=hqXcmqgJP7U"}
+        {"name": "YouTube(BRTV)", "url": "https://www.youtube.com/watch?v=hqXcmqgJP7U"}
       ]
     },
     {
@@ -556,7 +556,7 @@
       "description": "TV series premiere event of Douluo Continent.",
       "platforms": [
         {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc00200js3mdvw/p0035nypt0c.html"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Xpz7jfSKU-s"}
+        {"name": "YouTube(Tencent)", "url": "https://www.youtube.com/watch?v=Xpz7jfSKU-s"}
       ]
     },
     {
@@ -583,7 +583,7 @@
       "platforms": [
         {"name": "优酷", "url": "https://v.youku.com/video?spm=a2hkm.8166622.PhoneSokuProgram_2.dselectbutton_2&vid=XNTA1NjM0MDg4MA=="},
         {"name": "Youku", "url": "https://www.youku.tv/v/v_show/id_XNTkyNDcwOTMzMg==.html?s=addfb4a9b2184a2d9158&spm=a2hje.13141534.1_2.d_zj2_2&scm=20140719.apircmd.242627.video_XNTkyNDcwOTMzMg=="},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=e601XtWLcr8"}
+        {"name": "YouTube(YOUKU)", "url": "https://www.youtube.com/watch?v=e601XtWLcr8"}
       ]
     },
     {
@@ -595,9 +595,9 @@
       "category": ["stage performances"],
       "description": "Stage performance at SMG Countdown Party 2021. Performed three songs: 1.相爱后动物感伤 2.别问我什么是迪斯科 3.野子",
       "platforms": [
-        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=ihf9Mb6W7f4"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=qppP9bt2e40"},
-        {"name": "YouTube3", "url": "https://www.youtube.com/watch?v=1xnvLhlptKk"}
+        {"name": "YouTube(SMG音乐频道)1", "url": "https://www.youtube.com/watch?v=ihf9Mb6W7f4"},
+        {"name": "YouTube(SMG音乐频道)2", "url": "https://www.youtube.com/watch?v=qppP9bt2e40"},
+        {"name": "YouTube(SMG官方频道)3", "url": "https://www.youtube.com/watch?v=1xnvLhlptKk"}
       ]
     },
     {
@@ -609,8 +609,8 @@
       "category": ["stage performances"],
       "description": "Stage performance at Tencent Video All Star Night 2020. Performed two songs: 1.余生,请多指教 2.最幸运的幸运",
       "platforms": [
-        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=iIU61IEZydQ"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=snpbIm_8tyg"}
+        {"name": "YouTube(Tencent)1", "url": "https://www.youtube.com/watch?v=iIU61IEZydQ"},
+        {"name": "YouTube(Tencent)2", "url": "https://www.youtube.com/watch?v=snpbIm_8tyg"}
       ]
     },
     {
@@ -622,7 +622,7 @@
       "category": ["stage performances"],
       "description": "Stage performance at Everybody Standby Season 2.",
       "platforms": [
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=EL9jpQGDfYU"}
+        {"name": "YouTube(Tencent)", "url": "https://www.youtube.com/watch?v=EL9jpQGDfYU"}
       ]
     },
     {
@@ -652,7 +652,7 @@
       "description": "Stage performance at Double Ninth Festival celebration.",
       "platforms": [
         {"name": "CCTV.COM", "url": "https://tv.cctv.com/2020/10/25/VIDEvmcOE8DiMhWfYQoDPcQO201025.shtml"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=l60mfjxNlXU"}
+        {"name": "YouTube(CCTV春晚)", "url": "https://www.youtube.com/watch?v=l60mfjxNlXU"}
       ]
     },
     {
@@ -668,8 +668,8 @@
         {"name": "CCTV2", "url": "https://tv.cctv.com/2020/09/21/VIDEG7oR7FWKequmjWI7bHx3200921.shtml?spm=C55853485115.PhO6T4rt8QwC.0.0"},
         {"name": "央视频1", "url": "https://w.yangshipin.cn/video?type=0&vid=g000022hfsl"},
         {"name": "央视频2", "url": "https://w.yangshipin.cn/video?type=0&vid=h0000813lav"},
-        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=ttmwU8mYYac"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=jC_1ErkEaVY"}
+        {"name": "YouTube(China Zone剧乐部)1", "url": "https://www.youtube.com/watch?v=ttmwU8mYYac"},
+        {"name": "YouTube(China Zone剧乐部)2", "url": "https://www.youtube.com/watch?v=jC_1ErkEaVY"}
       ]
     },
     {
@@ -722,8 +722,8 @@
       "platforms": [
         {"name": "CCTV.COM1", "url": "https://tv.cctv.com/2020/01/26/VIDEG4OFtTbBZcO4PlK8AmyW200126.shtml"},
         {"name": "CCTV.COM2", "url": "https://tv.cctv.com/2020/01/26/VIDEnwSofzp8gXf3paAqayE2200126.shtml?spm=C52056131267.P6AQcZyePmUN.0.0"},
-        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=mmu9qLIMMuY"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=YmKTxosE0pE"}
+        {"name": "YouTube(CCTV)1", "url": "https://www.youtube.com/watch?v=mmu9qLIMMuY"},
+        {"name": "YouTube(CCTV)2", "url": "https://www.youtube.com/watch?v=YmKTxosE0pE"}
       ]
     },
     {
@@ -735,10 +735,10 @@
       "category": ["stage performances"],
       "description": "Stage performance at Beijing Spring Festival Gala 2020. Performed two songs: 1.沧海一声笑 2.壮志在我胸",
       "platforms": [
-        {"name": "抖音1", "url": "https://www.douyin.com/video/6785863696775187720"},
-        {"name": "抖音2", "url": "https://www.douyin.com/user/MS4wLjABAAAAU-9q9jD8WQyj7jJHsSfxPGHxyVajJBaGu7A8hn24cio?from_tab_name=main&modal_id=6785903440527641864&relation=0&vid=6785863696775187720"},
+        {"name": "抖音(北京台文艺频道)1", "url": "https://www.douyin.com/video/6785863696775187720"},
+        {"name": "抖音(北京台文艺频道)2", "url": "https://www.douyin.com/user/MS4wLjABAAAAU-9q9jD8WQyj7jJHsSfxPGHxyVajJBaGu7A8hn24cio?from_tab_name=main&modal_id=6785903440527641864&relation=0&vid=6785863696775187720"},
         {"name": "爱奇艺", "url": "https://www.iqiyi.com/v_19rvy6dnbw.html"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=YZhtDJJRPEc"}
+        {"name": "YouTube(BRTV)", "url": "https://www.youtube.com/watch?v=YZhtDJJRPEc"}
       ]
     },
     {
@@ -750,10 +750,10 @@
       "category": ["variety", "stage performances"],
       "description": "The short play tells the story of tea house owner Xie Na, who has played matchmaker for many customers, but her own love life remains a blank slate. Dentist Xiao Zhan, who met Xie Na online, bravely comes to confess his love.",
       "platforms": [
-        {"name": "抖音", "url": "https://www.douyin.com/video/6927619076466478343"},
+        {"name": "抖音(迎新年看春晚)", "url": "https://www.douyin.com/video/6927619076466478343"},
         {"name": "CCTV.COM", "url": "https://tv.cctv.com/2020/01/25/VIDEfNtgACc8baqFL6DqhlB5200125.shtml?spm=C88599.PAZ9IA5B3QsX.E2jnZ4cc7gEy.63"},
         {"name": "iQIYI", "url": "https://www.iq.com/play/%E5%B0%8F%E5%93%81%E3%80%8A%E5%96%9C%E6%AC%A2%E4%BD%A0%E5%96%9C%E6%AC%A2%E6%88%91%E3%80%8B%E8%82%96%E6%88%98%E8%B0%A2%E5%A8%9C%E4%B8%8A%E6%BC%94%E2%80%9C%E5%A7%90%E5%BC%9F%E6%81%8B%E2%80%9D%E2%80%942020%E5%A4%AE%E8%A7%86%E6%98%A5%E6%99%9A-2020-19rwamg4nk?lang=es_mx"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=XGb3WueZ8dI"}
+        {"name": "YouTube(CCTV春晚)", "url": "https://www.youtube.com/watch?v=XGb3WueZ8dI"}
       ]
     },
     {
@@ -765,8 +765,8 @@
       "category": ["variety"],
       "description": "The show was licensed from JTBC's Crime Scene. Episode 11-12 are about solving murders on the Slow Northern Train.",
       "platforms": [
-        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=fZdewSQ4HWE"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=qG9YfhHjBYw"}
+        {"name": "YouTube(MangoTV)1", "url": "https://www.youtube.com/watch?v=fZdewSQ4HWE"},
+        {"name": "YouTube(MangoTV)2", "url": "https://www.youtube.com/watch?v=qG9YfhHjBYw"}
       ]
     },
     {
@@ -778,7 +778,7 @@
       "category": ["variety"],
       "description": "The mischievous and cheeky boy played by Xiao Zhan is also a filial and good-natured child. He takes out a loan to buy a car, enduring a frugal lifestyle for the next two years, all with the goal of letting his father ride in his four-wheeled vehicle and bask in the adoration in his father's eyes.",
       "platforms": [
-        {"name": "Weibo", "url": "https://weibo.com/5721872475/Iox9OrHpc"},
+        {"name": "Weibo(最美表演)", "url": "https://weibo.com/5721872475/Iox9OrHpc"},
         {"name": "YouTube", "url": "https://www.youtube.com/watch?v=c8PaBbPAQZA"}
       ]
     },
@@ -791,7 +791,7 @@
       "category": ["variety"],
       "description": "Xiao Zhan took on the role of a food delivery worker, portraying a story about his deep concern for his grandmother and his desire to buy her a hearing aid.",
       "platforms": [
-        {"name": "Weibo", "url": "https://weibo.com/5721872475/IpjUWzy8C"},
+        {"name": "Weibo(最美表演)", "url": "https://weibo.com/5721872475/IpjUWzy8C"},
         {"name": "YouTube", "url": "https://www.youtube.com/watch?v=gzTFUWmV_iQ"}
       ]
     },
@@ -804,10 +804,10 @@
       "category": ["stage performances"],
       "description": "Stage performances at Super IP Ceremony.",
       "platforms": [
-        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=i3H95319FEk"},
+        {"name": "YouTube(SMG)1", "url": "https://www.youtube.com/watch?v=i3H95319FEk"},
         {"name": "QQ音乐1", "url": "https://y.qq.com/n/ryqq/mv/v0033yoo3xl"},
-        {"name": "YouTube2-发言", "url": "https://www.youtube.com/watch?v=YVf7OJ2g2Nk"},
-        {"name": "YouTube3-领奖", "url": "https://www.youtube.com/watch?v=x92_XB3Snfo"}
+        {"name": "YouTube(SMG)2-发言", "url": "https://www.youtube.com/watch?v=YVf7OJ2g2Nk"},
+        {"name": "YouTube(SMG)3-领奖", "url": "https://www.youtube.com/watch?v=x92_XB3Snfo"}
       ]
     },
     {
@@ -819,10 +819,10 @@
       "category": ["stage performances"],
       "description": "Stage performance at SMG Countdown Party 2020. Performed four songs: 1.我们都是追梦人 2.跟着感觉走 3.余年 4.神奇",
       "platforms": [
-        {"name": "YouTube1", "url": "https://www.youtube.com/watch?v=cJtXk1pAq4s"},
-        {"name": "YouTube2", "url": "https://www.youtube.com/watch?v=O96YBHQSx3M"},
+        {"name": "YouTube(SMG)1", "url": "https://www.youtube.com/watch?v=cJtXk1pAq4s"},
+        {"name": "YouTube(SMG)2", "url": "https://www.youtube.com/watch?v=O96YBHQSx3M"},
         {"name": "iQIYI3", "url": "https://www.iq.com/play/2020%E4%B8%9C%E6%96%B9%E8%B7%A8%E5%B9%B4-%E8%82%96%E6%88%98%E6%AD%8C%E6%9B%B2%E3%80%8A%E4%BD%99%E5%B9%B4%E3%80%8B-2019-19rwgj221g?lang=en_us"},
-        {"name": "YouTube4", "url": "https://www.youtube.com/watch?v=Z6uWaQjM5G4"}
+        {"name": "YouTube(中国音乐电视)4", "url": "https://www.youtube.com/watch?v=Z6uWaQjM5G4"}
       ]
     },
     {
@@ -836,7 +836,7 @@
       "platforms": [
         {"name": "Tencent", "url": "https://v.qq.com/x/cover/mzc00200rgl0qf5/u003302az64.html"},
         {"name": "WeTV", "url": "https://www.iflix.com/zh-cn/play/iwu4p2pt4vd5la4-2019%E8%85%BE%E8%AE%AF%E8%A7%86%E9%A2%91%E9%97%AA%E8%80%80%E6%98%9F%E5%85%89%E6%97%A5/i0033j1z3mz-%E3%80%8A2019%E6%98%9F%E5%85%89%E5%A4%A7%E8%B5%8F%E3%80%8B%E8%82%96%E6%88%98%E6%BC%94%E5%94%B1%E3%80%8A%E4%BD%99%E5%B9%B4%E3%80%8B"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=Mg66CFuREj4"}
+        {"name": "YouTube(Tencent)", "url": "https://www.youtube.com/watch?v=Mg66CFuREj4"}
       ]
     },
     {
@@ -876,8 +876,8 @@
       "category": ["variety", "stage performances"],
       "description": "A reality competition show where singers from different generations collaborate to reinterpret classic songs.",
       "platforms": [
-        {"name": "YouTube(cut)", "url": "https://www.youtube.com/watch?v=u-ro3Ut8JGk"},
-        {"name": "YouTube(XZ合集)", "url": "https://www.youtube.com/watch?v=anJKIZovysY"}
+        {"name": "YouTube(SMG)-音综cut", "url": "https://www.youtube.com/watch?v=u-ro3Ut8JGk"},
+        {"name": "YouTube(SMG)-XZ歌曲合集", "url": "https://www.youtube.com/watch?v=anJKIZovysY"}
       ]
     },
     {
@@ -889,7 +889,7 @@
       "category": ["stage performances"],
       "description": "Stage performance at Hunan TV Double11 Carnival Festival.",
       "platforms": [
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=B2cF9NzGO0Y"}
+        {"name": "YouTube(湖南国际频道)", "url": "https://www.youtube.com/watch?v=B2cF9NzGO0Y"}
       ]
     },
     {
@@ -926,7 +926,7 @@
       "description": "Stage performance on CCTV-15 Music Channel.",
       "platforms": [
         {"name": "CCTV.COM", "url": "https://tv.cctv.com/2019/10/04/VIDEV71YJNMa8rKyP2AubWZj191004.shtml"},
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=1lr_k8SaxRA"}
+        {"name": "YouTube(中国音乐电视)", "url": "https://www.youtube.com/watch?v=1lr_k8SaxRA"}
       ]
     },
     {
@@ -938,8 +938,8 @@
       "category": ["variety"],
       "description": "A travel program featuring Xiamen.",
       "platforms": [
-        {"name": "Weibo1", "url": "https://weibo.com/6470719555/I9ivxtSww"},
-        {"name": "Weibo2", "url": "https://weibo.com/6470719555/Ibuq2bihY"}
+        {"name": "Weibo(慢游旅行家)1", "url": "https://weibo.com/6470719555/I9ivxtSww"},
+        {"name": "Weibo(慢游旅行家)2", "url": "https://weibo.com/6470719555/Ibuq2bihY"}
       ]
     },
     {
@@ -1006,7 +1006,7 @@
       "category": ["variety"],
       "description": "Xiao Zhan Interviewed by Tongdao.",
       "platforms": [
-        {"name": "YouTube", "url": "https://www.youtube.com/watch?v=8zXvCZfbREQ"}
+        {"name": "YouTube(同道大叔)", "url": "https://www.youtube.com/watch?v=8zXvCZfbREQ"}
       ]
     },
     {
