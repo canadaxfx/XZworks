@@ -621,47 +621,47 @@
       "description": "Stage performance at The Greater Bay Area Film Concert 2024. Performed two songs: 1.这世界那么多人 (This World Has So Many People) 2.往事随风 (Memories in the Wind).",
       "platforms": [
         {
-          "name": "中国新闻网1",
+          "name": "中国新闻网-1",
           "url": "https://www.chinanews.com.cn/shipin/cns-d/2024/09-23/news1000725.shtml"
         },
         {
-          "name": "Sina1",
+          "name": "Sina-1",
           "url": "https://video.sina.cn/finance/2024-09-23/detail-incqafyf0629406.d.html?vt=4"
         },
         {
-          "name": "Facebook1(凤凰卫视)",
+          "name": "Facebook-1(凤凰卫视)",
           "url": "https://www.facebook.com/PhoenixTVHK/videos/%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E5%A4%AA%E5%A5%BD%E8%81%BD%E4%BA%86%E8%8E%AB%E6%96%87%E8%94%9A%E8%82%96%E6%88%B0%E7%89%BD%E6%89%8B%E5%90%88%E5%94%B1%E9%80%99%E4%B8%96%E7%95%8C%E9%82%A3%E9%BA%BC%E5%A4%9A%E4%BA%BA/490703023831493/"
         },
         {
-          "name": "YouTube1.1(凤凰卫视)",
+          "name": "YouTube-1.1(凤凰卫视)",
           "url": "https://www.youtube.com/watch?v=iv49foV0oPU"
         },
         {
-          "name": "YouTube1.2(中国新闻社)",
+          "name": "YouTube-1.2(中国新闻社)",
           "url": "https://www.youtube.com/watch?v=qNJb4g1QELk"
         },
         {
-          "name": "YouTube1.3(莫文蔚版)",
+          "name": "YouTube-1.3(莫文蔚版)",
           "url": "https://www.youtube.com/watch?v=8GpqCj9EECQ"
         },
         {
-          "name": "X(China Daily)1.1",
+          "name": "X-1.1(China Daily)",
           "url": "https://x.com/ChinaDaily/status/1838029425130238412"
         },
         {
-          "name": "X(凤凰卫视)1.2",
+          "name": "X-1.2(凤凰卫视)",
           "url": "https://x.com/PhoenixTVHK/status/1837904700412432785"
         },
         {
-          "name": "Sina2",
+          "name": "Sina-2",
           "url": "https://k.sina.cn/article_1643971635_m61fd0433033013a1i.html?from=movie"
         },
         {
-          "name": "凤凰网2",
+          "name": "凤凰网-2",
           "url": "https://v.ifeng.com/c/8d61URNjqqt"
         },
         {
-          "name": "Facebook(凤凰卫视)2",
+          "name": "Facebook-2(凤凰卫视)",
           "url": "https://www.facebook.com/PhoenixTVHK/videos/%E7%81%A3%E5%8D%80%E5%8D%87%E6%98%8E%E6%9C%88%E8%B6%85%E7%A9%A9%E7%8F%BE%E5%A0%B4%E8%82%96%E6%88%B0%E5%91%88%E7%8F%BE%E9%AB%98%E9%9F%B3%E8%88%9E%E5%8F%B0%E5%BE%80%E4%BA%8B%E9%9A%A8%E9%A2%A8/1463277994388769/"
         },
         {
@@ -728,7 +728,7 @@
           "url": "http://www.news.cn/politics/20240128/9f4d386a26884392a4b67c29d6640980/c.html"
         },
         {
-          "name": "抖音(东方台)1",
+          "name": "抖音-1(东方台)",
           "url": "https://www.douyin.com/video/7334645390165200169"
         },
         {
@@ -736,40 +736,48 @@
           "url": "https://www.bilibili.com/video/BV1J64y1374c/"
         },
         {
-          "name": "Tencent2",
+          "name": "Tencent-2",
           "url": "https://v.qq.com/x/cover/mzc00200wlrpuxb/p0048hjuvou.html"
         },
         {
-          "name": "中国新闻网2.1",
+          "name": "中国新闻网-2.1",
           "url": "https://www.chinanews.com.cn/yl/shipin/cns/2023/10-16/news972808.shtml"
         },
         {
-          "name": "中国新闻网2.2",
+          "name": "中国新闻网-2.2",
           "url": "https://www.chinanews.com.cn/gn/2023/10-16/10094669.shtml"
         },
         {
-          "name": "YouTube(Tencent)2",
+          "name": "YouTube-2(Tencent)",
           "url": "https://www.youtube.com/watch?v=SPOZ_Um_dpA"
         }
       ]
     },
     {
-      "id": "interview-about-sheng-yang-in-sunshine-by-my-side-1-2",
-      "date": "2023-09-09 to 2023-09-10",
-      "title": "Interview about Sheng Yang in Sunshine by My Side 1 & 2",
-      "titleChinese": "骄阳伴我盛阳专访1 & 2",
+      "id": "interview-about-sheng-yang-in-sunshine-by-my-side",
+      "date": "2023-09-09 to 2023-09-12",
+      "title": "Compilation of Xiao Zhan interviews about Sheng Yang in Sunshine by My Side",
+      "titleChinese": "骄阳伴我盛阳专访合集",
       "role": "Sheng Yang 盛阳 (Lead)",
       "category": [
         "variety"
       ],
-      "description": "CCTV8 Star Interview about Sheng Yang in Sunshine by My Side",
+      "description": "Interviews about Sheng Yang in Sunshine by My Side. 1.CCTV8 Star's Choice 星推荐-1  2.CCTV8 Star's Choice 星推荐-2  3.Tencent 入戏  4.Sohu 狐厂大拷问",
       "platforms": [
         {
-          "name": "YouTube(CCTV电视剧)1",
+          "name": "YouTube-1(CCTV电视剧)",
           "url": "https://www.youtube.com/watch?v=sLThAFJZf24"
         },
         {
-          "name": "YouTube(CCTV电视剧)2",
+          "name": "YouTube-2(CCTV电视剧)",
+          "url": "https://www.youtube.com/watch?v=P32MCfuSqJA"
+        },
+        {
+          "name": "YouTube-3",
+          "url": "https://www.youtube.com/watch?v=sLThAFJZf24"
+        },
+        {
+          "name": "YouTube-4",
           "url": "https://www.youtube.com/watch?v=P32MCfuSqJA"
         }
       ]
@@ -800,6 +808,31 @@
         {
           "name": "YouTube",
           "url": "https://www.youtube.com/playlist?list=PLQqbdnAgoRmbSsGj7qT3ARvqvXe3SOWwM"
+        }
+      ]
+    },
+    {
+      "id": "Shi-Ying-Interviews",
+      "date": "2023-07-05 to 2023-07-18",
+      "title": "Compilation of Xiao Zhan Interviews about Shi Ying in The Longest Promise",
+      "titleChinese": "玉骨遥肖战时影专访合集",
+      "role": "Shi Ying 时影 (Lead)",
+      "category": [
+        "variety"
+      ],
+      "description": "Interviews about The Longest Promise. 1.Tencent 入戏  2.Sohu 狐厂大拷问  3.Baidu 百度",
+      "platforms": [
+        {
+          "name": "YouTube-1",
+          "url": "https://www.youtube.com/watch?v=zga6bdsmXL0"
+        },
+        {
+          "name": "YouTube-2",
+          "url": "https://www.youtube.com/watch?v=Y8JBPvOz37c"
+        },
+        {
+          "name": "YouTube-3",
+          "url": "https://www.youtube.com/watch?v=vO1a8TWAbzI"
         }
       ]
     },
@@ -849,6 +882,7 @@
         }
       ]
     },
+
     {
       "id": "cctv-8-chinese-tv-play-interview",
       "date": "2023-06-21",
@@ -873,8 +907,8 @@
     {
       "id": "show-great-shows-youth-memories",
       "date": "2023-06-18 & 2023-06-25",
-      "title": "Show of Great Shows: The Youth Memories",
-      "titleChinese": "剧说很好看:梦中的那片海",
+      "title": "Show of Great Shows: The Youth Memories   1 & 2",
+      "titleChinese": "剧说很好看:梦中的那片海  1 & 2",
       "role": "Xiao Chunsheng 肖春生 (Lead)",
       "category": [
         "variety"
@@ -882,28 +916,57 @@
       "description": "Behind-the-scenes and interviews about The Youth Memories.",
       "platforms": [
         {
-          "name": "央视频1",
+          "name": "央视频-1",
           "url": "https://w.yangshipin.cn/video?type=0&vid=t000028qt7y"
         },
         {
-          "name": "央视频2",
+          "name": "央视频-2",
           "url": "https://w.yangshipin.cn/video?type=0&vid=p000037v9d4&ptag=4_2.8.1.23336_sina"
         },
         {
-          "name": "CCTV.COM1",
+          "name": "CCTV.COM-1",
           "url": "https://tv.cctv.com/2023/06/18/VIDEpwqsabN3o0VEW0u4WIMc230618.shtml"
         },
         {
-          "name": "CCTV.COM2",
+          "name": "CCTV.COM-2",
           "url": "https://tv.cctv.com/2023/06/25/VIDEQjw87amDHR2I0cmsxX8g230625.shtml?spm=C53090171355.PaxHVtmpGFpz.0.0"
         },
         {
-          "name": "YouTube(CCTV电视剧)1",
+          "name": "YouTube-1(CCTV电视剧)",
           "url": "https://www.youtube.com/watch?v=h6OG10lWir4&t=932s"
         },
         {
-          "name": "YouTube(CCTV电视剧)2",
+          "name": "YouTube-2(CCTV电视剧)",
           "url": "https://www.youtube.com/watch?v=0caKdpLrG9A"
+        }
+      ]
+    },
+    {
+      "id": "Xiao-Chunsheng-Interviews",
+      "date": "2023-06-13 to 2023-06-17",
+      "title": "Compilation of Xiao Zhan Interviews about Xiao Chunsheng in The Youth Memories",
+      "titleChinese": "梦中的那片海肖战肖春生专访合集",
+      "role": "Xiao Chunsheng 肖春生 (Lead)",
+      "category": [
+        "variety"
+      ],
+      "description": "Interviews about The Youth Memories. 1.Sohu 狐厂大拷问  2. CCTV8 Star's Choice 星推荐-1  3.CCTV8 Star's Choice 星推荐-2  4.Tencent 入戏",
+      "platforms": [
+        {
+          "name": "YouTube-1",
+          "url": "https://www.youtube.com/watch?v=QB6EvKvfgtU"
+        },
+        {
+          "name": "YouTube-2(CCTV8电视剧)",
+          "url": "https://www.youtube.com/watch?v=uErdrzFqUs0"
+        },
+        {
+          "name": "YouTube-3(CCTV8电视剧)",
+          "url": "https://www.youtube.com/watch?v=24AGI9gbDI8"
+        },
+        {
+          "name": "YouTube-4",
+          "url": "https://www.youtube.com/watch?v=wE9gpVH7T1U"
         }
       ]
     },
@@ -929,6 +992,31 @@
         {
           "name": "YouTube",
           "url": "https://www.youtube.com/playlist?list=PLRBClVey5BqwM9E2uvd2rVf_mekyic98m"
+        }
+      ]
+    },
+    {
+      "id": "Gu-Wei-Interviews",
+      "date": "2022-03-17 to 2022-04-03",
+      "title": "Compilation of Xiao Zhan Interviews about Gu Wei in The Oath of Love",
+      "titleChinese": "余生请多指教肖战顾魏专访合集",
+      "role": "Gu Wei 顾魏 (Lead)",
+      "category": [
+        "variety"
+      ],
+      "description": "Interviews about The Oath of Love. 1.Tencent 出戏双采  2. Tencent 入戏-1  3.Tencent 入戏-2",
+      "platforms": [
+        {
+          "name": "YouTube-1(Tencent)",
+          "url": "https://www.youtube.com/watch?v=63H_fwPx0J0"
+        },
+        {
+          "name": "YouTube-2(Tencent)",
+          "url": "https://www.youtube.com/watch?v=odegYyN7cek"
+        },
+        {
+          "name": "YouTube-3(Tencent)",
+          "url": "https://www.youtube.com/watch?v=_rK_dAPYVwY"
         }
       ]
     },
@@ -979,6 +1067,23 @@
         {
           "name": "YouTube",
           "url": "https://www.youtube.com/watch?v=IWou9xlKSl0&list=PLxbgQdcnIafgy2d95lKn_QVqNxtvgkXmX&index=9"
+        }
+      ]
+    },
+    {
+      "id": "Gu-Yiye-Interview",
+      "date": "2022-01-16",
+      "title": "Xiao Zhan Interviewed about Gu Yiye in Ace Troops",
+      "titleChinese": "王牌部队肖战顾一野专访",
+      "role": "Gu Yiye 顾一野 (Lead)",
+      "category": [
+        "variety"
+      ],
+      "description": "Interview about Gu Yiye in Ace Troops.",
+      "platforms": [
+        {
+          "name": "YouTube(iQIYI)",
+          "url": "https://www.youtube.com/watch?v=ofcwM2-2AxU"
         }
       ]
     },
@@ -1065,23 +1170,23 @@
       "description": "Stage performance at JD.com's 618 shopping festival. Performed two songs: 1.让我留在你身边 2.竹石",
       "platforms": [
         {
-          "name": "Weibo(京东)",
+          "name": "Weibo-1&2(京东)",
           "url": "https://weibo.com/tv/show/1034:4643045698896064?from=old_pc_videoshow"
         },
         {
-          "name": "QQ音乐1",
+          "name": "QQ音乐-1",
           "url": "https://y.qq.com/n/yqq/mv/m/012QLDZ93uHidM.html"
         },
         {
-          "name": "Weixin(北京卫视)1",
+          "name": "Weixin(北京卫视)-1",
           "url": "https://mp.weixin.qq.com/s?__biz=MjM5MTgzMTAwMA==&mid=2653134655&idx=2&sn=0197783545201f582de163d7a1c731a0&chksm=bd78b9888a0f309eca0ef5919830ae4e6f21d07c0879377a3124cbebfb371203aa62f9b7cba1&scene=27"
         },
         {
-          "name": "Tencent2",
+          "name": "Tencent-2",
           "url": "https://v.qq.com/x/page/n3251xpi3sg.html"
         },
         {
-          "name": "QQ音乐2",
+          "name": "QQ音乐-2",
           "url": "https://y.qq.com/n/yqq/mv/m/013OBtIl3xdi1k.html"
         }
       ]
@@ -1115,28 +1220,61 @@
       "description": "Stage performance at The Winter Dream's Promise event. Performed two songs: 1.冬梦 2.Something just like this",
       "platforms": [
         {
-          "name": "央视频1",
+          "name": "央视频-1",
           "url": "https://w.yangshipin.cn/video?type=0&vid=f000099v8tv&cid=nxigpbeei12heg7&ptag=4_2.2.3.23078_wxf"
         },
         {
-          "name": "优酷1",
+          "name": "优酷-1",
           "url": "https://v.youku.com/video?vid=XNTExNTc4Njk4MA%3D%3D"
         },
         {
-          "name": "央视频2",
+          "name": "央视频-2",
           "url": "https://w.yangshipin.cn/video?type=0&vid=d000060rs23&cid=nxigpbeei12heg7"
         },
         {
-          "name": "QQ音乐2",
+          "name": "QQ音乐-2",
           "url": "https://y.qq.com/n/ryqq/mv/013hmD2t1Amwmi"
         },
         {
-          "name": "土豆2",
+          "name": "土豆-2",
           "url": "https://play.tudou.com/v_show/id_XNTE0MzQ5NjkyMA==.html"
         },
         {
-          "name": "Sina1+2",
+          "name": "Sina-1&2",
           "url": "https://k.sina.cn/article_6511453608_m1841ce5a803300ygmc.html"
+        }
+      ]
+    },
+    {
+      "id": "Tang-San-Interviews",
+      "date": "2021-02-14 to 2021-03-10",
+      "title": "Compilation of Xiao Zhan Interviews about Tang San in Douluo Continent",
+      "titleChinese": "斗罗大陆肖战唐三专访合集",
+      "role": "Tang San 唐三 (Lead)",
+      "category": [
+        "variety"
+      ],
+      "description": "Interviews about Tang San in Douluo Continent. 1.CCTV8 Star's Choice 星推荐-1  2. CCTV8 Star's Choice 星推荐-2  3.CCTV8 Star's Choice 星推荐-3  4.Tencent 入戏-1  5.Tencent 入戏-2",
+      "platforms": [
+        {
+          "name": "YouTube-1(CCTV8电视剧)",
+          "url": "https://www.youtube.com/watch?v=w2tXRF7-iw8"
+        },
+        {
+          "name": "YouTube-2(CCTV8电视剧)",
+          "url": "https://www.youtube.com/watch?v=xPYoDvtaW"
+        },
+        {
+          "name": "YouTube-3(CCTV8电视剧)",
+          "url": "https://www.youtube.com/watch?v=_6y_Nfb04DQ"
+        },
+        {
+          "name": "YouTube-4(Tencent)",
+          "url": "https://www.youtube.com/watch?v=gcw0D1_2f4k"
+        },
+        {
+          "name": "YouTube-5(Tencent)",
+          "url": "https://www.youtube.com/watch?v=LQ9YY0HfMOg"
         }
       ]
     },
@@ -1286,15 +1424,15 @@
       "description": "Stage performance at SMG Countdown Party 2021. Performed three songs: 1.相爱后动物感伤 2.别问我什么是迪斯科 3.野子",
       "platforms": [
         {
-          "name": "YouTube(SMG音乐频道)1",
+          "name": "YouTube-1(SMG音乐频道)",
           "url": "https://www.youtube.com/watch?v=ihf9Mb6W7f4"
         },
         {
-          "name": "YouTube(SMG音乐频道)2",
+          "name": "YouTube-2(SMG音乐频道)",
           "url": "https://www.youtube.com/watch?v=qppP9bt2e40"
         },
         {
-          "name": "YouTube(SMG官方频道)3",
+          "name": "YouTube-3(SMG官方频道)",
           "url": "https://www.youtube.com/watch?v=1xnvLhlptKk"
         }
       ]
@@ -1311,11 +1449,11 @@
       "description": "Stage performance at Tencent Video All Star Night 2020. Performed two songs: 1.余生,请多指教 2.最幸运的幸运",
       "platforms": [
         {
-          "name": "YouTube(Tencent)1",
+          "name": "YouTube-1(Tencent)",
           "url": "https://www.youtube.com/watch?v=iIU61IEZydQ"
         },
         {
-          "name": "YouTube(Tencent)2",
+          "name": "YouTube-2(Tencent)",
           "url": "https://www.youtube.com/watch?v=snpbIm_8tyg"
         }
       ]
@@ -1396,6 +1534,23 @@
       ]
     },
     {
+      "id": "Cai-Ding-Interview",
+      "date": "2020-09-20",
+      "title": "Xiao Zhan Interview about Cai Ding in Happiness Community",
+      "titleChinese": "最美逆行者幸福社区肖战蔡丁专访",
+      "role": "Cai Ding 蔡丁",
+      "category": [
+        "variety"
+      ],
+      "description": "Xiao Zhan interviewed by CCTV8 about Cai Ding in Happiness Community.",
+      "platforms": [
+        {
+          "name": "YouTube(CCTV8电视剧)",
+          "url": "https://www.youtube.com/watch?v=dub3zAJo9Eg"
+        }
+      ]
+    },
+    {
       "id": "heroes-in-harms-way",
       "date": "2020-09-17",
       "title": "Heroes in Harm's Way: Happiness Community",
@@ -1407,27 +1562,27 @@
       "description": "The COVID-19 pandemic in China serves as the backdrop for this 7-part series.",
       "platforms": [
         {
-          "name": "CCTV1",
+          "name": "CCTV-1",
           "url": "https://tv.cctv.com/2020/09/21/VIDEnAR2exiunMHhn41cbvlI200921.shtml"
         },
         {
-          "name": "CCTV2",
+          "name": "CCTV-2",
           "url": "https://tv.cctv.com/2020/09/21/VIDEG7oR7FWKequmjWI7bHx3200921.shtml?spm=C55853485115.PhO6T4rt8QwC.0.0"
         },
         {
-          "name": "央视频1",
+          "name": "央视频-1",
           "url": "https://w.yangshipin.cn/video?type=0&vid=g000022hfsl"
         },
         {
-          "name": "央视频2",
+          "name": "央视频-2",
           "url": "https://w.yangshipin.cn/video?type=0&vid=h0000813lav"
         },
         {
-          "name": "YouTube(China Zone剧乐部)1",
+          "name": "YouTube-1(China Zone剧乐部)",
           "url": "https://www.youtube.com/watch?v=ttmwU8mYYac"
         },
         {
-          "name": "YouTube(China Zone剧乐部)2",
+          "name": "YouTube-2(China Zone剧乐部)",
           "url": "https://www.youtube.com/watch?v=jC_1ErkEaVY"
         }
       ]
@@ -1507,19 +1662,19 @@
       "description": "Stage performance at Everlasting Classics Season 3. Performed two songs: 1.千年一声唱 2.竹石",
       "platforms": [
         {
-          "name": "CCTV.COM1",
+          "name": "CCTV.COM-1",
           "url": "https://tv.cctv.com/2020/01/26/VIDEG4OFtTbBZcO4PlK8AmyW200126.shtml"
         },
         {
-          "name": "CCTV.COM2",
+          "name": "CCTV.COM-2",
           "url": "https://tv.cctv.com/2020/01/26/VIDEnwSofzp8gXf3paAqayE2200126.shtml?spm=C52056131267.P6AQcZyePmUN.0.0"
         },
         {
-          "name": "YouTube(CCTV)1",
+          "name": "YouTube-1(CCTV)",
           "url": "https://www.youtube.com/watch?v=mmu9qLIMMuY"
         },
         {
-          "name": "YouTube(CCTV)2",
+          "name": "YouTube-2(CCTV)",
           "url": "https://www.youtube.com/watch?v=YmKTxosE0pE"
         }
       ]
@@ -1536,11 +1691,11 @@
       "description": "Stage performance at Beijing Spring Festival Gala 2020. Performed two songs: 1.沧海一声笑 2.壮志在我胸",
       "platforms": [
         {
-          "name": "抖音(北京台文艺频道)1",
+          "name": "抖音-1(北京台文艺频道)",
           "url": "https://www.douyin.com/video/6785863696775187720"
         },
         {
-          "name": "抖音(北京台文艺频道)2",
+          "name": "抖音-2(北京台文艺频道)",
           "url": "https://www.douyin.com/user/MS4wLjABAAAAU-9q9jD8WQyj7jJHsSfxPGHxyVajJBaGu7A8hn24cio?from_tab_name=main&modal_id=6785903440527641864&relation=0&vid=6785863696775187720"
         },
         {
@@ -1595,11 +1750,11 @@
       "description": "The show was licensed from JTBC's Crime Scene. Episode 11-12 are about solving murders on the Slow Northern Train.",
       "platforms": [
         {
-          "name": "YouTube(MangoTV)1",
+          "name": "YouTube-1(MangoTV)",
           "url": "https://www.youtube.com/watch?v=fZdewSQ4HWE"
         },
         {
-          "name": "YouTube(MangoTV)2",
+          "name": "YouTube-2(MangoTV)",
           "url": "https://www.youtube.com/watch?v=qG9YfhHjBYw"
         }
       ]
@@ -1658,19 +1813,19 @@
       "description": "Stage performances at Super IP Ceremony.",
       "platforms": [
         {
-          "name": "YouTube(SMG)1",
+          "name": "YouTube-1(SMG)",
           "url": "https://www.youtube.com/watch?v=i3H95319FEk"
         },
         {
-          "name": "QQ音乐1",
+          "name": "QQ音乐-1",
           "url": "https://y.qq.com/n/ryqq/mv/v0033yoo3xl"
         },
         {
-          "name": "YouTube(SMG)2-发言",
+          "name": "YouTube-2(SMG)-发言",
           "url": "https://www.youtube.com/watch?v=YVf7OJ2g2Nk"
         },
         {
-          "name": "YouTube(SMG)3-领奖",
+          "name": "YouTube-3(SMG)-领奖",
           "url": "https://www.youtube.com/watch?v=x92_XB3Snfo"
         }
       ]
@@ -1687,11 +1842,11 @@
       "description": "Stage performance at SMG Countdown Party 2020. Performed four songs: 1.我们都是追梦人 2.跟着感觉走 3.余年 4.神奇",
       "platforms": [
         {
-          "name": "YouTube(SMG)1",
+          "name": "YouTube-1(SMG)",
           "url": "https://www.youtube.com/watch?v=cJtXk1pAq4s"
         },
         {
-          "name": "YouTube(SMG)2",
+          "name": "YouTube-2(SMG)",
           "url": "https://www.youtube.com/watch?v=O96YBHQSx3M"
         },
         {
@@ -1699,7 +1854,7 @@
           "url": "https://www.iq.com/play/2020%E4%B8%9C%E6%96%B9%E8%B7%A8%E5%B9%B4-%E8%82%96%E6%88%98%E6%AD%8C%E6%9B%B2%E3%80%8A%E4%BD%99%E5%B9%B4%E3%80%8B-2019-19rwgj221g?lang=en_us"
         },
         {
-          "name": "YouTube(中国音乐电视)4",
+          "name": "YouTube-4(中国音乐电视)",
           "url": "https://www.youtube.com/watch?v=Z6uWaQjM5G4"
         }
       ]
@@ -1937,6 +2092,23 @@
         {
           "name": "YouTube",
           "url": "https://www.youtube.com/watch?v=E4J9dWT4k_U"
+        }
+      ]
+    },
+    {
+      "id": "Wei-Wuxian-Interview",
+      "date": "2019-08-13",
+      "title": "Xiao Zhan Interview about Wei Wuxian in The Untamed",
+      "titleChinese": "陈情令肖战魏无羡专访",
+      "role": "Wei Wuxian 魏无羡 ",
+      "category": [
+        "variety"
+      ],
+      "description": "Xiao Zhan interviewed by Tencent about Wei Wuxian in The Untamed.",
+      "platforms": [
+        {
+          "name": "YouTube(Tencent)",
+          "url": "https://www.youtube.com/watch?v=yoI1CYD6-Ok"
         }
       ]
     },
