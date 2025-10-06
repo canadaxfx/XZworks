@@ -263,6 +263,7 @@ function initializeTermsToggle() {
 // =============== MUSIC PLAYER ===============
 function initializeMusicPlayer() {
     const originalPlaylist = [
+        { name: "XZ-岁岁年年", file: "岁岁年年.mp3" },
         { name: "XZ-都一样", file: "都一样.mp3" },
         { name: "XZ-灯塔", file: "灯塔.mp3" },
         { name: "XZ-漂流", file: "漂流.mp3" },
@@ -270,7 +271,6 @@ function initializeMusicPlayer() {
         { name: "XZ-如愿", file: "如愿.mp3" },
         { name: "XZ-同路人", file: "同路人.mp3" },
         { name: "XZ-余年", file: "余年.mp3" },
-        { name: "XZ-晚安", file: "晚安.mp3" }
     ];
     
     let playlist = [...originalPlaylist];
