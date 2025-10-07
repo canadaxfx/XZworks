@@ -402,7 +402,7 @@ function initializeCarousel() {
         'xiao-zhan1-9.jpg', 'xiao-zhan1-10.jpg', 'xiao-zhan1-11.jpg', 'xiao-zhan1-12.jpg',
         'xiao-zhan1-13.jpg', 'xiao-zhan1-14.jpg', 'xiao-zhan1-15.jpg', 'xiao-zhan1-16.jpg',
         'xiao-zhan1-17.jpg', 'xiao-zhan1-18.jpg', 'xiao-zhan2-1.jpg', 'xiao-zhan2-2.jpg',
-        'xiao-zhan2-3.jpg', 'xiao-zhan2-4.jpg', 'xiao-zhan3-1.jpg'
+        'xiao-zhan2-3.jpg', 'xiao-zhan2-4.png', 'xiao-zhan2-5.jpeg','xiao-zhan3-1.jpg'
     ];
     
     const imageStrip = document.querySelector('.image-strip');
