@@ -92,7 +92,7 @@
       "category": [
         "variety"
       ],
-      "description": "Compilation of interviews: 1.Xinhua News 新华网肖战  2.People's Daily New Media 人民日报新媒体肖战  3.CCTV8 星推荐肖战  4.CCTV8 & CCTV News 剧说很好看肖战  5.CCTV Drama CCTV电视剧肖战  6.Sina 新浪娱情Lab肖战  7.Sohu 狐厂大拷问肖战  8.Baidu 百度肖战  9.1.YOUKU1 优酷肖战1  9.2.YOUKU2 优酷肖战2  9.3.YOUKU3 优酷肖战3  10.SMG Entertainment 东方新娱乐肖战  11.BRTV 大戏看北京+每天都有戏肖战  12.CCTV8 (Zheng Xiaolong & Cao Yiwen) 央视导演双采  13.BRTV (Zheng Xiaolong & Cao Yiwen) 北卫导演双采  14.BRTV Daily Entertainment Express(Cao Yiwen) 每日文娱播报曹译文  15.1.Beijing Youth Daily(Cao Yiwen) 北京青年报曹译文  15.2.Beijing Youth Daily (Zheng Xiaolong) 北京青年报郑晓龙  16.1.Beijing Daily (Cao Yiwen) 北京日报曹译文  16.2.Beijing Daily (Zheng Xiaolong) 北京日报郑晓龙  17.Zhejiang Tide News (Cao Yiwen) 潮新闻曹译文  18.Interview collection of Zhang Ben 张本采访合集  19.Beijing Premiere BRTV (Liang Chao) 大戏看北京梁超  20.CCTV15 TV music interviews:The Orchestration of Strategy《影视留声机》乐鉴光影:谋局之音  21.CCTV15 TV music interviews:Zang Hai & Antu《影视留声机》乐鉴光影:海与辂  22.CCTV15 TV music interviews:The intangible cultural heritage《影视留声机》乐鉴光影:非遗生辉  23.CCTV15 TV music interviews:Captivating Individual Characters《影视留声机》乐鉴光影:侧影惊鸿  24.Zheng & Cao Interviewed by Taiwanese Veteran Producer Wang Weizhong 王伟忠x郑晓龙x曹译文视频播客",
+      "description": "Compilation of interviews: 1.Xinhua News 新华网肖战  2.People's Daily New Media 人民日报新媒体肖战  3.CCTV8 星推荐肖战  4.CCTV8 & CCTV News 剧说很好看肖战  5.CCTV Drama CCTV电视剧肖战  6.Sina 新浪娱情Lab肖战  7.Sohu 狐厂大拷问肖战  8.Baidu 百度肖战  9.1.YOUKU1 优酷肖战1  9.2.YOUKU2 优酷肖战2  9.3.YOUKU3 优酷肖战3  10.SMG Entertainment 东方新娱乐肖战  11.BRTV 大戏看北京+每天都有戏肖战  12.CCTV8 (Zheng Xiaolong & Cao Yiwen) 央视导演双采  13.BRTV (Zheng Xiaolong & Cao Yiwen) 北卫导演双采  14.BRTV Daily Entertainment Express(Cao Yiwen) 每日文娱播报曹译文  15.1.Beijing Youth Daily(Cao Yiwen) 北京青年报曹译文  15.2.Beijing Youth Daily (Zheng Xiaolong) 北京青年报郑晓龙  16.1.Beijing Daily (Cao Yiwen) 北京日报曹译文  16.2.Beijing Daily (Zheng Xiaolong) 北京日报郑晓龙  17.Zhejiang Tide News (Cao Yiwen) 潮新闻曹译文  18.Interview collection of Zhang Ben 张本采访合集  19.Beijing Premiere BRTV (Liang Chao) 大戏看北京梁超  20.CCTV15 TV music interviews:The Orchestration of Strategy《影视留声机》乐鉴光影:谋局之音  21.CCTV15 TV music interviews:Zang Hai & Antu《影视留声机》乐鉴光影:海与荼  22.CCTV15 TV music interviews:The intangible cultural heritage《影视留声机》乐鉴光影:非遗生辉  23.CCTV15 TV music interviews:Captivating Individual Characters《影视留声机》乐鉴光影:侧影惊鸿  24.Zheng & Cao Interviewed by Taiwanese Veteran Producer Wang Weizhong 王伟忠x郑晓龙x曹译文视频播客",
       "platforms": [
         {
           "name": "Weibo-1",
@@ -724,7 +724,7 @@
       "description": "1.Narrator of Chapter 1: Seize the Day. 2.Singer of the song: Fellow Traveler.",
       "platforms": [
         {
-          "name": "新华网1",
+          "name": "新华网-1",
           "url": "http://www.news.cn/politics/20240128/9f4d386a26884392a4b67c29d6640980/c.html"
         },
         {
@@ -732,7 +732,7 @@
           "url": "https://www.douyin.com/video/7334645390165200169"
         },
         {
-          "name": "Bilibili1",
+          "name": "Bilibili-1",
           "url": "https://www.bilibili.com/video/BV1J64y1374c/"
         },
         {
@@ -2100,7 +2100,7 @@
       "date": "2019-08-13",
       "title": "Xiao Zhan Interview about Wei Wuxian in The Untamed",
       "titleChinese": "陈情令肖战魏无羡专访",
-      "role": "Wei Wuxian 魏无羡 ",
+      "role": "Wei Wuxian 魏无羡 (Lead)",
       "category": [
         "variety"
       ],
