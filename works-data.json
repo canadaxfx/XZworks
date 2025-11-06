@@ -943,14 +943,14 @@
     },
     {
       "id": "Xiao-Chunsheng-Interviews",
-      "date": "2023-06-13 to 2023-06-17",
+      "date": "2023-06-13 to 2023-06-19",
       "title": "Compilation of Xiao Zhan Interviews about Xiao Chunsheng in The Youth Memories",
       "titleChinese": "梦中的那片海肖战肖春生专访合集",
       "role": "Xiao Chunsheng 肖春生 (Lead)",
       "category": [
         "variety"
       ],
-      "description": "Interviews about The Youth Memories. 1.Sohu 狐厂大拷问  2. CCTV8 Star's Choice 星推荐-1  3.CCTV8 Star's Choice 星推荐-2  4.Tencent 入戏",
+      "description": "Interviews about The Youth Memories. 1.Sohu 狐厂大拷问  2. CCTV8 Star's Choice 星推荐-1  3.CCTV8 Star's Choice 星推荐-2  4.Tencent 入戏  5.凤凰网娱乐 非常道",
       "platforms": [
         {
           "name": "YouTube-1",
@@ -967,6 +967,10 @@
         {
           "name": "YouTube-4",
           "url": "https://www.youtube.com/watch?v=wE9gpVH7T1U"
+        },
+        {
+          "name": "YouTube-5",
+          "url": "https://www.youtube.com/watch?v=RDT0JD26P3k"
         }
       ]
     },
