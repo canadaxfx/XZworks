@@ -1,6 +1,91 @@
 {
   "works": [
     {
+      "id": "interview-series-about-movie-gezhi-town",
+      "date": "2025-12-05 to 2025-12-30",
+      "title": "Interview Series about movie Gezhi Town",
+      "titleChinese": "得闲谨制媒体采访访谈合集",
+      "role": "Mo Dexian 莫得闲 (Lead)",
+      "category": [
+        "variety"
+      ],
+      "description": "Compilation of interviews: 1.China Film Report 中国电影报道   2.Xinhua News Agency 新华社   3.The People's Daily 人民日报   4.Movie Talk 今日影评   5.CCTV News 央视新闻   6.Baidu Entertainment 百度娱乐   7.Sina Entertainment 新浪娱乐   8.MuYi Movie 木易Movie   9.小片片说大片",
+      "platforms": [
+        {
+          "name": "Weibo-1",
+          "url": "https://weibo.com/1261788454/QhEgO6PT6"
+        },
+        {
+          "name": "YouTube-1",
+          "url": "https://www.youtube.com/watch?v=mDQemipi2uY"
+        },
+        {
+          "name": "Weibo-2",
+          "url": "https://weibo.com/1699432410/QhVc3a6RA"
+        },
+        {
+          "name": "YouTube-2",
+          "url": "https://www.youtube.com/watch?v=f5uNZZFV39Y"
+        },
+        {
+          "name": "Weibo-3",
+          "url": "https://weibo.com/2803301701/QhWkHeP61"
+        },
+        {
+          "name": "YouTube-3",
+          "url": "https://www.youtube.com/watch?v=Fqd92BN-MoM"
+        },
+        {
+          "name": "Weibo-4",
+          "url": "https://weibo.com/5828293600/QhVNWpgal"
+        },
+        {
+          "name": "YouTube-4",
+          "url": "https://www.youtube.com/watch?v=bA-RkgroikM"
+        },
+        {
+          "name": "Weibo-5",
+          "url": "https://weibo.com/2656274875/QhUrfdZa6"
+        },
+        {
+          "name": "YouTube-5",
+          "url": "https://www.youtube.com/watch?v=M6cRi-rI_Ow"
+        },
+        {
+          "name": "Weibo-6",
+          "url": "https://weibo.com/5909962605/Qi3pmtYmm"
+        },
+        {
+          "name": "YouTube-6",
+          "url": "https://www.youtube.com/watch?v=LEGxDQGtEB4"
+        },
+        {
+          "name": "Weibo-7",
+          "url": "https://weibo.com/6643123988/Qi3wpDBLq"
+        },
+        {
+          "name": "YouTube-7",
+          "url": "https://www.youtube.com/watch?v=u391WRsAHnU"
+        },
+        {
+          "name": "Weibo-8",
+          "url": "https://weibo.com/1925723352/Qi6al7TVr"
+        },
+        {
+          "name": "YouTube-8",
+          "url": "https://www.youtube.com/watch?v=jT7b_K4HpF0"
+        },
+        {
+          "name": "Bilibili-9",
+          "url": "https://www.bilibili.com/video/BV1GRm7BxEAo/?spm_id_from=333.337.search-card.all.click&vd_source=feb8e033e2242387ae13586d99acb2ec"
+        },
+        {
+          "name": "YouTube-9",
+          "url": "https://www.youtube.com/watch?v=wW0cb1XbWsQ"
+        }
+      ]
+    },
+    {
       "id": "the-greater-bay-area-film-concert-2025-music-all-night",
       "date": "2025-09-28",
       "title": "The Greater Bay Area Film Concert 2025：Music All Night",
@@ -882,7 +967,6 @@
         }
       ]
     },
-
     {
       "id": "cctv-8-chinese-tv-play-interview",
       "date": "2023-06-21",
