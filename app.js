@@ -270,7 +270,7 @@ function initializeMusicPlayer() {
         { name: "XZ-不要回头", file: "不要回头.mp3" },
         { name: "XZ-如愿", file: "如愿.mp3" },
         { name: "XZ-同路人", file: "同路人.mp3" },
-        { name: "XZ-余年", file: "余年.mp3" },
+        { name: "XZ-得闲谨制", file: "得闲谨制.mp3" },
     ];
     
     let playlist = [...originalPlaylist];
