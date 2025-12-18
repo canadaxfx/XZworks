@@ -9,7 +9,7 @@
       "category": [
         "variety"
       ],
-      "description": "Compilation of interviews: 1.China Film Report 中国电影报道    2.Xinhua News Agency 新华社    3.The People's Daily 人民日报    4.Movie Talk 今日影评    5.CCTV News 央视新闻    6.Baidu Entertainment 百度娱乐    7.Sina Entertainment 新浪娱乐    8.MuYi Movie 木易Movie    9.小片片说大片    10.M Movie Group (Beijing premiere) M观影团微博北京首映合集    11.New Media Center of Movie Channel 电影频道融媒体B站专访",
+      "description": "Compilation of interviews: 1.China Film Report 中国电影报道    2.Xinhua News Agency 新华社    3.The People's Daily 人民日报    4.Movie Talk 今日影评    5.CCTV News 央视新闻    6.Baidu Entertainment 百度娱乐    7.Sina Entertainment 新浪娱乐    8.MuYi Movie 木易Movie    9.小片片说大片    10.M Movie Group (Beijing premiere) M观影团微博北京首映合集    11.New Media Center of Movie Channel 电影频道融媒体B站专访    12.Global Times Entertainment 环球时报文娱    13.Sohu 狐厂大拷问",
       "platforms": [
         {
           "name": "Weibo-1",
@@ -98,6 +98,22 @@
         {
           "name": "YouTube-11",
           "url": "https://www.youtube.com/watch?v=7bAMTUnvAfc"
+        },
+        {
+          "name": "Weibo-12",
+          "url": "https://weibo.com/7442413095/QiEHHxy8D"
+        },
+        {
+          "name": "YouTube-12",
+          "url": "https://www.youtube.com/watch?v=VWU1tyEVIZo"
+        },
+        {
+          "name": "Weibo-13",
+          "url": "https://weibo.com/6525010965/QiNavmkS2?refer_flag=1001030103_"
+        },
+        {
+          "name": "YouTube-13",
+          "url": "https://www.youtube.com/watch?v=Ont2GK8cRjo"
         }
       ]
     },
