@@ -9,7 +9,7 @@
       "category": [
         "variety"
       ],
-      "description": "Compilation of interviews: 1.China Film Report 中国电影报道    2.Xinhua News Agency 新华社    3.The People's Daily 人民日报    4.Movie Talk 今日影评    5.CCTV News 央视新闻    6.Baidu Entertainment 百度娱乐    7.Sina Entertainment 新浪娱乐    8.MuYi Movie 木易Movie    9.小片片说大片    10.M Movie Group (Beijing premiere) M观影团微博北京首映合集    11.New Media Center of Movie Channel 电影频道融媒体B站专访    12.Global Times Entertainment 环球时报文娱    13.Sohu 狐厂大拷问",
+      "description": "Compilation of interviews: 1.China Film Report 中国电影报道 &nbsp 2.Xinhua News Agency 新华社 &nbsp 3.The People's Daily 人民日报 &nbsp 4.Movie Talk 今日影评 &nbsp 5.CCTV News 央视新闻 &nbsp 6.Baidu Entertainment 百度娱乐 &nbsp 7.Sina Entertainment 新浪娱乐 &nbsp 8.MuYi Movie 木易Movie &nbsp 9.小片片说大片 &nbsp 10.M Movie Group (Beijing premiere) M观影团微博北京首映合集 &nbsp 11.New Media Center of Movie Channel 电影频道融媒体B站专访 &nbsp 12.Global Times Entertainment 环球时报文娱 &nbsp 13.Sohu 狐厂大拷问 &nbsp 14.Guangming Daily 光明日报",
       "platforms": [
         {
           "name": "Weibo-1",
@@ -114,6 +114,14 @@
         {
           "name": "YouTube-13",
           "url": "https://www.youtube.com/watch?v=Ont2GK8cRjo"
+        },
+        {
+          "name": "Weibo-14",
+          "url": "https://weibo.com/u/1402977920?key_word=%E5%85%89%E6%98%8E%E6%97%A5%E6%8A%A5%E4%B8%93%E8%AE%BF%E8%82%96%E6%88%98&end_time=1766552400"
+        },
+        {
+          "name": "YouTube-14",
+          "url": "https://www.youtube.com/watch?v=eVLXoKN1H84"
         }
       ]
     },
@@ -209,7 +217,7 @@
       "category": [
         "variety"
       ],
-      "description": "Compilation of interviews: 1.Xinhua News 新华网肖战 &nbsp 2.People's Daily New Media 人民日报新媒体肖战 &nbsp 3.CCTV8 星推荐肖战 &nbsp 4.CCTV8 & CCTV News 剧说很好看肖战 &nbsp 5.CCTV Drama CCTV电视剧肖战 &nbsp 6.Sina 新浪娱情Lab肖战 &nbsp 7.Sohu 狐厂大拷问肖战 &nbsp 8.Baidu 百度肖战 &nbsp 9.1.YOUKU1 优酷肖战1 &nbsp 9.2.YOUKU2 优酷肖战2 &nbsp 9.3.YOUKU3 优酷肖战3 &nbsp 10.SMG Entertainment 东方新娱乐肖战 &nbsp 11.BRTV 大戏看北京+每天都有戏肖战 &nbsp 12.CCTV8 (Zheng Xiaolong & Cao Yiwen) 央视导演双采 &nbsp 13.BRTV (Zheng Xiaolong & Cao Yiwen) 北卫导演双采 &nbsp 14.BRTV Daily Entertainment Express(Cao Yiwen) 每日文娱播报曹译文 &nbsp 15.1.Beijing Youth Daily(Cao Yiwen) 北京青年报曹译文 &nbsp 15.2.Beijing Youth Daily (Zheng Xiaolong) 北京青年报郑晓龙 &nbsp 16.1.Beijing Daily (Cao Yiwen) 北京日报曹译文 &nbsp 16.2.Beijing Daily (Zheng Xiaolong) 北京日报郑晓龙 &nbsp 17.Zhejiang Tide News (Cao Yiwen) 潮新闻曹译文 &nbsp 18.Interview collection of Zhang Ben 张本采访合集 &nbsp 19.Beijing Premiere BRTV (Liang Chao) 大戏看北京梁超 &nbsp 20.CCTV15 TV music interviews:The Orchestration of Strategy《影视留声机》乐鉴光影:谋局之音 &nbsp 21.CCTV15 TV music interviews:Zang Hai & Antu《影视留声机》乐鉴光影:海与荼 &nbsp 22.CCTV15 TV music interviews:The intangible cultural heritage《影视留声机》乐鉴光影:非遗生辉 &nbsp 23.CCTV15 TV music interviews:Captivating Individual Characters《影视留声机》乐鉴光影:侧影惊鸿 &nbsp 24.Zheng & Cao Interviewed by Taiwanese Veteran Producer Wang Weizhong 王伟忠x郑晓龙x曹译文视频播客",
+      "description": "Compilation of interviews: 1.Xinhua News 新华网肖战 &nbsp 2.People's Daily New Media 人民日报新媒体肖战 &nbsp 3.CCTV8 星推荐肖战 &nbsp 4.CCTV8 & CCTV News 剧说很好看肖战 &nbsp 5.CCTV Drama CCTV电视剧肖战 &nbsp 6.Sina 新浪娱情Lab肖战 &nbsp 7.Sohu 狐厂大拷问肖战 &nbsp 8.Baidu 百度肖战 &nbsp 9.1.YOUKU1 优酷肖战1 &nbsp 9.2.YOUKU2 优酷肖战2 &nbsp 9.3.YOUKU3 优酷肖战3 &nbsp 10.SMG Entertainment 东方新娱乐肖战 &nbsp 11.BRTV 大戏看北京+每天都有戏肖战 &nbsp 12.CCTV8 (Zheng Xiaolong & Cao Yiwen) 央视导演双采 &nbsp 13.BRTV (Zheng Xiaolong & Cao Yiwen) 北卫导演双采 &nbsp 14.BRTV Daily Entertainment Express(Cao Yiwen) 每日文娱播报曹译文 &nbsp 15.1.Beijing Youth Daily(Cao Yiwen) 北京青年报曹译文 &nbsp 15.2.Beijing Youth Daily (Zheng Xiaolong) 北京青年报郑晓龙 &nbsp 16.1.Beijing Daily (Cao Yiwen) 北京日报曹译文 &nbsp 16.2.Beijing Daily (Zheng Xiaolong) 北京日报郑晓龙 &nbsp 17.Zhejiang Tide News (Cao Yiwen) 潮新闻曹译文 &nbsp 18.Interview collection of Zhang Ben 张本采访合集 &nbsp 19.Beijing Premiere BRTV (Liang Chao) 大戏看北京梁超 &nbsp 20.CCTV15 TV music interviews:The Orchestration of Strategy《影视留声机》乐鉴光影:谋局之音 &nbsp 21.CCTV15 TV music interviews:Zang Hai & Antu《影视留声机》乐鉴光影:海与荼 &nbsp 22.CCTV15 TV music interviews:The intangible cultural heritage《影视留声机》乐鉴光影:非遗生辉 &nbsp 23.CCTV15 TV music interviews:Captivating Individual Characters《影视留声机》乐鉴光影:侧影惊鸿 &nbsp 24.Zheng & Cao interviewed by Taiwanese veteran producer Wang Weizhong 王伟忠x郑晓龙x曹译文视频播客 &nbsp 25.Zhang Ben interviewed by Guangming Daily 光明日报专访张本",
       "platforms": [
         {
           "name": "Weibo-1",
@@ -478,6 +486,14 @@
         {
           "name": "YouTube-24",
           "url": "https://www.youtube.com/watch?v=c6waPYDPsIc"
+        },
+        {
+          "name": "Weibo-25",
+          "url": "https://weibo.com/6525010965/QjhD4iR2O?refer_flag=1001030103_"
+        },
+        {
+          "name": "YouTube-25",
+          "url": "https://www.youtube.com/watch?v=X1L5oWg5ITE"
         }
       ]
     },
