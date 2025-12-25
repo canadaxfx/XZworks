@@ -263,14 +263,14 @@ function initializeTermsToggle() {
 // =============== MUSIC PLAYER ===============
 function initializeMusicPlayer() {
     const originalPlaylist = [
-        { name: "XZ-岁岁年年", file: "岁岁年年.mp3" },
+        { name: "XZ-得闲谨制", file: "得闲谨制.mp3" },      
+	{ name: "XZ-岁岁年年", file: "岁岁年年.mp3" },
         { name: "XZ-都一样", file: "都一样.mp3" },
         { name: "XZ-灯塔", file: "灯塔.mp3" },
         { name: "XZ-漂流", file: "漂流.mp3" },
         { name: "XZ-不要回头", file: "不要回头.mp3" },
         { name: "XZ-如愿", file: "如愿.mp3" },
         { name: "XZ-同路人", file: "同路人.mp3" },
-        { name: "XZ-得闲谨制", file: "得闲谨制.mp3" },
     ];
     
     let playlist = [...originalPlaylist];
@@ -401,7 +401,7 @@ function initializeCarousel() {
         'xiao-zhan1-5.jpg', 'xiao-zhan1-6.jpg', 'xiao-zhan1-7.jpg', 'xiao-zhan1-8.jpg',
         'xiao-zhan1-9.jpg', 'xiao-zhan1-10.jpg', 'xiao-zhan1-11.jpg', 'xiao-zhan1-12.jpg',
         'xiao-zhan1-13.jpg', 'xiao-zhan1-14.jpg', 'xiao-zhan1-15.jpg', 'xiao-zhan1-16.jpg',
-        'xiao-zhan1-17.jpg', 'xiao-zhan1-18.jpg', 'xiao-zhan2-1.jpg', 'xiao-zhan2-2.jpg',
+        'xiao-zhan1-17.jpg', 'xiao-zhan1-18.jpg', 'xiao-zhan1-19.jpg', 'xiao-zhan2-1.jpg', 'xiao-zhan2-2.jpg',
         'xiao-zhan2-3.jpg', 'xiao-zhan2-4.png', 'xiao-zhan2-5.jpeg','xiao-zhan3-1.jpg'
     ];
     
