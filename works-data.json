@@ -1,6 +1,31 @@
 {
   "works": [
     {
+      "id": "smg-countdown-party-2026",
+      "date": "2025-12-31",
+      "title": "SMG Countdown Party 2026",
+      "titleChinese": "2026东方卫视跨年盛典",
+      "role": "Singer",
+      "category": [
+        "stage performances"
+      ],
+      "description": "Stage performance at SMG Countdown Party 2026. Performed three songs: 1.得闲谨制 &nbsp 2.不要回头 &nbsp 3.现在不跳舞要干嘛",
+      "platforms": [
+        {
+          "name": "YouTube (东方卫视官方频道 China DragonTV)",
+          "url": "https://www.youtube.com/watch?v=Q8BcttLX9zo"
+        },
+        {
+          "name": "YouTube (上海电视台官方频道 SMG Shanghai TV)",
+          "url": "https://www.youtube.com/watch?v=AkNHNTjq-9c"
+        },
+        {
+          "name": "YouTube (上海东方卫视欢乐频道 SMG Entertainment)",
+          "url": "https://www.youtube.com/watch?v=N7Y0ijLWmgI"
+        }
+      ]
+    },
+    {
       "id": "interview-series-about-movie-gezhi-town",
       "date": "2025-12",
       "title": "Interview Series about movie Gezhi Town",
