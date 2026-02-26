@@ -1,6 +1,31 @@
 {
   "works": [
     {
+      "id": "beijing-spring-festival-gala-year-after-year",
+      "date": "2026-02-17",
+      "title": "Beijing Spring Festival Gala: Year After Year",
+      "titleChinese": "2026北京台春晚：岁岁年年",
+      "role": "Singer",
+      "category": [
+        "stage performances"
+      ],
+      "description": "Stage performance at Beijing Spring Festival Gala 2026.",
+      "platforms": [
+        {
+          "name": "Weibo(BRTV北京卫视)",
+          "url": "https://weibo.com/1779837945/Qsi0cpoe4"
+        },
+        {
+          "name": "Weibo(人民日报)",
+          "url": "https://weibo.com/2803301701/Qsi58x83j"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/watch?v=dbw1fJ3R-yE"
+        }
+      ]
+    },
+    {
       "id": "smg-countdown-party-2026",
       "date": "2025-12-31",
       "title": "SMG Countdown Party 2026",
@@ -22,6 +47,39 @@
         {
           "name": "YouTube (上海东方卫视欢乐频道 SMG Entertainment)",
           "url": "https://www.youtube.com/watch?v=N7Y0ijLWmgI"
+        }
+      ]
+    },
+    {
+      "id": "gezhi-town",
+      "date": "2025-12-06",
+      "title": "Gezhi Town",
+      "titleChinese": "得闲谨制",
+      "role": "Mo Dexian (莫得闲) (Lead)",
+      "category": [
+        "movies"
+      ],
+      "description": "Mo Dexian (Xiao Zhan), a machinist from the Jinling Machinery Factory, flees into the mountains with his family during wartime. There, they settle in “Gezhi Town,” where artillery officer Xiao Yan (Peng Yuchang) and a handful of abandoned soldiers have also taken refuge. Mo Dexian, his wife Xia Cheng (Zhou Yiran), his great-grandfather (Yang Xinming), and his young son briefly enjoy a peaceful, idyllic life — but the tranquility is short-lived. A small Japanese reconnaissance unit led by Okawara (Yin Zheng) unexpectedly arrives. What follows is a deadly confrontation where ordinary civilians rely on ingenuity and courage to face well-trained, heavily armed soldiers. Against overwhelming odds, can they protect the only home they have left?",
+      "platforms": [
+        {
+          "name": "腾讯视频",
+          "url": "https://v.qq.com/x/cover/mzc00200yi8ktmx.html?ptag=mzhan&_referrer=https%3A%2F%2Fwww.google.com%2F"
+        },
+        {
+          "name": "优酷",
+          "url": "https://v.youku.com/v_show/id_XNjUxNTEzOTM5Ng==.html?spm=a2hkm.8166622.PhoneSokuProgram_1.dplaybutton&s=afce28ac6248404e92d3"
+        },
+        {
+          "name": "爱奇艺",
+          "url": "https://www.iqiyi.com/v_1q2l018s94c.html?vid=1c090afc9d07f6d4a5ce5c332d5d17bc&ps4=0&vfrmblk=pca_115_episode_new&ischarge=true&ps3=pca_115_episode_new&lt=2&vfrm=3&ht=2&e2=150227bceb93ca4e1c60910efee9a6a0&ps2=3&vfrmrst=0"
+        },
+        {
+          "name": "Bilibili",
+          "url": "https://www.bilibili.com/bangumi/play/ep2791760"
+        },
+        {
+          "name": "芒果TV",
+          "url": "https://www.mgtv.com/b/814144/24149269.html?fpa=1413&fpos=6"
         }
       ]
     },
