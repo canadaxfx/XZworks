@@ -81,7 +81,7 @@ function initializeAllFunctionality() {
     initializeBackToTop();
     initializeTermsToggle();
     initializeMusicPlayer();
-    initializeCarousel();
+    // initializeCarousel(); // replaced by CSS film strip animation
 }
 
 // =============== TAB FUNCTIONALITY ===============
@@ -263,14 +263,14 @@ function initializeTermsToggle() {
 // =============== MUSIC PLAYER ===============
 function initializeMusicPlayer() {
     const originalPlaylist = [
-        { name: "XZ-得闲谨制", file: "得闲谨制.mp3" },      
-	{ name: "XZ-岁岁年年", file: "岁岁年年.mp3" },
-        { name: "XZ-都一样", file: "都一样.mp3" },
-        { name: "XZ-灯塔", file: "灯塔.mp3" },
-        { name: "XZ-漂流", file: "漂流.mp3" },
-        { name: "XZ-不要回头", file: "不要回头.mp3" },
-        { name: "XZ-如愿", file: "如愿.mp3" },
-        { name: "XZ-同路人", file: "同路人.mp3" },
+        { name: "XZ-得闲谨制", file: "music/得闲谨制.mp3" },
+        { name: "XZ-岁岁年年", file: "music/岁岁年年.mp3" },
+        { name: "XZ-都一样", file: "music/都一样.mp3" },
+        { name: "XZ-灯塔", file: "music/灯塔.mp3" },
+        { name: "XZ-漂流", file: "music/漂流.mp3" },
+        { name: "XZ-不要回头", file: "music/不要回头.mp3" },
+        { name: "XZ-如愿", file: "music/如愿.mp3" },
+        { name: "XZ-同路人", file: "music/同路人.mp3" },
     ];
     
     let playlist = [...originalPlaylist];
@@ -397,12 +397,12 @@ function initializeMusicPlayer() {
 // =============== BACKGROUND CAROUSEL ===============
 function initializeCarousel() {
     const imagePaths = [
-        'xiao-zhan1-1.jpg', 'xiao-zhan1-2.jpg', 'xiao-zhan1-3.jpg', 'xiao-zhan1-4.jpg',
-        'xiao-zhan1-5.jpg', 'xiao-zhan1-6.jpg', 'xiao-zhan1-7.jpg', 'xiao-zhan1-8.jpg',
-        'xiao-zhan1-9.jpg', 'xiao-zhan1-10.jpg', 'xiao-zhan1-11.jpg', 'xiao-zhan1-12.jpg',
-        'xiao-zhan1-13.jpg', 'xiao-zhan1-14.jpg', 'xiao-zhan1-15.jpg', 'xiao-zhan1-16.jpg',
-        'xiao-zhan1-17.jpg', 'xiao-zhan1-18.jpg', 'xiao-zhan1-19.jpg', 'xiao-zhan2-1.jpg', 'xiao-zhan2-2.jpg',
-        'xiao-zhan2-3.jpg', 'xiao-zhan2-4.png', 'xiao-zhan2-5.jpeg','xiao-zhan3-1.jpg'
+        'images/stills/xiao-zhan1-1.jpg', 'images/stills/xiao-zhan1-2.jpg', 'images/stills/xiao-zhan1-3.jpg', 'images/stills/xiao-zhan1-4.jpg',
+        'images/stills/xiao-zhan1-5.jpg', 'images/stills/xiao-zhan1-6.jpg', 'images/stills/xiao-zhan1-7.jpg', 'images/stills/xiao-zhan1-8.jpg',
+        'images/stills/xiao-zhan1-9.jpg', 'images/stills/xiao-zhan1-10.jpg', 'images/stills/xiao-zhan1-11.jpg', 'images/stills/xiao-zhan1-12.jpg',
+        'images/stills/xiao-zhan1-13.jpg', 'images/stills/xiao-zhan1-14.jpg', 'images/stills/xiao-zhan1-15.jpg', 'images/stills/xiao-zhan1-16.jpg',
+        'images/stills/xiao-zhan1-17.jpg', 'images/stills/xiao-zhan1-18.jpg', 'images/stills/xiao-zhan1-19.jpg', 'images/stills/xiao-zhan2-1.jpg', 'images/stills/xiao-zhan2-2.jpg',
+        'images/stills/xiao-zhan2-3.jpg', 'images/stills/xiao-zhan2-4.png', 'images/stills/xiao-zhan2-5.jpeg', 'images/stills/xiao-zhan3-1.jpg'
     ];
     
     const imageStrip = document.querySelector('.image-strip');
