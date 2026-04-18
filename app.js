@@ -352,16 +352,24 @@ function initializeMusicPlayer() {
     function toggleMusic() {
         if (isPlaying) {
             audioElement.pause();
+            isPlaying = false;
+            updatePlayButton();
         } else {
             const playPromise = audioElement.play();
             if (playPromise !== undefined) {
-                playPromise.catch(e => {
+                playPromise.then(() => {
+                    isPlaying = true;
+                    updatePlayButton();
+                }).catch(e => {
                     console.error('Playback prevented:', e);
+                    isPlaying = false;
+                    updatePlayButton();
                 });
+            } else {
+                isPlaying = true;
+                updatePlayButton();
             }
         }
-        isPlaying = !isPlaying;
-        updatePlayButton();
     }
     
     function playPreviousTrack() {
