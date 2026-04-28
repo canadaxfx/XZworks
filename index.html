@@ -316,8 +316,9 @@
             align-items:center;
             justify-content:center;
             gap:8px;
-            max-width:640px;
-            margin:30px auto 0;
+            max-width:560px;
+            margin:30px auto 20px;
+            padding:0 16px;
         }
 
         #search-input {
@@ -626,6 +627,12 @@
             #back-to-top .text {
                 font-size:7px
             }
+        }
+
+        @media (max-width: 600px) {
+            .search-container { padding: 0 12px; gap: 6px; }
+            #search-input { flex: 0 0 100%; min-width: 0; padding: 10px 14px 10px 40px; }
+            #search-button, #clear-search { flex: 1; padding: 10px 8px; }
         }
 
         @media (max-width: 380px) {
