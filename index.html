@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Screen Arts of Xiao Zhan</title>
     <meta name="robots" content="noai, noimageai">
-    <meta name="copyright" content="Content curation and organization © 2025 CanadaXFX. Unauthorized AI training prohibited.">
+    <meta name="copyright" content="Content curation and organization © 2026 CanadaXFX. Unauthorized AI training prohibited.">
     <link rel="preload" href="images/stills/xiao-zhan1-1.jpg" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -315,43 +315,59 @@
             flex-wrap:wrap;
             align-items:center;
             justify-content:center;
-            gap:10px;
-            max-width:600px;
-            margin:30px auto 0
+            gap:8px;
+            max-width:640px;
+            margin:30px auto 0;
         }
 
         #search-input {
             flex:1;
-            min-width:200px;
-            max-width:600px;
-            padding:10px 15px;
-            border:1px solid #ddd;
-            border-radius:5px;
-            font-size:1rem;
-            outline:none
+            min-width:180px;
+            padding:11px 16px 11px 44px;
+            border:1.5px solid #ddd;
+            background-color:#fff;
+            background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='8'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>");
+            background-repeat:no-repeat;
+            background-position:14px center;
+            border-radius:10px;
+            font-size:.95rem;
+            outline:none;
+            transition:border-color .2s,box-shadow .2s;
+            font-family:inherit;
         }
 
         #search-input:focus {
-            border-color:var(--primary-color);
-            box-shadow:0 0 3px #4a4a8f4d
+            border-color:var(--accent-color);
+            box-shadow:0 0 0 3px rgba(var(--accent-rgb),.15);
         }
 
         #search-button,#clear-search {
-            padding:10px 15px;
+            padding:11px 20px;
             background-color:var(--primary-color);
             color:#fff;
             border:none;
-            border-radius:5px;
+            border-radius:10px;
             cursor:pointer;
-            transition:background-color .3s
+            font-size:.95rem;
+            font-weight:600;
+            transition:background-color .2s,color .2s;
+            white-space:nowrap;
         }
 
         #search-button:hover,#clear-search:hover {
-            background-color:var(--accent-color)
+            background-color:var(--accent-color);
+            color:var(--primary-color);
         }
 
         #clear-search {
-            background-color:#999
+            background-color:#e8e8e8;
+            color:#555;
+            font-weight:normal;
+        }
+
+        #clear-search:hover {
+            background-color:#d8d8d8;
+            color:#555;
         }
 
         #search-results-count {
@@ -662,7 +678,7 @@ body {
     </script>
 <style>
 /* ── Palette overrides — ink/gold theme ─────────── */
-:root{--primary-color:#1a1a24;--accent-color:#c9a86a;--secondary-color:#faf8f3;--text-color:#333}
+:root{--primary-color:#1a1a24;--accent-color:#c9a86a;--accent-rgb:201,168,106;--secondary-color:#faf8f3;--text-color:#333}
 body{background-color:#faf8f3}
 
 /* Cinematic nav tabs */
@@ -713,10 +729,6 @@ body{background-color:#faf8f3}
 .platform-link{background:#1a1a24;color:#fff}
 .platform-link:hover{background:#c9a86a;color:#1a1a24}
 
-#search-input:focus{border-color:#c9a86a;box-shadow:0 0 3px rgba(201,168,106,.3)}
-#search-button{background:#1a1a24}
-#search-button:hover{background:#c9a86a;color:#1a1a24}
-#clear-search{background:#6b6b7a}
 #search-results-count{color:#8a6a30}
 .highlight{background-color:rgba(201,168,106,.25)}
 
@@ -1045,7 +1057,7 @@ header::before{display:none}
                     <a href="https://www.youtube.com/@xzstudio-1005" target="_blank" class="footer-link">XZ.Studio on YouTube</a>
                     <a href="https://canadaxfx.github.io/xiaozhan/" target="_blank" class="footer-link">XZ Social Media</a>
                 </div>
-                <div class="copyright-notice">&copy; 2025 CanadaXFX. All rights reserved.</div>
+                <div class="copyright-notice">&copy; 2026 CanadaXFX. All rights reserved.</div>
 
                 <div class="copyright-notice">
                     <p><a href="#" id="terms-toggle">See Terms of Use</a></p>
