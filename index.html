@@ -754,7 +754,7 @@ body{background-color:#faf8f3}
 
 /* ── Cinematic header ───────────────────────────── */
 header{
-  position:relative;height:380px;
+  position:relative;height:300px;
   background:#0b0b12;color:#fff;
   text-align:left;padding:0;overflow:hidden;
 }
@@ -767,17 +767,6 @@ header::before{display:none}
   font-size:13px;color:rgba(255,255,255,0.92);letter-spacing:.04em;
   background:linear-gradient(to bottom,rgba(0,0,0,.4),transparent);
   border-bottom:1px solid rgba(255,255,255,.08);
-}
-.hero-utility .left{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.hero-utility .wordmark{
-  font-family:'Fraunces',serif;font-weight:500;font-size:15px;
-  letter-spacing:.02em;color:#fff;
-}
-.hero-utility .dot{opacity:.5;font-size:14px}
-.hero-utility .kicker-small{
-  font-family:'Noto Sans SC','Noto Sans',sans-serif;
-  font-size:15px;font-weight:400;letter-spacing:.08em;
-  color:rgba(255,255,255,.85);
 }
 .hero-utility .links{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
 .hero-utility a{
@@ -861,7 +850,7 @@ header::before{display:none}
 
 /* Mobile */
 @media(max-width:768px){
-  header{height:auto;min-height:380px}
+  header{height:auto;min-height:300px}
   .hero-utility{padding:10px 14px;font-size:11px;gap:8px}
   .hero-utility .back{padding:4px 8px;font-size:10px}
   .hero-strip{height:65%;top:43%}
@@ -876,11 +865,8 @@ header::before{display:none}
   .hero-sublinks a{display:inline-block;margin:2px 8px 2px 0}
 }
 @media(max-width:480px){
-  header{min-height:340px}
-  .hero-utility{padding:8px 10px;font-size:10px;justify-content:space-between;flex-wrap:nowrap}
-  .hero-utility .wordmark{font-size:11px}
-  .hero-utility .kicker-small{font-size:11px}
-  .hero-utility .left{gap:5px}
+  header{min-height:260px}
+  .hero-utility{padding:8px 10px;font-size:10px;flex-wrap:nowrap}
   .hero-utility .links{gap:0;font-size:9px}
   .hero-utility a{padding:4px 6px}
   .hero-title{font-size:clamp(17px,5.5vw,26px);white-space:nowrap}
@@ -910,14 +896,9 @@ header::before{display:none}
     <!-- Header — cinematic drifting film strip -->
     <header>
         <div class="hero-utility">
-            <div class="left">
-                <span class="wordmark">Xiao Zhan</span>
-                <span class="dot">·</span>
-                <span class="kicker-small">肖战</span>
-            </div>
             <div class="links">
                 <a href="https://www.youtube.com/@CanadaXFX" target="_blank" rel="noopener">YouTube ↗</a>
-<a href="https://xz-studio-gallery.com/" target="_blank" rel="noopener">Studio Gallery ↗</a>
+                <a href="https://xz-studio-gallery.com/" target="_blank" rel="noopener">Studio Gallery ↗</a>
             </div>
         </div>
 
