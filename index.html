@@ -1164,6 +1164,17 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
     <!-- JavaScript will go here -->
     <script src="app.js?v=2"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var ytTab = document.querySelector('.youtube-tab');
+      if (ytTab) {
+        ytTab.addEventListener('click', function(e) {
+          e.stopImmediatePropagation();
+          window.location.href = 'https://xzyt.pages.dev/';
+        });
+      }
+    });
+    </script>
 
     <script>
     /* ─── Magnolia Watermark ─────────────────────────────────── */
