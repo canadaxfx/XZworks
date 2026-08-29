@@ -1,81 +1,23 @@
 {
   "works": [
     {
-      "id": "beijing-spring-festival-gala-year-after-year",
-      "date": "2026-02-17",
-      "title": "Beijing Spring Festival Gala: Year After Year",
-      "titleChinese": "2026北京台春晚：岁岁年年",
+      "id": "guest-performance-at-na-yings-beijing-concert",
+      "date": "2026-08-22",
+      "title": "Guest performance at Na Ying's Beijing concert",
+      "titleChinese": "那英北京演唱会嘉宾表演",
       "role": "Singer",
       "category": [
         "stage performances"
       ],
-      "description": "Stage performance at Beijing Spring Festival Gala 2026.",
+      "description": "那英北京演唱会嘉宾表演：1. 千年一声唱 One Song of a Thousand Years；2. 春暖花开 Warm Spring with Blooming Flowers",
       "platforms": [
         {
-          "name": "Weibo(BRTV北京卫视)",
-          "url": "https://weibo.com/1779837945/Qsi0cpoe4"
+          "name": "YouTube (千年一声唱)",
+          "url": "https://www.youtube.com/watch?v=VjCQYdevfZ0"
         },
         {
-          "name": "Weibo(人民日报)",
-          "url": "https://weibo.com/2803301701/Qsi58x83j"
-        }
-      ]
-    },
-    {
-      "id": "smg-countdown-party-2026",
-      "date": "2025-12-31",
-      "title": "SMG Countdown Party 2026",
-      "titleChinese": "2026东方卫视跨年盛典",
-      "role": "Singer",
-      "category": [
-        "stage performances"
-      ],
-      "description": "Stage performance at SMG Countdown Party 2026. Performed three songs: 1.得闲谨制 &nbsp 2.不要回头 &nbsp 3.现在不跳舞要干嘛",
-      "platforms": [
-        {
-          "name": "YouTube (东方卫视官方频道 China DragonTV)",
-          "url": "https://www.youtube.com/watch?v=Q8BcttLX9zo"
-        },
-        {
-          "name": "YouTube (上海电视台官方频道 SMG Shanghai TV)",
-          "url": "https://www.youtube.com/watch?v=AkNHNTjq-9c"
-        },
-        {
-          "name": "YouTube (上海东方卫视欢乐频道 SMG Entertainment)",
-          "url": "https://www.youtube.com/watch?v=N7Y0ijLWmgI"
-        }
-      ]
-    },
-    {
-      "id": "gezhi-town",
-      "date": "2025-12-06",
-      "title": "Gezhi Town",
-      "titleChinese": "得闲谨制",
-      "role": "Mo Dexian (莫得闲) (Lead)",
-      "category": [
-        "movies"
-      ],
-      "description": "Mo Dexian (Xiao Zhan), a machinist from the Jinling Machinery Factory, flees into the mountains with his family during wartime. There, they settle in “Gezhi Town,” where artillery officer Xiao Yan (Peng Yuchang) and a handful of abandoned soldiers have also taken refuge. Mo Dexian, his wife Xia Cheng (Zhou Yiran), his great-grandfather (Yang Xinming), and his young son briefly enjoy a peaceful, idyllic life — but the tranquility is short-lived. A small Japanese reconnaissance unit led by Okawara (Yin Zheng) unexpectedly arrives. What follows is a deadly confrontation where ordinary civilians rely on ingenuity and courage to face well-trained, heavily armed soldiers. Against overwhelming odds, can they protect the only home they have left?",
-      "platforms": [
-        {
-          "name": "腾讯视频",
-          "url": "https://v.qq.com/x/cover/mzc00200yi8ktmx.html?ptag=mzhan&_referrer=https%3A%2F%2Fwww.google.com%2F"
-        },
-        {
-          "name": "优酷",
-          "url": "https://v.youku.com/v_show/id_XNjUxNTEzOTM5Ng==.html?spm=a2hkm.8166622.PhoneSokuProgram_1.dplaybutton&s=afce28ac6248404e92d3"
-        },
-        {
-          "name": "爱奇艺",
-          "url": "https://www.iqiyi.com/v_1q2l018s94c.html?vid=1c090afc9d07f6d4a5ce5c332d5d17bc&ps4=0&vfrmblk=pca_115_episode_new&ischarge=true&ps3=pca_115_episode_new&lt=2&vfrm=3&ht=2&e2=150227bceb93ca4e1c60910efee9a6a0&ps2=3&vfrmrst=0"
-        },
-        {
-          "name": "Bilibili",
-          "url": "https://www.bilibili.com/bangumi/play/ep2791760"
-        },
-        {
-          "name": "芒果TV",
-          "url": "https://www.mgtv.com/b/814144/24149269.html?fpa=1413&fpos=6"
+          "name": "YouTube (春暖花开)",
+          "url": "https://www.youtube.com/watch?v=xaZt2nyROpA"
         }
       ]
     },
@@ -88,7 +30,7 @@
       "category": [
         "variety"
       ],
-      "description": "Compilation of interviews: 1.China Film Report 中国电影报道 &nbsp 2.Xinhua News Agency 新华社 &nbsp 3.The People's Daily 人民日报 &nbsp 4.Movie Talk 今日影评 &nbsp 5.CCTV News 央视新闻 &nbsp 6.Baidu Entertainment 百度娱乐 &nbsp 7.Sina Entertainment 新浪娱乐 &nbsp 8.MuYi Movie 木易Movie &nbsp 9.小片片说大片 &nbsp 10.M Movie Group (Beijing premiere) M观影团微博北京首映合集 &nbsp 11.New Media Center of Movie Channel 电影频道融媒体B站专访 &nbsp 12.Global Times Entertainment 环球时报文娱 &nbsp 13.Sohu 狐厂大拷问 &nbsp 14.Guangming Daily 光明日报 &nbsp 15.Xinhua News Agency 新华社 (Beijing College Student Film Festival 大影节专访)",
+      "description": "Compilation of interviews: 1.China Film Report 中国电影报道 &nbsp 2.Xinhua News Agency 新华社 &nbsp 3.The People's Daily 人民日报 &nbsp 4.Movie Talk 今日影评 &nbsp 5.CCTV News 央视新闻 &nbsp 6.Baidu Entertainment 百度娱乐 &nbsp 7.Sina Entertainment 新浪娱乐 &nbsp 8.MuYi Movie 木易Movie &nbsp 9.小片片说大片 &nbsp 10.M Movie Group (Beijing premiere) M观影团微博北京首映合集 &nbsp 11.New Media Center of Movie Channel 电影频道融媒体B站专访 &nbsp 12.Global Times Entertainment 环球时报文娱 &nbsp 13.Sohu 狐厂大拷问 &nbsp 14.Guangming Daily 光明日报",
       "platforms": [
         {
           "name": "Weibo-1",
@@ -201,10 +143,6 @@
         {
           "name": "YouTube-14",
           "url": "https://www.youtube.com/watch?v=i-1vThL0BPs"
-        },
-        {
-          "name": "Weibo-15",
-          "url": "https://weibo.com/1699432410/QDHmQiH43"
         }
       ]
     },
@@ -1628,10 +1566,6 @@
         {
           "name": "YouTube(YOUKU)",
           "url": "https://www.youtube.com/watch?v=e601XtWLcr8"
-        },
-        {
-          "name": "YouTube(肖战特别篇)",
-          "url": "https://www.youtube.com/watch?v=9cTMOQJLaYw"
         }
       ]
     },
