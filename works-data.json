@@ -12,12 +12,20 @@
       "description": "那英北京演唱会嘉宾表演：1. 千年一声唱 One Song of a Thousand Years；2. 春暖花开 Warm Spring with Blooming Flowers",
       "platforms": [
         {
-          "name": "YouTube (千年一声唱)",
+          "name": "YouTube-1",
           "url": "https://www.youtube.com/watch?v=VjCQYdevfZ0"
         },
         {
-          "name": "YouTube (春暖花开)",
+          "name": "Weibo-1(央视新闻)",
+          "url": "https://weibo.com/2656274875/ReCyjrIWz"
+        },
+        {
+          "name": "YouTube-2",
           "url": "https://www.youtube.com/watch?v=xaZt2nyROpA"
+        },
+        {
+          "name": "Weibo-2(中国新闻网)",
+          "url": "https://weibo.com/1784473157/ReBSjAezD"
         }
       ]
     },
