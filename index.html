@@ -1071,7 +1071,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         <div class="hero-content">
             <div class="hero-kicker"><strong>Xiao Zhan</strong> · Complete Works</div>
             <h1 class="hero-title">Screen Arts of Xiao Zhan</h1>
-            <p class="hero-zh">肖战演出全览 · 剧集、电影、舞台与综艺</p>
+            <p class="hero-zh">肖战演出全览 · 剧集、电影、音乐与综艺</p>
         </div>
     </header>
     
@@ -1089,7 +1089,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             <div class="tab active" data-section="all">All Works<br>全部演出</div>
             <div class="tab" data-section="dramas">TV Dramas<br>剧集</div>
             <div class="tab" data-section="movies">Movies<br>电影</div>
-            <div class="tab" data-section="stage performances">Stages<br>舞台</div>
+            <div class="tab" data-section="music">Music<br>音乐</div>
             <div class="tab" data-section="variety">Variety Shows<br>综艺</div>
             <div class="tab youtube-tab">YouTube<br>聚合站</div>
         </div>
@@ -1110,9 +1110,9 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             <div id="movies-container"></div>
         </div>
 
-        <div id="stage performances" class="content-section">
-            <h2>Stage Performances</h2>
-            <div id="stage-performances-container"></div>
+        <div id="music" class="content-section">
+            <h2>Music</h2>
+            <div id="music-container"></div>
         </div>
 
         <div id="variety" class="content-section">
@@ -1220,7 +1220,7 @@ function renderWorks() {
     const categoryMap = {
         'dramas': 'dramas-container',
         'movies': 'movies-container',
-        'stage performances': 'stage-performances-container',
+        'music': 'music-container',
         'variety': 'variety-container'
     };
 
