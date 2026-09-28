@@ -1710,39 +1710,22 @@ document.addEventListener('DOMContentLoaded', function() {
     })();
     </script>
 
-<!-- Featured video player (lightbox). To change what plays, edit the settings block in the script below. -->
+<!-- Featured video player (lightbox). What plays comes from featured.json on the CDN (see script below). -->
 <div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="视频播放">
   <button class="vm-close" id="vm-close" aria-label="关闭">&times;</button>
   <div class="vm-box"><video id="vm-video" controls playsinline preload="none"></video>
     <div class="vm-bar"><span class="t" id="vm-title"></span><span id="vm-links"></span></div></div>
 </div>
 <script>
-// ===== Featured video settings =====
-// HERO_REEL -> the permanent play button in the header (set to null to hide it).
-// FEATURED  -> the card at the top of "All Works": swap in another video any time, or set to null to take it down.
-// links: add { label: 'YouTube', url: 'https://...' } entries; entries with an empty url are skipped.
-const XZ_MEDIA = 'https://assets.xz-studio-gallery.com/xzworks/featured/';
-const HERO_REEL = {
-  video: XZ_MEDIA + 'xz-10th-anniversary-reel.mp4',
-  poster: XZ_MEDIA + 'xz-10th-anniversary-reel-poster.jpg',
-  title: '光影足迹 · Screen Arts of Xiao Zhan (2016–2026)',
-  links: [],
-};
-const FEATURED = {
-  kicker: 'Featured · 出道十周年特辑',
-  title: 'Footprints in Light',
-  zh: '肖战 · 光影足迹  2016–2026',
-  desc: '十年作品回顾：从《超星星学园》到《十日终焉》，中英双语字幕。A look back at ten years of screen and stage work, with Chinese–English subtitles.',
-  video: HERO_REEL.video,
-  poster: HERO_REEL.poster,
-  links: HERO_REEL.links,
-};
-// ===== end of settings =====
+// Featured video: settings come from featured.json on the CDN, managed in autosync (⚙️ 配置 → 精选视频 Featured).
+//   heroReel → the ▶ button in the header;  featured → the card at the top of "All Works" (unless showOn.xzworks is false).
+// Either may be null. If the file can't be loaded, the page just shows neither — nothing else depends on it.
+const FEATURED_JSON = 'https://assets.xz-studio-gallery.com/xzworks/featured/featured.json';
 
 (function () {
   const modal = document.getElementById('vmodal'), video = document.getElementById('vm-video');
-  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  const linkHtml = links => (links || []).filter(l => l.url).map(l =>
+  const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const linkHtml = links => (links || []).filter(l => l && l.url).map(l =>
     `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('');
 
   function open(item) {
@@ -1765,26 +1748,35 @@ const FEATURED = {
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) close(); });
   window.openFeaturedVideo = open;   // handy for testing / other buttons
 
-  if (HERO_REEL) {
-    const btn = document.getElementById('hero-play');
-    btn.hidden = false;
-    btn.onclick = () => open(HERO_REEL);
-  }
-  if (FEATURED) {
+  function render(cfg) {
+    const hero = cfg && cfg.heroReel;
+    if (hero && hero.video) {
+      const btn = document.getElementById('hero-play');
+      btn.hidden = false;
+      btn.onclick = () => open(hero);
+    }
+    const f = cfg && cfg.featured;
+    if (!f || !f.video || (f.showOn && f.showOn.xzworks === false)) return;
+    const item = { video: f.video, poster: f.poster, links: f.links,
+                   title: [f.titleEn, f.titleZh].filter(Boolean).join(' · ') };
     const slot = document.getElementById('featured-slot');
     slot.innerHTML = `<div class="featured-card">
-      <div class="fc-media" role="button" tabindex="0" aria-label="播放"><img src="${esc(FEATURED.poster)}" alt="${esc(FEATURED.title)}" loading="lazy"></div>
+      <div class="fc-media" role="button" tabindex="0" aria-label="播放"><img src="${esc(f.poster)}" alt="${esc(item.title)}" loading="lazy"></div>
       <div class="fc-body">
-        <div class="fc-kicker">${esc(FEATURED.kicker)}</div>
-        <h3 class="fc-title">${esc(FEATURED.title)}</h3>
-        <p class="fc-zh">${esc(FEATURED.zh)}</p>
-        <p class="fc-desc">${esc(FEATURED.desc)}</p>
-        <div class="fc-actions"><button type="button" class="fc-play">▶ 播放 Play</button>${linkHtml(FEATURED.links)}</div>
+        <div class="fc-kicker">Featured · ${esc(f.occasion || '精选')}</div>
+        <h3 class="fc-title">${esc(f.titleEn || f.titleZh)}</h3>
+        <p class="fc-zh">${esc([f.titleEn ? f.titleZh : '', f.sub].filter(Boolean).join('  '))}</p>
+        <p class="fc-desc">${esc(f.desc)}</p>
+        <div class="fc-actions"><button type="button" class="fc-play">▶ 播放 Play</button>${linkHtml(f.links)}</div>
       </div></div>`;
     const media = slot.querySelector('.fc-media');
-    media.onclick = slot.querySelector('.fc-play').onclick = () => open(FEATURED);
-    media.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(FEATURED); } };
+    media.onclick = slot.querySelector('.fc-play').onclick = () => open(item);
+    media.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(item); } };
   }
+
+  // the per-minute query string means a change shows up within a minute, without waiting on CDN/browser caches
+  fetch(FEATURED_JSON + '?t=' + Math.floor(Date.now() / 60000))
+    .then(r => r.ok ? r.json() : null).then(render).catch(() => {});
 })();
 </script>
 </body>
