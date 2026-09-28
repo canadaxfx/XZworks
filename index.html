@@ -828,6 +828,49 @@ header::before{display:none}
   to{transform:translate(-50%,-50%)}
 }
 @media(prefers-reduced-motion:reduce){.hero-strip{animation:none}}
+/* ---------- Featured video: hero play button, featured card, video lightbox ---------- */
+.hero-play{margin-top:14px;display:inline-flex;align-items:center;gap:4px;cursor:pointer;
+  font:600 14px 'Noto Sans',sans-serif;letter-spacing:.04em;color:#1a1500;
+  background:linear-gradient(180deg,#E8C040,#C9A01C);border:0;border-radius:999px;padding:9px 20px;
+  box-shadow:0 6px 22px rgba(221,184,32,.35);transition:transform .15s,box-shadow .15s;pointer-events:auto}
+.hero-play[hidden]{display:none}
+.hero-play span{font-weight:500;opacity:.75}
+.hero-play:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(221,184,32,.5)}
+.featured-card{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);margin:0 0 28px;
+  background:#0b0b12;border-radius:10px;overflow:hidden;color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.18);
+  border-top:6px solid #3a2a18;border-bottom:6px solid #3a2a18}
+.featured-card .fc-media{position:relative;aspect-ratio:16/9;cursor:pointer;background:#000;overflow:hidden}
+.featured-card .fc-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.featured-card .fc-media:hover img{transform:scale(1.03)}
+.featured-card .fc-media::after{content:'\25B6';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;padding-left:5px;box-sizing:border-box;
+  font-size:24px;color:#1a1500;background:rgba(232,192,64,.92);box-shadow:0 6px 24px rgba(0,0,0,.5)}
+.featured-card .fc-body{padding:24px 28px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.featured-card .fc-kicker{font:500 12px 'JetBrains Mono',monospace;letter-spacing:.2em;color:#DDB820;text-transform:uppercase}
+.featured-card .fc-title{font:400 28px/1.15 'Fraunces',serif;margin:0;color:#fff}
+.featured-card .fc-zh{font:500 15px 'Noto Sans',sans-serif;color:rgba(255,255,255,.8);margin:0}
+.featured-card .fc-desc{font-size:13.5px;color:rgba(255,255,255,.62);line-height:1.6;margin:4px 0 0}
+.featured-card .fc-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.featured-card .fc-actions button,.featured-card .fc-actions a{font:600 13px 'Noto Sans',sans-serif;border-radius:999px;
+  padding:7px 16px;cursor:pointer;text-decoration:none;border:1px solid rgba(221,184,32,.55);color:#E8C040;background:transparent}
+.featured-card .fc-actions .fc-play{background:#E8C040;color:#1a1500;border-color:#E8C040}
+.vmodal{position:fixed;inset:0;z-index:1000;background:rgba(5,5,10,.92);display:none;align-items:center;justify-content:center;padding:24px}
+.vmodal.open{display:flex}
+.vmodal .vm-box{width:min(1100px,100%)}
+.vmodal video{width:100%;aspect-ratio:16/9;background:#000;border-radius:6px;display:block}
+.vmodal .vm-bar{display:flex;align-items:center;gap:12px;margin-top:10px;color:rgba(255,255,255,.75);font-size:13px}
+.vmodal .vm-bar .t{flex:1}
+.vmodal .vm-bar a{color:#E8C040;text-decoration:none;border-bottom:1px solid rgba(221,184,32,.5);margin-left:10px}
+.vmodal .vm-close{position:absolute;top:14px;right:18px;background:none;border:0;color:#fff;font-size:30px;cursor:pointer;line-height:1}
+@media(max-width:768px){
+  .hero-play{margin-top:8px;font-size:12px;padding:6px 14px}
+  .hero-play span{display:none}
+  .featured-card{grid-template-columns:1fr}
+  .featured-card .fc-body{padding:16px 18px 20px}
+  .featured-card .fc-title{font-size:22px}
+  .vmodal{padding:10px}
+}
+
 
 .hero-overlay{
   position:absolute;inset:0;z-index:2;pointer-events:none;
@@ -1080,6 +1123,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             <div class="hero-kicker"><strong>Xiao Zhan</strong> · Complete Works</div>
             <h1 class="hero-title">Screen Arts of Xiao Zhan</h1>
             <p class="hero-zh">肖战演出全览 · 剧集、电影、音乐与综艺</p>
+            <button type="button" class="hero-play" id="hero-play" hidden>▶ 观看「光影足迹」<span> · Watch the reel</span></button>
         </div>
     </header>
     
@@ -1104,6 +1148,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         
         <!-- Content Sections - Works will be loaded dynamically -->
         <div id="all" class="content-section active">
+            <div id="featured-slot"></div>
             <h2>All Works</h2>
             <div id="all-container" class="loading">Loading works...</div>
         </div>
@@ -1664,5 +1709,83 @@ document.addEventListener('DOMContentLoaded', function() {
       window.addEventListener('resize', () => { if (mgOn && mgLayout === 'P') mgBuildTiles(); });
     })();
     </script>
+
+<!-- Featured video player (lightbox). To change what plays, edit the settings block in the script below. -->
+<div class="vmodal" id="vmodal" role="dialog" aria-modal="true" aria-label="视频播放">
+  <button class="vm-close" id="vm-close" aria-label="关闭">&times;</button>
+  <div class="vm-box"><video id="vm-video" controls playsinline preload="none"></video>
+    <div class="vm-bar"><span class="t" id="vm-title"></span><span id="vm-links"></span></div></div>
+</div>
+<script>
+// ===== Featured video settings =====
+// HERO_REEL -> the permanent play button in the header (set to null to hide it).
+// FEATURED  -> the card at the top of "All Works": swap in another video any time, or set to null to take it down.
+// links: add { label: 'YouTube', url: 'https://...' } entries; entries with an empty url are skipped.
+const XZ_MEDIA = 'https://assets.xz-studio-gallery.com/xzworks/featured/';
+const HERO_REEL = {
+  video: XZ_MEDIA + 'xz-10th-anniversary-reel.mp4',
+  poster: XZ_MEDIA + 'xz-10th-anniversary-reel-poster.jpg',
+  title: '光影足迹 · Screen Arts of Xiao Zhan (2016–2026)',
+  links: [],
+};
+const FEATURED = {
+  kicker: 'Featured · 出道十周年特辑',
+  title: 'Footprints in Light',
+  zh: '肖战 · 光影足迹  2016–2026',
+  desc: '十年作品回顾：从《超星星学园》到《十日终焉》，中英双语字幕。A look back at ten years of screen and stage work, with Chinese–English subtitles.',
+  video: HERO_REEL.video,
+  poster: HERO_REEL.poster,
+  links: HERO_REEL.links,
+};
+// ===== end of settings =====
+
+(function () {
+  const modal = document.getElementById('vmodal'), video = document.getElementById('vm-video');
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const linkHtml = links => (links || []).filter(l => l.url).map(l =>
+    `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join('');
+
+  function open(item) {
+    video.poster = item.poster || '';
+    video.src = item.video;
+    document.getElementById('vm-title').textContent = item.title || '';
+    document.getElementById('vm-links').innerHTML = linkHtml(item.links);
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    video.play().catch(() => {});
+    if (window.gtag) gtag('event', 'featured_video_play', { video: item.video });
+  }
+  function close() {
+    video.pause(); video.removeAttribute('src'); video.load();
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('vm-close').onclick = close;
+  modal.addEventListener('click', e => { if (e.target === modal) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && modal.classList.contains('open')) close(); });
+  window.openFeaturedVideo = open;   // handy for testing / other buttons
+
+  if (HERO_REEL) {
+    const btn = document.getElementById('hero-play');
+    btn.hidden = false;
+    btn.onclick = () => open(HERO_REEL);
+  }
+  if (FEATURED) {
+    const slot = document.getElementById('featured-slot');
+    slot.innerHTML = `<div class="featured-card">
+      <div class="fc-media" role="button" tabindex="0" aria-label="播放"><img src="${esc(FEATURED.poster)}" alt="${esc(FEATURED.title)}" loading="lazy"></div>
+      <div class="fc-body">
+        <div class="fc-kicker">${esc(FEATURED.kicker)}</div>
+        <h3 class="fc-title">${esc(FEATURED.title)}</h3>
+        <p class="fc-zh">${esc(FEATURED.zh)}</p>
+        <p class="fc-desc">${esc(FEATURED.desc)}</p>
+        <div class="fc-actions"><button type="button" class="fc-play">▶ 播放 Play</button>${linkHtml(FEATURED.links)}</div>
+      </div></div>`;
+    const media = slot.querySelector('.fc-media');
+    media.onclick = slot.querySelector('.fc-play').onclick = () => open(FEATURED);
+    media.onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(FEATURED); } };
+  }
+})();
+</script>
 </body>
 </html>
