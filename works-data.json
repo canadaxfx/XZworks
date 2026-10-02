@@ -1,6 +1,51 @@
 {
   "works": [
     {
+      "id": "my-motherland-and-i",
+      "date": "2026-10-01",
+      "title": "My Motherland and I",
+      "titleChinese": "我和我的祖国",
+      "role": "Lead Singer",
+      "category": [
+        "music"
+      ],
+      "description": "2026国庆特别节目",
+      "platforms": [
+        {
+          "name": "央视文艺",
+          "url": "https://weibo.com/2210168325/5349308909231181"
+        },
+        {
+          "name": "央视新闻",
+          "url": "https://weibo.com/2656274875/5349310304878716"
+        },
+        {
+          "name": "新华社",
+          "url": "https://weibo.com/1699432410/5349314379123842"
+        },
+        {
+          "name": "央视频",
+          "url": "https://weibo.com/7211561239/5349310201334304"
+        },
+        {
+          "name": "人民日报",
+          "url": "https://weibo.com/2803301701/5349311336418004"
+        },
+        {
+          "name": "人民网",
+          "url": "https://weibo.com/2286908003/5349316088825075"
+        },
+        {
+          "name": "春晚",
+          "url": "https://weibo.com/3506728370/5349307689733994"
+        },
+        {
+          "name": "YouTube (CCTV)",
+          "url": "https://www.youtube.com/watch?v=Im4WQRhBnJ8"
+        }
+      ]
+    },
+    {
       "id": "guest-performance-at-na-yings-beijing-concert",
       "date": "2026-08-22",
       "title": "Guest performance at Na Ying's Beijing Concert",
