@@ -904,6 +904,123 @@
       ]
     },
     {
+      "id": "wm",
+      "date": "2024-11-13",
+      "title": "WM",
+      "titleChinese": "我们",
+      "role": "Singer",
+      "category": [
+        "music"
+      ],
+      "description": "肖战专辑我们 Album by Xiao Zhan",
+      "platforms": [
+        {
+          "name": "Weibo(我们)",
+          "url": "https://weibo.com/6643123988/P07pNlwB9"
+        },
+        {
+          "name": "Douyin(我们)",
+          "url": "https://www.douyin.com/video/7436633640366361906"
+        },
+        {
+          "name": "YouTube(我们/wild)",
+          "url": "https://www.youtube.com/watch?v=T0BhjJuyI1g"
+        },
+        {
+          "name": "Weibo(都一样)",
+          "url": "https://weibo.com/6643123988/P0ex0dlAy"
+        },
+        {
+          "name": "Douyin(都一样)",
+          "url": "https://www.douyin.com/video/7436794400602131747"
+        },
+        {
+          "name": "YouTube(都一样/Anonymous)",
+          "url": "https://www.youtube.com/watch?v=_u6IH4ZqAyc"
+        },
+        {
+          "name": "Douyin(漂流)",
+          "url": "https://www.douyin.com/video/7439068805667622179"
+        },
+        {
+          "name": "Weibo(漂流纯享版)",
+          "url": "https://weibo.com/6643123988/P1iwFkwSn"
+        },
+        {
+          "name": "Douyin(漂流纯享版)",
+          "url": "https://www.douyin.com/video/7439312937438809381"
+        },
+        {
+          "name": "YouTube(漂流/Life of Us)",
+          "url": "https://www.youtube.com/watch?v=GmuwqCqKqGU"
+        },
+        {
+          "name": "Weibo(灯塔)",
+          "url": "https://weibo.com/6643123988/P1rX0uMUR"
+        },
+        {
+          "name": "Douyin(灯塔)",
+          "url": "https://www.douyin.com/video/7439663796798360882"
+        },
+        {
+          "name": "YouTube(灯塔/Beacon)",
+          "url": "https://www.youtube.com/watch?v=HtgizUPOOO4"
+        },
+        {
+          "name": "Douyin(不要回头)",
+          "url": "https://www.douyin.com/video/7441371177261485346"
+        },
+        {
+          "name": "Weibo(晚安)",
+          "url": "https://weibo.com/6643123988/P2mwauqVZ"
+        },
+        {
+          "name": "Douyin(晚安)",
+          "url": "https://www.douyin.com/video/7441984054058077480"
+        },
+        {
+          "name": "YouTube(晚安/Bonne Nuit)",
+          "url": "https://www.youtube.com/watch?v=UuaGVJPGK-o"
+        },
+        {
+          "name": "Weibo(纪录片)",
+          "url": "https://weibo.com/6643123988/P3qlnwnTk"
+        },
+        {
+          "name": "Douyin(纪录片)",
+          "url": "https://www.douyin.com/video/7444595033006787892"
+        },
+        {
+          "name": "YouTube(纪录片)",
+          "url": "https://www.youtube.com/watch?v=3s5JQg3Kous"
+        },
+        {
+          "name": "Weibo(BTS)",
+          "url": "https://weibo.com/6643123988/P4nnW96y2"
+        },
+        {
+          "name": "Douyin(BTS)",
+          "url": "https://www.douyin.com/video/7447066386708319528"
+        },
+        {
+          "name": "YouTube(BTS)",
+          "url": "https://www.youtube.com/watch?v=YRJJ9SOChhc"
+        },
+        {
+          "name": "Weibo(制作特辑)",
+          "url": "https://weibo.com/6643123988/PkuGAt4Lt"
+        },
+        {
+          "name": "Douyin(制作特辑)",
+          "url": "https://www.douyin.com/video/7486022107063733516"
+        },
+        {
+          "name": "YouTube(制作特辑)",
+          "url": "https://www.youtube.com/watch?v=cF8-8XxPXbw"
+        }
+      ]
+    },
+    {
       "id": "the-greater-bay-area-film-concert-2024",
       "date": "2024-09-22",
       "title": "The Greater Bay Area Film Concert 2024",
