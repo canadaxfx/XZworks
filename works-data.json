@@ -1,6 +1,31 @@
 {
   "works": [
     {
+      "id": "flights-of-fancy",
+      "date": "2026-10-04",
+      "title": "Flights of Fancy",
+      "titleChinese": "异想天开",
+      "role": "Singer",
+      "category": [
+        "music"
+      ],
+      "description": "EP (Extended Play) by Xiao Zhan",
+      "platforms": [
+        {
+          "name": "Douyin(工作室: 异想天开)",
+          "url": "https://www.douyin.com/video/7692861487740485617"
+        },
+        {
+          "name": "XHS(战个地儿: 异想天开)",
+          "url": "https://www.xiaohongshu.com/discovery/item/6ac28513000000000b004824?xsec_token=ABpnhpQFV1SIJJXpcv49fvTPpCTVu0TkZF7zObJPlUKWk="
+        },
+        {
+          "name": "Weibo(肖战: 异想天开)",
+          "url": "https://weibo.com/1792951112/RlekT6h7z"
+        }
+      ]
+    },
+    {
       "id": "my-motherland-and-i",
       "date": "2026-10-01",
       "title": "My Motherland and I",
