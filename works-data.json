@@ -1,6 +1,23 @@
 {
   "works": [
     {
+      "id": "small-town-remedy",
+      "date": "2026-10-21",
+      "title": "Small Town Remedy",
+      "titleChinese": "小城良方",
+      "role": "Liu Zhengliang (刘铮亮) (Lead)",
+      "category": [
+        "dramas"
+      ],
+      "description": "After losing his job at a top-tier hospital due to an unexpected incident, Liu Zheng Liang returns to his hometown and begins working in the emergency department of a local community hospital. While healing patients one after another, he finds himself continually healed by their resilience and humanity, creating a mutual journey of recovery and growth between caregiver and those in need.",
+      "platforms": [
+        {
+          "name": "爱奇艺",
+          "url": "https://www.iqiyi.com/a_kab1eeoxdl.html"
+        }
+      ]
+    },
+    {
       "id": "flights-of-fancy",
       "date": "2026-10-04",
       "title": "Flights of Fancy",
