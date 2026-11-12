@@ -1458,14 +1458,17 @@ function initializeTermsToggle() {
 // =============== MUSIC PLAYER ===============
 function initializeMusicPlayer() {
     const originalPlaylist = [
-        { name: "XZ-得闲谨制", file: "music/得闲谨制.mp3" },
-        { name: "XZ-岁岁年年", file: "music/岁岁年年.mp3" },
-        { name: "XZ-都一样", file: "music/都一样.mp3" },
-        { name: "XZ-灯塔", file: "music/灯塔.mp3" },
-        { name: "XZ-漂流", file: "music/漂流.mp3" },
-        { name: "XZ-不要回头", file: "music/不要回头.mp3" },
-        { name: "XZ-如愿", file: "music/如愿.mp3" },
-        { name: "XZ-同路人", file: "music/同路人.mp3" },
+        // Same songlist as XZ Article Archive (its music.json), served from the shared R2 CDN
+        { name: "夢中的那片海", file: "https://assets.xz-studio-gallery.com/music/dream-sea.mp3" },
+        { name: "轻轻", file: "https://assets.xz-studio-gallery.com/music/qingqing-instrumental.mp3" },
+        { name: "心之所向", file: "https://assets.xz-studio-gallery.com/music/heart-direction.mp3" },
+        { name: "小城", file: "https://assets.xz-studio-gallery.com/music/xiaocheng.mp3" },
+        { name: "无羁", file: "https://assets.xz-studio-gallery.com/music/wuji-flute.mp3" },
+        { name: "書籤", file: "https://assets.xz-studio-gallery.com/music/bookmark.mp3" },
+        { name: "玉骨", file: "https://assets.xz-studio-gallery.com/music/jade-bone.mp3" },
+        { name: "萤火", file: "https://assets.xz-studio-gallery.com/music/firefly.mp3" },
+        { name: "莲花坞", file: "https://assets.xz-studio-gallery.com/music/lotus.mp3" },
+        { name: "醉梦", file: "https://assets.xz-studio-gallery.com/music/drunk-dream.mp3" },
     ];
 
     let playlist = [...originalPlaylist];
