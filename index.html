@@ -428,6 +428,71 @@
             text-overflow:ellipsis
         }
 
+        .track-btn {
+            display:flex;
+            align-items:center;
+            background:none;
+            border:none;
+            padding:0;
+            cursor:pointer;
+            font:inherit;
+            color:var(--text-color)
+        }
+
+        .track-caret {
+            margin-left:4px;
+            font-size:.75rem;
+            opacity:.6
+        }
+
+        .songlist {
+            display:none;
+            position:absolute;
+            bottom:calc(100% + 8px);
+            right:0;
+            min-width:200px;
+            max-height:60vh;
+            overflow-y:auto;
+            margin:0;
+            padding:6px 0;
+            list-style:none;
+            background:#fff;
+            border-radius:12px;
+            box-shadow:0 4px 16px #0003
+        }
+
+        .songlist.open {
+            display:block
+        }
+
+        .music-player:has(.songlist.open) {
+            opacity:1
+        }
+
+        .songlist li {
+            padding:7px 16px;
+            font-size:.9rem;
+            color:var(--text-color);
+            cursor:pointer;
+            white-space:nowrap
+        }
+
+        .songlist li:hover {
+            background:#0000000d
+        }
+
+        .songlist li.current {
+            color:var(--accent-color);
+            font-weight:600
+        }
+
+        .songlist .sl-num {
+            display:inline-block;
+            width:1.6em;
+            opacity:.5;
+            font-variant-numeric:tabular-nums
+        }
+
         #back-to-top {
             position:fixed;
             bottom:20px;
@@ -1010,8 +1075,11 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             </button>
             <button id="next-track" class="control-btn">⏩</button>
             <button id="shuffle-toggle" class="control-btn">🔀</button>
-            <span id="track-name" class="track-info">Select a track</span>
+            <button id="track-name-btn" class="track-btn" aria-haspopup="listbox" aria-expanded="false" title="Songlist 歌单">
+                <span id="track-name" class="track-info">Select a track</span><span class="track-caret">▾</span>
+            </button>
         </div>
+        <ul id="songlist" class="songlist" role="listbox" aria-label="Songlist 歌单"></ul>
     </div>
 
     <!-- Header — cinematic drifting film strip -->
@@ -1489,6 +1557,7 @@ function initializeMusicPlayer() {
         audioElement.load();
         trackNameDisplay.textContent = track.name;
         trackNameDisplay.title = track.name;
+        markCurrentInSonglist();
         if (isPlaying) {
             const playPromise = audioElement.play();
             if (playPromise !== undefined) {
@@ -1570,6 +1639,57 @@ function initializeMusicPlayer() {
         currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
         loadTrack(currentTrackIndex);
     }
+
+    // Songlist popup: click the song name to see all songs; click one to play it
+    const songlistBtn = document.getElementById('track-name-btn');
+    const songlistEl = document.getElementById('songlist');
+
+    function buildSonglist() {
+        songlistEl.innerHTML = '';
+        originalPlaylist.forEach((track, i) => {
+            const li = document.createElement('li');
+            li.setAttribute('role', 'option');
+            li.dataset.file = track.file;
+            li.innerHTML = '<span class="sl-num">' + (i + 1) + '.</span>';
+            li.appendChild(document.createTextNode(track.name));
+            li.addEventListener('click', () => playFromSonglist(track.file));
+            songlistEl.appendChild(li);
+        });
+    }
+
+    function markCurrentInSonglist() {
+        const current = playlist[currentTrackIndex];
+        songlistEl.querySelectorAll('li').forEach(li => {
+            const on = !!current && li.dataset.file === current.file;
+            li.classList.toggle('current', on);
+            li.setAttribute('aria-selected', on);
+        });
+    }
+
+    function setSonglistOpen(open) {
+        songlistEl.classList.toggle('open', open);
+        songlistBtn.setAttribute('aria-expanded', open);
+    }
+
+    function playFromSonglist(file) {
+        currentTrackIndex = Math.max(0, playlist.findIndex(t => t.file === file));
+        isPlaying = true;
+        updatePlayButton();
+        loadTrack(currentTrackIndex);
+        setSonglistOpen(false);
+    }
+
+    buildSonglist();
+    songlistBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        setSonglistOpen(!songlistEl.classList.contains('open'));
+    });
+    document.addEventListener('click', e => {
+        if (!songlistEl.contains(e.target)) setSonglistOpen(false);
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') setSonglistOpen(false);
+    });
 
     musicToggle.addEventListener('click', toggleMusic);
     prevButton.addEventListener('click', playPreviousTrack);
