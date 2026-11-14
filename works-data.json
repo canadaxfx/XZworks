@@ -1,6 +1,55 @@
 {
   "works": [
     {
+      "id": "here-comes-our-exit",
+      "date": "2026-10-23 to",
+      "title": "Here Comes Our Exit",
+      "titleChinese": "［出口·我们］巡回演唱会",
+      "role": "Singer",
+      "category": [
+        "music"
+      ],
+      "description": "Xiao Zhan's concert tour",
+      "platforms": [
+        {
+          "name": "YouTube(竹石/南京)",
+          "url": "https://www.youtube.com/watch?v=qIoChusERYY"
+        },
+        {
+          "name": "Weibo(央视新闻：竹石/南京)",
+          "url": "https://weibo.com/2656274875/RoavawP1z"
+        },
+        {
+          "name": "YouTube(影音会：轻轻/南京)",
+          "url": "https://www.youtube.com/watch?v=GMlrFXO9Q1I"
+        },
+        {
+          "name": "Weibo(新华社：轻轻/南京)",
+          "url": "https://weibo.com/1699432410/RojFgnh6o"
+        },
+        {
+          "name": "YouTube(影音会：灯塔/上海)",
+          "url": "https://www.youtube.com/watch?v=6mLhxi_ySOQ"
+        },
+        {
+          "name": "Weibo(央视新闻：灯塔/上海)",
+          "url": "https://weibo.com/2656274875/RqJg5uYjv"
+        },
+        {
+          "name": "YouTube(影音会：轻轻/上海)",
+          "url": "https://www.youtube.com/watch?v=luOdoEkAuAU"
+        },
+        {
+          "name": "Weibo(央视新闻：轻轻/上海)",
+          "url": "https://weibo.com/2656274875/RqsfYmCKU"
+        },
+        {
+          "name": "Weibo(新华社：轻轻/上海)",
+          "url": "https://weibo.com/1699432410/Rqsz0fxUJ"
+        }
+      ]
+    },
+    {
       "id": "small-town-remedy",
       "date": "2026-10-21",
       "title": "Small Town Remedy",
